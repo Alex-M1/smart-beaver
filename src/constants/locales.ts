@@ -1,0 +1,17 @@
+export const locales = {
+  about_us: 'About',
+  faq: 'FAQ',
+  contacts: 'Contacts',
+  products: 'Products',
+  company_name: 'Smart Beaver',
+  tagline: 'Kitchen for Your Individuality',
+  description_text: 'Our furniture is made from selected and best quality materials that are suitable for your dream home',
+  expert_craft_title: 'Expert Craftsmanship',
+  expert_craft_text: 'The art of cabinet making among the Amish community has been handed down from generation to generation.The detail and work put into each cabinet made is still unsurpassed in the industry today.',
+  design_no_limit_title: 'Design with no limit',
+  design_no_limit_text: 'We can build anything you can imagine. Our cabinets do not have any size or design limitations. We can tailor every cabinet to fit your space and taste. You can never get the same luxury feel from prefabricated cabinets.',
+  superior_quality_title: 'Superior Quality',
+  superior_quality_text: 'Our cabinets are made of 100% wood panels 3/4`\` We only use the highest grade hardware in  all of our cabinetry, doors and drawers. Only hight qualiti birch plywood is used for the shelving. Rich selection of solid wood materials for cabinet doors, drawers, frames and facades.',
+  unsurpassed_value_title: 'Unsurpassed value',
+  unsurpassed_value_text: 'Our kitchens are made to serve you for years!',
+};
