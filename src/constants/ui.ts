@@ -5,6 +5,7 @@ export const breakPoints = {
 const fonts = [
   { name: 'Bold', weight: 800 },
   { name: 'SemiBold', weight: 600 },
+  { name: 'SemiBoldItalic', weight: 600, style: 'italic' },
   { name: 'Medium', weight: 500 },
   { name: 'Regular', weight: 400 },
   { name: 'Light', weight: 200 },
@@ -17,7 +18,7 @@ export const fontFace = fontsExt.map((ext) => (
       font-family: 'Gilroy';
       src: url('/fonts/Gilroy-${font.name}.${ext}');
       font-weight: ${font.weight};
-      font-style: normal;
+      font-style: ${font.style || 'normal'};
     }
   `))
 ));

@@ -7,7 +7,14 @@ export enum ICON_NAMES {
   design_no_limit = 'design_no_limit',
   expert_craft = 'expert_craft',
   superior_qauality = 'superior_qauality',
-  unsurpassed_value = 'unsurpassed_value'
+  unsurpassed_value = 'unsurpassed_value',
+  woman_carpenter = 'woman_carpenter',
+  credit_card = 'credit_card',
+  delivery = 'delivery',
+  kitchen_design = 'kitchen_design',
+  roulette = 'roulette',
+  woodmaker = 'woodmaker',
+  calculator = 'calculator'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

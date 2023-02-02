@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import Header from '../Header';
 import SliderBlock from './SliderBlock';
 import Advantages from './Advantages';
+import BlockWithPhoto from './BlockWithPhoto';
+import Steps from './Steps';
 
 interface Props {
 
@@ -15,6 +17,8 @@ const MainPage: React.FC<Props> = () => {
       <Header iconRef={iconWrapper} />
       <SliderBlock iconRef={iconWrapper} />
       <Advantages />
+      <BlockWithPhoto />
+      <Steps />
     </main>
   );
 };
