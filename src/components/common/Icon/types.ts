@@ -14,7 +14,21 @@ export enum ICON_NAMES {
   kitchen_design = 'kitchen_design',
   roulette = 'roulette',
   woodmaker = 'woodmaker',
-  calculator = 'calculator'
+  calculator = 'calculator',
+
+  portfolio_slide_1_1 = 'portfolio_slide_1_1',
+  portfolio_slide_1_2 = 'portfolio_slide_1_2',
+  portfolio_slide_1_3 = 'portfolio_slide_1_3',
+  portfolio_slide_1_4 = 'portfolio_slide_1_4',
+
+  photo_block_1 = 'photo_block_1',
+  photo_block_2 = 'photo_block_2',
+  photo_block_3 = 'photo_block_3',
+  photo_block_4 = 'photo_block_4',
+  photo_block_5 = 'photo_block_5',
+  photo_block_6 = 'photo_block_6',
+  photo_block_7 = 'photo_block_7',
+  photo_block_8 = 'photo_block_8',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

@@ -29,6 +29,7 @@ export const StGrid = styled.div <StGridProps>`
     ${mixins.sizeStyles};
     ${mixins.positionStyles};
     ${mixins.fontStyles};
+    ${({ bgColor }) => bgColor && `background-color: ${bgColor};`};
     a {
       ${(props) => !props.linkWithTextDecor && 'text-decoration: none;'};
     }

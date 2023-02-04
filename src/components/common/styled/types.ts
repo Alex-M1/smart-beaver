@@ -88,12 +88,7 @@ export interface StGridProps extends SizesProps, PositionProps, FontProps {
   row?: any;
   align?: CSS.AlignContent;
   linkWithTextDecor?: boolean;
-  columns1600?: string;
-  columns1650?: string;
-  columns1750?: string;
-  columns1700?: string;
-  columns1800?: string;
-  columns1440?: string;
+  bgColor?: string;
 }
 export interface StDivProps extends SizesProps, PositionProps, FontProps {
   userSelect?: string;

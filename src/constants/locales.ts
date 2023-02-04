@@ -15,6 +15,7 @@ export const locales = {
   unsurpassed_value_title: 'Unsurpassed value',
   unsurpassed_value_text: 'Our kitchens are made to serve you for years!',
   block_with_photo: 'The products of our furniture factory are designed to serve you for a long time. Our furniture is made from environmentally friendly materials and breathes with its high quality and durability. All products pass the quality control at the skin stage of vibration. We were lucky that our furniture brought warmth and calm to your booths.',
+  work_order: 'Work order',
   measurements_title: 'Measurements',
   measures_text: 'The measurer goes to the client at a predetermined time',
   project_design_title: 'Project design approval',
@@ -27,4 +28,8 @@ export const locales = {
   furniture_text: 'Your order will be done by one team who will be responsible for all details',
   delivery_title: 'Delivery and assembly of furniture at the customer\'s site',
   delivery_text: 'Final payment is made upon receiving the order',
+  portfolio: 'Portfolio',
+  portfolio_slide_text_1: 'In this project the client requested a layout change.\n1. When we met we had the opportunity to take measurements and then we created several design options. One of the designs was the winner. The client was confident that this configuration would give her the ability to keep all things organized and also enable her to prepare meals for celebration of important events, doing so quickly and in large volumes. We agreed upon the specifications for the manufacturing of the cabinets, the colors and built-in elements.Then, we signed the contract. Right away, the contractors got to work.\nThey got rid of the wall and moved all utilities like plumbing, electric and HVAC just as it was indicated on the 2D plan. They prepared the walls and flooring for cabinet installation.\nAfter all cabinets are set in place using laser leveling, our partners come in to install granite, quartz or any other countertop material of the client\'s choosing. After that we get to the point where we install the backsplash, connect the sink and faucet, garbage disposal and dishwasher. And that is all, the project is done. Enjoy!',
+  photo_bock_descr: 'Сreate an atmosphere of comfort with',
+  photo_block_company: '#SmartBeaver',
 };

@@ -4,6 +4,9 @@ import SliderBlock from './SliderBlock';
 import Advantages from './Advantages';
 import BlockWithPhoto from './BlockWithPhoto';
 import Steps from './Steps';
+import Portfolio from './Portfolio';
+import PhotoBlock from './PhotoBlock';
+import ContactForm from '../common/ContactForm';
 
 interface Props {
 
@@ -19,6 +22,9 @@ const MainPage: React.FC<Props> = () => {
       <Advantages />
       <BlockWithPhoto />
       <Steps />
+      <Portfolio />
+      <PhotoBlock />
+      <ContactForm />
     </main>
   );
 };
