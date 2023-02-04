@@ -1,8 +1,6 @@
-import React, {
-  MutableRefObject, useEffect, useRef, useState,
-} from 'react';
+import React from 'react';
 import Icon from '@/components/common/Icon';
-import { StDiv, StFlex, StGrid } from '@/components/common/styled/Block';
+import { StDiv, StFlex } from '@/components/common/styled/Block';
 import { IconNames } from '@/components/common/Icon/types';
 import { StStepsNumber, StStepsTitle } from './styled';
 

@@ -4,11 +4,7 @@ import { locales } from '@/constants/locales';
 import { ICON_NAMES } from '@/components/common/Icon/types';
 import Step from './Step';
 
-interface Props {
-
-}
-
-const Steps: React.FC<Props> = ({ }) => {
+const Steps: React.FC = () => {
   const items = [
     { title: locales.measurements_title, text: locales.measures_text, iconName: ICON_NAMES.roulette },
     { title: locales.project_design_title, text: locales.project_design_text, iconName: ICON_NAMES.kitchen_design },
