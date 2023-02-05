@@ -1,5 +1,7 @@
 export enum ICON_NAMES {
   logo = 'logo',
+  white_logo = 'white_logo',
+
   slider_img1 = 'slider_img1',
   slider_img2 = 'slider_img2',
   slider_img3 = 'slider_img3',

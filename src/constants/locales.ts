@@ -48,4 +48,7 @@ export const locales = {
   review_name_1: 'Alice',
   review_text_2: 'We hired Alex to put in an entirely new kitchen. I thought it would be cost-prohibitive and have too long of a timeline to be feasible — to my surprise, it was neither. I felt Smart Beaver prices were incredibly fair (in line with the other proposal we got), and the timeline was shockingly fast. Their team showed up exactly when they said they would, worked quietly and cleanly, and completed the job faster and better than I could have ever expected. Even with a few little changes along the way (choices we were making), they were able to adjust, accommodate, and stay on schedule.',
   review_name_2: 'Stacy',
+  footer_description: 'Wooden furniture shop',
+  footer_address: 'Northeast Ohio, USA',
+  phone: '+1 (440) 520 4032',
 };
