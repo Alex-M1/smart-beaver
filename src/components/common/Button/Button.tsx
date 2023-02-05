@@ -1,47 +1,54 @@
 import React, { ReactNode, PropsWithChildren } from 'react';
 import MuiButton from '@mui/material/Button';
-import { BUTTON_VARIANTS, ButtonVariants } from './types';
+import { ThemeProvider } from '@mui/material';
+import { BUTTON_VARIANTS, ButtonColor, ButtonVariants } from './types';
+import { theme } from '../styled/theme';
 
 interface Props extends PropsWithChildren {
   url?: string;
   width?: string;
+  color?: ButtonColor;
   height?: string;
+  padding?: string;
   content?: string | ReactNode;
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: ButtonVariants,
-  endIcon?: ReactNode;
   disabled?: boolean;
-  startIcon?: ReactNode;
+  borderRadius?: string;
   onTouchStart?: () => void;
 }
 
 const Button: React.FC<Props> = ({
   url,
   width,
+  color = 'primary',
   height,
+  padding,
   content,
   onClick,
   variant = BUTTON_VARIANTS.contained,
-  endIcon,
   children,
   disabled,
-  startIcon,
+  borderRadius,
   onTouchStart,
 }) => {
-  const sxProps = { width, height };
+  const sxProps = {
+    width, height, borderRadius, padding,
+  };
   return (
-    <MuiButton
-      sx={sxProps}
-      href={url}
-      onClick={onClick}
-      onTouchStart={onTouchStart}
-      disabled={disabled}
-      variant={variant}
-      endIcon={endIcon}
-      startIcon={startIcon}
-    >
-      {content || children}
-    </MuiButton>
+    <ThemeProvider theme={theme}>
+      <MuiButton
+        sx={sxProps}
+        href={url}
+        onClick={onClick}
+        onTouchStart={onTouchStart}
+        disabled={disabled}
+        variant={variant}
+        color={color}
+      >
+        {content || children}
+      </MuiButton>
+    </ThemeProvider>
   );
 };
 

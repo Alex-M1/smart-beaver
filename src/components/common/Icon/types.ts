@@ -29,6 +29,9 @@ export enum ICON_NAMES {
   photo_block_6 = 'photo_block_6',
   photo_block_7 = 'photo_block_7',
   photo_block_8 = 'photo_block_8',
+
+  cross = 'cross',
+  check = 'check'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

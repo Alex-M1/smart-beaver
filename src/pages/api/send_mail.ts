@@ -3,17 +3,16 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 
 type Data = {
-  name: string
+  message: string
 }
-// const testEmailAccount = await nodemailer.createTestAccount();
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  service: 'gmail',
   port: 587,
   secure: false, // true only 465
   auth: {
-    user: 'nyah.harris@ethereal.email',
-    pass: 'SSah8BbxjdMDM8KGrW',
+    user: process.env.NEXT_PUBLIC_MAIL,
+    pass: process.env.NEXT_PUBLIC_PASSWORD,
   },
 });
 
@@ -21,18 +20,14 @@ export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  console.log('--------------------------------------');
-  console.log(req.body);
-  console.log('--------------------------------------');
   const message = {
-    from: 'Email sender <nyah.harris@ethereal.email>',
-    to: 'oleksiimal@wizardsdev.com',
-    // text: `${req.body.name} ${req.body.phone}`,
-    text: 'asdasdasdads',
+    from: process.env.NEXT_PUBLIC_MAIL,
+    to: process.env.NEXT_PUBLIC_CLIENT,
+    subject: 'Mail sender',
+    text: `Client name: ${req.body.name},\nClient phone: ${req.body.phone}`,
   };
-  transporter.sendMail(message, (err, info) => {
-    if (err) return console.log('err', err);
-    console.log('Sent', info);
+  transporter.sendMail(message, (err) => {
+    if (err) return res.status(500).json({ message: 'Something went wrong' });
+    res.status(200).json({ message: 'Email was sent' });
   });
-  res.status(200).json({ name: 'John Doe' });
 }

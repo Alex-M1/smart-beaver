@@ -9,4 +9,5 @@ export const colors = {
   black: '#000',
   gray_light: '#616161',
   white_crime: '#FCF8F3',
+  warning: '#DB996C',
 };

@@ -7,4 +7,7 @@ export const StForm = styled.form`
   justify-content: center;
   align-items: center;
   padding: 51px 0 80px 0;
+  button {
+    text-transform: none;
+  }
 `;
