@@ -10,4 +10,5 @@ export const colors = {
   gray_light: '#616161',
   white_crime: '#FCF8F3',
   warning: '#DB996C',
+  swamp_green: '#D8D9D4',
 };

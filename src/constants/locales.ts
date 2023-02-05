@@ -41,4 +41,11 @@ export const locales = {
   application_sent_title: 'Application sent!',
   aplication_sent_text: 'Thank you! Our specialist will contact you by phone as soon as possible to clarify the details.',
   our_production: 'Our production',
+  reviews: 'Reviews',
+  reviews_header: 'Testimonials from our beloved customers',
+  reviews_text: 'We would like to share warm feedback from our clients.',
+  review_text_1: 'Team did an amazing job on our kitchen remodel. They helped with design at first and managed the entire project from start to finish until everything was perfect and to our taste. Most of the time they had to work long hours to get everything done. They are a group of professional and experienced workers who work as a team and get the job done on time with exceptional quality. Strongly recommend for any remodeling!!!',
+  review_name_1: 'Alice',
+  review_text_2: 'We hired Alex to put in an entirely new kitchen. I thought it would be cost-prohibitive and have too long of a timeline to be feasible — to my surprise, it was neither. I felt Smart Beaver prices were incredibly fair (in line with the other proposal we got), and the timeline was shockingly fast. Their team showed up exactly when they said they would, worked quietly and cleanly, and completed the job faster and better than I could have ever expected. Even with a few little changes along the way (choices we were making), they were able to adjust, accommodate, and stay on schedule.',
+  review_name_2: 'Stacy',
 };
