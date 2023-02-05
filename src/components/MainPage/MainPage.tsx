@@ -7,6 +7,7 @@ import Steps from './Steps';
 import Portfolio from './Portfolio';
 import PhotoBlock from './PhotoBlock';
 import ContactForm from '../common/ContactForm';
+import OurProduction from './OurProduction';
 
 interface Props {
 
@@ -25,6 +26,7 @@ const MainPage: React.FC<Props> = () => {
       <Portfolio />
       <PhotoBlock />
       <ContactForm />
+      <OurProduction />
     </main>
   );
 };

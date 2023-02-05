@@ -39,5 +39,6 @@ export const locales = {
   placeholder_phone: 'Your phone number',
   order_button: 'Order a measurer',
   application_sent_title: 'Application sent!',
-  aplication_sent_text: 'Thank you! Our specialist will contact you by phone as soon as possible to clarify the details.'
+  aplication_sent_text: 'Thank you! Our specialist will contact you by phone as soon as possible to clarify the details.',
+  our_production: 'Our production',
 };

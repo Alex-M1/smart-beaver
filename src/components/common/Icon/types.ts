@@ -4,6 +4,7 @@ export enum ICON_NAMES {
   slider_img2 = 'slider_img2',
   slider_img3 = 'slider_img3',
   slider_img4 = 'slider_img4',
+
   design_no_limit = 'design_no_limit',
   expert_craft = 'expert_craft',
   superior_qauality = 'superior_qauality',
@@ -31,7 +32,12 @@ export enum ICON_NAMES {
   photo_block_8 = 'photo_block_8',
 
   cross = 'cross',
-  check = 'check'
+  check = 'check',
+
+  our_producrtion_1 = 'our_producrtion_1',
+  our_producrtion_2 = 'our_producrtion_2',
+  our_producrtion_3 = 'our_producrtion_3',
+  our_producrtion_4 = 'our_producrtion_4',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

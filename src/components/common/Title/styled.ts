@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const StTitle = styled.div<{ posX: string }>`
+export const StTitle = styled.div<{ posX: string; }>`
   position: relative;
   display: inline-block;
   background: url('/icons/title_bg.png');
