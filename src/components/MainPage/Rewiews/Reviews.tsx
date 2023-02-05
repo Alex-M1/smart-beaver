@@ -5,11 +5,7 @@ import { locales } from '@/constants/locales';
 import React from 'react';
 import ReviewItem from './ReviewItem';
 
-interface Props {
-
-}
-
-const Reviews: React.FC<Props> = ({ }) => (
+const Reviews: React.FC = () => (
   <StDiv className="container" padding="100px 80px 30px">
     <Title text={locales.reviews} />
     <StGrid columns="1fr 2fr" margin="50px 0 0 0" gap="100px">
