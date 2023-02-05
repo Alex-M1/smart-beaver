@@ -5,11 +5,7 @@ import { locales } from '@/constants/locales';
 import { FontWeight } from '@/constants/ui';
 import React from 'react';
 
-interface Props {
-
-}
-
-const PhotoBlock: React.FC<Props> = ({ }) => (
+const PhotoBlock: React.FC = () => (
   <StDiv className="container" padding="50px 0">
     <StFlex flexDirection="column" ai="center" marginBottom="30px">
       <StSpan color="gray_light" fontSize="20px">{locales.photo_bock_descr}</StSpan>

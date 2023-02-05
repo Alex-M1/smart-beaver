@@ -6,11 +6,7 @@ import { locales } from '@/constants/locales';
 import { FontWeight } from '@/constants/ui';
 import React from 'react';
 
-interface Props {
-
-}
-
-const SlideItem: React.FC<Props> = ({ }) => (
+const SlideItem: React.FC = () => (
   <StGrid columns="3fr 1fr" bgColor={colors.brownLight} padding="36px 40px">
     <StFlex ai="center">
       <StSpan textAlign="left" padding="0 60px 0 0" whiteSpace="pre-wrap" fontSize="18px" color="white" fontWeight={FontWeight.bold} lineHeight="30px">{locales.portfolio_slide_text_1}</StSpan>

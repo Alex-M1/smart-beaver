@@ -8,4 +8,5 @@ export const colors = {
   gray: '#898989',
   black: '#000',
   gray_light: '#616161',
+  white_crime: '#FCF8F3',
 };

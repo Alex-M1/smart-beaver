@@ -32,4 +32,9 @@ export const locales = {
   portfolio_slide_text_1: 'In this project the client requested a layout change.\n1. When we met we had the opportunity to take measurements and then we created several design options. One of the designs was the winner. The client was confident that this configuration would give her the ability to keep all things organized and also enable her to prepare meals for celebration of important events, doing so quickly and in large volumes. We agreed upon the specifications for the manufacturing of the cabinets, the colors and built-in elements.Then, we signed the contract. Right away, the contractors got to work.\nThey got rid of the wall and moved all utilities like plumbing, electric and HVAC just as it was indicated on the 2D plan. They prepared the walls and flooring for cabinet installation.\nAfter all cabinets are set in place using laser leveling, our partners come in to install granite, quartz or any other countertop material of the client\'s choosing. After that we get to the point where we install the backsplash, connect the sink and faucet, garbage disposal and dishwasher. And that is all, the project is done. Enjoy!',
   photo_bock_descr: 'Сreate an atmosphere of comfort with',
   photo_block_company: '#SmartBeaver',
+  form_title: 'We will call you back ASAP',
+  form_description: 'Enter your details and we will call you back within 15 minutes to clarify the time for the departure of the measurer',
+  form_contacts: 'You can also order a measurer by calling +1 (440) 520 4032',
+  placeholder_name: 'Your name',
+  placeholder_phone: 'Your phone number',
 };

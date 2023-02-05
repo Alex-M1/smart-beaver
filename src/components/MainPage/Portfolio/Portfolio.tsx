@@ -4,11 +4,7 @@ import React from 'react';
 import Slider from '@/components/common/Slider';
 import SlideItem from './SlideItem';
 
-interface Props {
-
-}
-
-const Portfolio: React.FC<Props> = ({ }) => {
+const Portfolio: React.FC = () => {
   const slides = [<SlideItem />];
   return (
     <div className="container">
