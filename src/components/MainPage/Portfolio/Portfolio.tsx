@@ -5,7 +5,7 @@ import Slider from '@/components/common/Slider';
 import SlideItem from './SlideItem';
 
 const Portfolio: React.FC = () => {
-  const slides = [<SlideItem />];
+  const slides = [<SlideItem key="portfolio_slide_1" />];
   return (
     <div className="container">
       <Title text={locales.portfolio} textAlign="right" />

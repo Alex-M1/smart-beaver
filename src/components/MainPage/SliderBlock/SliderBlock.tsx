@@ -17,10 +17,10 @@ const SliderBlock: React.FC<Props> = ({ iconRef }) => {
   }, [iconRef?.current?.getBoundingClientRect().width]);
 
   const slides = [
-    <div><Icon alt="example-1" name="slider_img1" width="852px" height={576} /></div>,
-    <div><Icon alt="example-2" name="slider_img2" width="852px" height={576} /></div>,
-    <div><Icon alt="example-3" name="slider_img3" width="852px" height={576} /></div>,
-    <div><Icon alt="example-4" name="slider_img4" width="852px" height={576} /></div>,
+    <div key="slider_block_slide_1"><Icon alt="example-1" name="slider_img1" width="852px" height={576} /></div>,
+    <div key="slider_block_slide_2"><Icon alt="example-2" name="slider_img2" width="852px" height={576} /></div>,
+    <div key="slider_block_slide_3"><Icon alt="example-3" name="slider_img3" width="852px" height={576} /></div>,
+    <div key="slider_block_slide_4"><Icon alt="example-4" name="slider_img4" width="852px" height={576} /></div>,
   ];
 
   return (

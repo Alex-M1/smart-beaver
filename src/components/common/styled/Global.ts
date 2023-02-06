@@ -38,4 +38,11 @@ export const GlobalStyle = createGlobalStyle`
     font-size: 18px;
   }
   ${fontFace}
+
+  @media screen and (max-width: 1366px) {
+    .container {
+      width: 100%;
+      margin: 0 auto;
+    }
+  } 
 `;

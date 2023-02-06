@@ -9,6 +9,7 @@ export const StDescription = styled(StFlex)`
   height: 297px;
   border: 1px solid black;
   position: absolute;
+  z-index: 10;
   background-color: ${colors.white_opacity};
   flex-direction: column;
   padding: 37px 0 0 20px;

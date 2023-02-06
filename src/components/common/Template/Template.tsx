@@ -10,7 +10,7 @@ const Template: React.FC<Props> = ({ iconRef, children }) => (
   <>
     <Header iconRef={iconRef} />
     {children}
-    <Footer />
+    {/* <Footer /> */}
   </>
 );
 
