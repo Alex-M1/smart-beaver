@@ -17,6 +17,7 @@ export const StFlex = styled.div < StFlexProps >`
     ${(props) => props.hasEllipsis && `${mixins.ellipsisStyles};`};
     ${(props) => props.overflowX && `overflow-x: ${props.overflowX}`};
     ${({ bgColor }) => bgColor && `background-color: ${bgColor};`};
+    ${({ justifySelf }) => justifySelf && `justify-self: ${justifySelf};`};
 }
 `;
 export const StGrid = styled.div <StGridProps>`
@@ -30,6 +31,7 @@ export const StGrid = styled.div <StGridProps>`
     ${mixins.positionStyles};
     ${mixins.fontStyles};
     ${({ bgColor }) => bgColor && `background-color: ${bgColor};`};
+    ${({ justifySelf }) => justifySelf && `justify-self: ${justifySelf};`};
     a {
       ${(props) => !props.linkWithTextDecor && 'text-decoration: none;'};
     }
@@ -50,4 +52,5 @@ export const StDiv = styled.div <StDivProps>`
     ${(props) => props.flexFull && 'flex: 1'};
     ${(props) => props.display && `display: ${props.display}`};
     ${({ bgColor }) => bgColor && `background-color: ${bgColor};`};
+    ${({ justifySelf }) => justifySelf && `justify-self: ${justifySelf};`};
 }`;

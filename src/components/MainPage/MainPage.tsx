@@ -5,7 +5,7 @@ import BlockWithPhoto from './BlockWithPhoto';
 import Steps from './Steps';
 import Portfolio from './Portfolio';
 import PhotoBlock from './PhotoBlock';
-import ContactForm from '../common/ContactForm';
+import ContactForm from '../ContactForm';
 import OurProduction from './OurProduction';
 import Reviews from './Rewiews';
 import Template from '../common/Template';

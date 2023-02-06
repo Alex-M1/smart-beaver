@@ -5,7 +5,7 @@ export const StNav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  a, button {
+  button {
     text-transform: none;
     margin-right: 218px;
     font-size: 16px;

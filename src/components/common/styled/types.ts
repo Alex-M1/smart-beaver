@@ -79,6 +79,7 @@ export interface StFlexProps extends SizesProps, PositionProps, FontProps {
   flex?: string | number;
   overflowX?: CSS.OverflowY;
   bgColor?: string;
+  justifySelf?: CSS.JustifySelf;
 }
 export interface StGridProps extends SizesProps, PositionProps, FontProps {
   columns1536?: string;
@@ -89,6 +90,7 @@ export interface StGridProps extends SizesProps, PositionProps, FontProps {
   align?: CSS.AlignContent;
   linkWithTextDecor?: boolean;
   bgColor?: string;
+  justifySelf?: CSS.JustifySelf;
 }
 export interface StDivProps extends SizesProps, PositionProps, FontProps {
   userSelect?: string;
@@ -102,6 +104,7 @@ export interface StDivProps extends SizesProps, PositionProps, FontProps {
   flexFull?: boolean;
   display?: string;
   bgColor?: string;
+  justifySelf?: CSS.JustifySelf;
 }
 
 export interface StSpanProps extends SizesProps, ColorsProps, PositionProps, FontProps {

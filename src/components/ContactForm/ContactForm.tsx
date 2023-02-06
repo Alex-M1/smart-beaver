@@ -3,10 +3,10 @@ import { locales } from '@/constants/locales';
 import { FontWeight } from '@/constants/ui';
 import Modal from '@/components/Modal';
 import { StForm } from './styled';
-import Button from '../Button';
-import { StSpan } from '../styled/Text';
-import { StDiv, StFlex } from '../styled/Block';
-import Input from '../Input';
+import Button from '../common/Button';
+import { StSpan } from '../common/styled/Text';
+import { StDiv, StFlex } from '../common/styled/Block';
+import Input from '../common/Input';
 
 interface Props {
 
@@ -26,7 +26,7 @@ const ContactForm: React.FC<Props> = () => {
 
   const sendRequest = async () => {
     try {
-      // await fetch('http://localhost:3000/api/send_mail', {
+      // await fetch(`${urls.main}${urls.send_mail}`, {
       //   method: 'POST',
       //   body: JSON.stringify(value),
       //   headers: {

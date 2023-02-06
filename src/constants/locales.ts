@@ -51,4 +51,8 @@ export const locales = {
   footer_description: 'Wooden furniture shop',
   footer_address: 'Northeast Ohio, USA',
   phone: '+1 (440) 520 4032',
+  menu: 'Menu',
+  stay_connected: 'Stay Connected',
+  facebook: 'Facebook',
+  instagram: 'Instagram',
 };
