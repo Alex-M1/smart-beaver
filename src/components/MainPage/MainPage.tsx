@@ -18,9 +18,9 @@ const MainPage: React.FC = () => {
       <main>
         <SliderBlock iconRef={iconWrapper} />
         <Advantages />
-        {/* <BlockWithPhoto />
+        <BlockWithPhoto />
         <Steps />
-        <Portfolio />
+        {/* <Portfolio />
         <PhotoBlock />
         <ContactForm />
         <OurProduction />

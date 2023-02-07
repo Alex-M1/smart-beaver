@@ -13,6 +13,15 @@ export const AdvantageWrapper = styled.div`
     .advanced-item {
       padding: 0;
     }
+    img {
+      width: 25px;
+    }
+  }
+
+  @media (max-width: 426px) {
+    display: flex;
+    flex-direction: column;
+    padding: 15px 20px;
   }
 `;
 

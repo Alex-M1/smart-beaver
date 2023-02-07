@@ -1,15 +1,12 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import List from '@mui/material/List';
 import Link from '@/components/common/Link';
 import { locales } from '@/constants/locales';
 import IconButton from '@mui/material/IconButton';
-import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import { colors } from '@/constants/colors';
 import Icon from '@/components/common/Icon';
-import { StDiv } from '@/components/common/styled/Block';
 
 type MenuItemType = ['products', 'about_us', 'faq', 'contacts']
 
