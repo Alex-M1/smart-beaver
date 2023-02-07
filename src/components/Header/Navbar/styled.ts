@@ -28,4 +28,9 @@ export const StNav = styled.nav`
         margin-right: 70px;
       }
     }  
+    @media screen and (max-width: 641px) {
+      button, a {
+        margin-right: 40px;
+      }
+    }  
 `;

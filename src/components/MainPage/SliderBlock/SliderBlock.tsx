@@ -17,19 +17,21 @@ const SliderBlock: React.FC<Props> = ({ iconRef }) => {
   }, [iconRef?.current?.getBoundingClientRect().width]);
 
   const slides = [
-    <div key="slider_block_slide_1"><Icon alt="example-1" name="slider_img1" width="852px" height={576} /></div>,
-    <div key="slider_block_slide_2"><Icon alt="example-2" name="slider_img2" width="852px" height={576} /></div>,
-    <div key="slider_block_slide_3"><Icon alt="example-3" name="slider_img3" width="852px" height={576} /></div>,
-    <div key="slider_block_slide_4"><Icon alt="example-4" name="slider_img4" width="852px" height={576} /></div>,
+    <div key="slider_block_slide_1"><Icon alt="example-1" name="slider_img1" /></div>,
+    <div key="slider_block_slide_2"><Icon alt="example-2" name="slider_img2" /></div>,
+    <div key="slider_block_slide_3"><Icon alt="example-3" name="slider_img3" /></div>,
+    <div key="slider_block_slide_4"><Icon alt="example-4" name="slider_img4" /></div>,
   ];
 
   return (
     <StFlex bgColor={colors.brownLight}>
-      <StGrid className="container" columns={`${width}px auto`}>
+      <StGrid className="container" position="relative" columns={`${width}px auto`}>
         <StDiv height="100%" bgColor={colors.white} />
         <StSliderBackground>
           <Description />
-          <Slider slides={slides} width="852px" />
+          <div className="slider-wrapper-main">
+            <Slider slides={slides} width="auto" />
+          </div>
         </StSliderBackground>
       </StGrid>
     </StFlex>

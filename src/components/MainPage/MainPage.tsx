@@ -16,9 +16,9 @@ const MainPage: React.FC = () => {
   return (
     <Template iconRef={iconWrapper}>
       <main>
-        {/* <SliderBlock iconRef={iconWrapper} />
+        <SliderBlock iconRef={iconWrapper} />
         <Advantages />
-        <BlockWithPhoto />
+        {/* <BlockWithPhoto />
         <Steps />
         <Portfolio />
         <PhotoBlock />

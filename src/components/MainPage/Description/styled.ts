@@ -30,4 +30,22 @@ export const StDescription = styled(StFlex)`
       font-weight: ${FontWeight.medium};
     }
   }
+  @media (max-width: 769px) {
+    top: 57px;
+    width: 329px;
+    height: 251px;
+    left: 50%;
+    transform: translatex(-50%);
+    .description {
+      &__tagline {
+        font-size: 20px;
+        margin: 12px 0;
+        font-weight: ${FontWeight.regular};
+      }
+      &__text {
+        font-size: 18px;
+        font-weight: ${FontWeight.medium};
+      }
+  }
+  } 
 `;

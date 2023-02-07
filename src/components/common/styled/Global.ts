@@ -39,10 +39,27 @@ export const GlobalStyle = createGlobalStyle`
   }
   ${fontFace}
 
-  @media screen and (max-width: 1366px) {
+  @media (max-width: 1366px) {
     .container {
       width: 100%;
       margin: 0 auto;
+    }
+  } 
+  @media (max-width: 769px) {
+    h1 {
+      font-size: 42px;
+    }
+    h2 {
+      font-size: 40px;
+    }
+    h3 { 
+      font-size: 28px;
+    }
+    h4 {
+      font-size: 24px;
+    }
+    h5 {
+      font-size: 18px;
     }
   } 
 `;
