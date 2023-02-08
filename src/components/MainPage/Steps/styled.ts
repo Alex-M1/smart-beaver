@@ -1,3 +1,4 @@
+import { flexCenter } from '@/components/common/styled/mixins';
 import { colors } from '@/constants/colors';
 import { FontWeight } from '@/constants/ui';
 import styled from 'styled-components';
@@ -24,6 +25,23 @@ export const StStepWrapper = styled.div`
       margin-bottom: 80px;
       min-height: 120px;
     }
+
+    &__title {
+      font-weight: ${FontWeight.bold};
+      font-size: 18px;
+      position: relative;
+      top: -50px;
+      margin-left: 12px;
+      &::after {
+        content: '';
+        height:2px;
+        background: ${colors.black};
+        width: 69px;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+      }
+    }
   }
 
   @media(max-width: 1025px) {
@@ -45,39 +63,34 @@ export const StStepWrapper = styled.div`
         font-size: 15px;
         margin-bottom: 15px;
       }
+      &__title {
+        font-size: 15px;
+        top: -40px;
+      }
     }
     img {
       width: 164px;
     }
   }
-`;
+  @media (max-width: 426px) {
+    padding: 20px;
+    .steps {
+      ${flexCenter};
+      flex-direction: column;
+    }
 
-export const StStepsTitle = styled.span<{ serialNum: number }>`
-  font-weight: ${FontWeight.bold};
-  font-size: 18px;
-  position: relative;
-  top: ${({ serialNum }) => {
-    if (serialNum === 3 || serialNum === 5) return `${-12 - 24}px`;
-    if (serialNum === 6) return `${-12 - 46}px`;
-    return '-12px';
-  }};
-  margin-left: 12px;
-  &::after {
-    content: '';
-    height:2px;
-    background: ${colors.black};
-    width: 69px;
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-  }
-
-  @media (max-width: 769px) {
-    font-size: 15px;
-    top: ${({ serialNum }) => {
-    if (serialNum === 3 || serialNum === 5 || serialNum === 2) return '-36px';
-    if (serialNum === 6) return '-73px';
-    return '-12px';
-  }};
+    .step {
+      &__wrapper-title {
+        justify-content: center;
+      }
+      &__text {
+        ${flexCenter}
+        text-align: center;
+        padding: 0 15px;
+      }
+      &__icon {
+         ${flexCenter}
+      }
+    }
   }
 `;

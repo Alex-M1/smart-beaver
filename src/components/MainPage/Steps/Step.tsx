@@ -2,7 +2,6 @@ import React from 'react';
 import Icon from '@/components/common/Icon';
 import { StFlex } from '@/components/common/styled/Block';
 import { IconNames } from '@/components/common/Icon/types';
-import { StStepsTitle } from './styled';
 
 interface Props {
   number: number;
@@ -15,9 +14,9 @@ const Step: React.FC<Props> = ({
   number, title, text, iconName,
 }) => (
   <div className="step">
-    <StFlex ai="baseline">
+    <StFlex className="step__wrapper-title" ai="flex-end">
       <span className="step__number">{number}</span>
-      <StStepsTitle serialNum={number}>{title}</StStepsTitle>
+      <span className="step__title">{title}</span>
     </StFlex>
     <div className="step__text">{text}</div>
     <Icon className="step__icon" fill alt={iconName} name={iconName} ext="png" />
