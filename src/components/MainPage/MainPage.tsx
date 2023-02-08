@@ -21,8 +21,8 @@ const MainPage: React.FC = () => {
         <BlockWithPhoto />
         <Steps />
         <Portfolio />
-        {/* <PhotoBlock />
-        <ContactForm />
+        <PhotoBlock />
+        {/* <ContactForm />
         <OurProduction />
         <Reviews /> */}
       </main>

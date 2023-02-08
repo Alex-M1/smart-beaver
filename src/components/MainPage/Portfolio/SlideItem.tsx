@@ -6,7 +6,7 @@ import { StPortfolioSlider } from './styled';
 
 const SlideItem: React.FC = () => (
   <StPortfolioSlider>
-    <StFlex ai="center">
+    <StFlex ai="center" className="content">
       <span className="portfolio-slider__text">{locales.portfolio_slide_text_1}</span>
     </StFlex>
     <StFlex className="portfolio-slider__img-block" flexDirection="column">

@@ -17,6 +17,10 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0 auto;
   }
 
+  .content {
+    padding: 0 80px;
+  }
+
   h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding:0;
@@ -46,6 +50,9 @@ export const GlobalStyle = createGlobalStyle`
     }
   } 
   @media (max-width: 769px) {
+    .content {
+      padding: 0 40px;
+    }
     h1 {
       font-size: 42px;
     }
@@ -61,5 +68,11 @@ export const GlobalStyle = createGlobalStyle`
     h5 {
       font-size: 18px;
     }
-  } 
+  }
+
+  @media(max-width: 426px) {
+    .content {
+      padding: 0 20px;
+    }
+  }
 `;

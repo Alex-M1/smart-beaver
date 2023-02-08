@@ -8,7 +8,7 @@ const Portfolio: React.FC = () => {
   const slides = [<SlideItem key="portfolio_slide_1" />];
   return (
     <div className="container">
-      <Title text={locales.portfolio} textAlign="right" />
+      <div className="content"><Title text={locales.portfolio} textAlign="right" /></div>
       <Slider slides={slides} />
     </div>
   );
