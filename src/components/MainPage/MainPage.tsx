@@ -22,9 +22,9 @@ const MainPage: React.FC = () => {
         <Steps />
         <Portfolio />
         <PhotoBlock />
-        {/* <ContactForm />
+        <ContactForm />
         <OurProduction />
-        <Reviews /> */}
+        {/* <Reviews /> */}
       </main>
     </Template>
   );

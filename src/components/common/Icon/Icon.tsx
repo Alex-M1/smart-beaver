@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import React from 'react';
-import { padding } from '@mui/system';
 import { IconNames } from './types';
 import { StDiv } from '../styled/Block';
 

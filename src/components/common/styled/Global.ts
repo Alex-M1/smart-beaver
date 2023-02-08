@@ -35,9 +35,6 @@ export const GlobalStyle = createGlobalStyle`
   h3 { 
     font-size: 28px;
   }
-  h4 {
-    font-size: 24px;
-  }
   h5 {
     font-size: 18px;
   }
@@ -60,17 +57,26 @@ export const GlobalStyle = createGlobalStyle`
       font-size: 40px;
     }
     h3 { 
-      font-size: 28px;
-    }
-    h4 {
-      font-size: 24px;
+      font-size: 18px;
     }
     h5 {
-      font-size: 18px;
+      font-size: 13px;
     }
   }
 
   @media(max-width: 426px) {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 28px;
+    }
+    h3 { 
+      font-size: 28px;
+    }
+    h5 {
+      font-size: 13px;
+    }
     .content {
       padding: 0 20px;
     }

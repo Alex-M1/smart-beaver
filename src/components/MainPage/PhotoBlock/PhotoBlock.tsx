@@ -1,5 +1,5 @@
 import Icon from '@/components/common/Icon';
-import { StDiv, StFlex, StGrid } from '@/components/common/styled/Block';
+import { StDiv, StFlex } from '@/components/common/styled/Block';
 import { StSpan } from '@/components/common/styled/Text';
 import { locales } from '@/constants/locales';
 import { FontWeight } from '@/constants/ui';
@@ -12,7 +12,7 @@ const PhotoBlock: React.FC = () => (
       <StSpan color="gray_light" fontSize="20px">{locales.photo_bock_descr}</StSpan>
       <StSpan color="darkGray" fontSize="40px" fontWeight={FontWeight.bold}>{locales.photo_block_company}</StSpan>
     </StFlex>
-    <StGrid columns="2fr 1fr 2fr" gap="15px" align="center">
+    <div className="photo-block">
       <StFlex flexDirection="column">
         <Icon fill name="photo_block_1" alt="photo_block_1" ext="png" />
         <StFlex jc="space-between" margin="10px 0">
@@ -35,7 +35,7 @@ const PhotoBlock: React.FC = () => (
           <Icon fill name="photo_block_8" alt="photo_block_8" ext="png" />
         </StFlex>
       </StFlex>
-    </StGrid>
+    </div>
   </StPhotoBlock>
 );
 
