@@ -11,8 +11,8 @@ interface Props {
 }
 
 const AdvantageItem: React.FC<Props> = ({ name, text, title }) => (
-  <StFlex padding="0 15px">
-    <Icon alt={name} name={name} ext="png" />
+  <StFlex className="advanced-item">
+    <Icon fill alt={name} name={name} ext="png" />
     <StDiv margin="5px 10px">
       <StAdvantagesH5>{title}</StAdvantagesH5>
       <StAdvantageText>
