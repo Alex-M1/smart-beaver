@@ -1,5 +1,5 @@
 export const locales = {
-  about_us: 'About',
+  about_us: 'About us',
   faq: 'FAQ',
   contacts: 'Contacts',
   products: 'Products',
@@ -55,4 +55,9 @@ export const locales = {
   stay_connected: 'Stay Connected',
   facebook: 'Facebook',
   instagram: 'Instagram',
+
+  about_us_p1: 'Smart Beaver is a custom cabinet seller in the Greater Cleveland area. We are a fast-growing business with a focus on quality and great customer service! We know that it can be difficult to get everything right when taking upon a new kitchen or bathroom project. Worry not! We are here to help :)',
+  about_us_p2: 'We can help you take measurements, create a fresh and unique cabinet design for your kitchen/bathroom and, if you live within one hour of Cleveland, we can come down and install your cabinets for you!',
+  about_us_p3: 'Why should you choose us? Simply put, our cabinets are the most long-lasting and best-looking! All of our cabinetry is manufactured by professional Amish artisans who put their soul into what they make. We work very hard to bring a sense of pride to your kitchen/bathroom by offering you the best quality in design, production, finishes and more!',
+  about_us_p4: 'Contact us today for a free quote and see for yourself the exceptional quality of work by our Amish craftsmen!',
 };

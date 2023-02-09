@@ -1,7 +1,6 @@
 import React from 'react';
 import MuiModal from '@mui/material/Modal';
 import Backdrop from '@mui/material/Backdrop';
-import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import { locales } from '@/constants/locales';
 import { StSpan } from '../common/styled/Text';
@@ -14,19 +13,6 @@ interface Props {
   open: boolean;
   onClose: () => void;
 }
-const style = {
-  position: 'absolute' as 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  maxWidth: 570,
-  bgcolor: 'background.paper',
-  borderRadius: '10px',
-  boxShadow: 24,
-  p: 4,
-  textAlign: 'center',
-  padding: '46px 37px 66px',
-};
 
 const Modal: React.FC<Props> = ({ open, onClose }) => (
   <MuiModal

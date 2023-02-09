@@ -1,4 +1,5 @@
 import React, { RefObject } from 'react';
+import Link from 'next/link';
 import Icon from '../common/Icon';
 import { StFlex } from '../common/styled/Block';
 import { StHeader, StLogoContainer, StNavContainer } from './styled';
@@ -13,7 +14,7 @@ const Header: React.FC<Props> = ({ iconRef }) => (
   <StHeader>
     <StFlex className="container">
       <StLogoContainer ref={iconRef}>
-        <Icon fill alt="logo" name="logo" ext="png" />
+        <Link href="/"><Icon fill alt="logo" name="logo" ext="png" /></Link>
       </StLogoContainer>
       <StNavContainer>
         <Burger />
