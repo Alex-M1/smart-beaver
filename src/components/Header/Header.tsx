@@ -1,9 +1,9 @@
 import React, { RefObject } from 'react';
-import { colors } from '@/constants/colors';
 import Icon from '../common/Icon';
 import { StFlex } from '../common/styled/Block';
-import { StHeader } from './styled';
+import { StHeader, StLogoContainer, StNavContainer } from './styled';
 import Navbar from './Navbar';
+import Burger from './Burger';
 
 interface Props {
   iconRef?: RefObject<HTMLDivElement>;
@@ -12,12 +12,13 @@ interface Props {
 const Header: React.FC<Props> = ({ iconRef }) => (
   <StHeader>
     <StFlex className="container">
-      <StFlex center bgColor={colors.white} padding="0 57px" ref={iconRef}>
-        <Icon alt="logo" name="logo" ext="png" />
-      </StFlex>
-      <StFlex center width="100%">
+      <StLogoContainer ref={iconRef}>
+        <Icon fill alt="logo" name="logo" ext="png" />
+      </StLogoContainer>
+      <StNavContainer>
+        <Burger />
         <Navbar />
-      </StFlex>
+      </StNavContainer>
     </StFlex>
   </StHeader>
 );

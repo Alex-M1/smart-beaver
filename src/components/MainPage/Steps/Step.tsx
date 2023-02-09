@@ -1,8 +1,7 @@
 import React from 'react';
 import Icon from '@/components/common/Icon';
-import { StDiv, StFlex } from '@/components/common/styled/Block';
+import { StFlex } from '@/components/common/styled/Block';
 import { IconNames } from '@/components/common/Icon/types';
-import { StStepsNumber, StStepsTitle } from './styled';
 
 interface Props {
   number: number;
@@ -13,21 +12,15 @@ interface Props {
 
 const Step: React.FC<Props> = ({
   number, title, text, iconName,
-}) => {
-  let top: number = 0;
-  if (number === 3 || number === 5) top = 24;
-  if (number === 6) top = 46;
-
-  return (
-    <div>
-      <StFlex ai="baseline">
-        <StStepsNumber>{number}</StStepsNumber>
-        <StStepsTitle curHeight={top}>{title}</StStepsTitle>
-      </StFlex>
-      <StDiv marginBottom="130px">{text}</StDiv>
-      <Icon alt={iconName} name={iconName} ext="png" />
-    </div>
-  );
-};
+}) => (
+  <div className="step">
+    <StFlex className="step__wrapper-title" ai="flex-end">
+      <span className="step__number">{number}</span>
+      <span className="step__title">{title}</span>
+    </StFlex>
+    <div className="step__text">{text}</div>
+    <Icon className="step__icon" fill alt={iconName} name={iconName} ext="png" />
+  </div>
+);
 
 export default Step;

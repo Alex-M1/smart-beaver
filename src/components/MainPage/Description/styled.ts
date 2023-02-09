@@ -9,6 +9,7 @@ export const StDescription = styled(StFlex)`
   height: 297px;
   border: 1px solid black;
   position: absolute;
+  z-index: 10;
   background-color: ${colors.white_opacity};
   flex-direction: column;
   padding: 37px 0 0 20px;
@@ -29,4 +30,22 @@ export const StDescription = styled(StFlex)`
       font-weight: ${FontWeight.medium};
     }
   }
+  @media (max-width: 769px) {
+    top: 57px;
+    width: 329px;
+    height: 251px;
+    left: 50%;
+    transform: translatex(-50%);
+    .description {
+      &__tagline {
+        font-size: 20px;
+        margin: 12px 0;
+        font-weight: ${FontWeight.regular};
+      }
+      &__text {
+        font-size: 18px;
+        font-weight: ${FontWeight.medium};
+      }
+  }
+  } 
 `;

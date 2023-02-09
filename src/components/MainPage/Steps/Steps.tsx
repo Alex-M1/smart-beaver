@@ -1,9 +1,9 @@
-import { StDiv, StGrid } from '@/components/common/styled/Block';
 import React from 'react';
 import { locales } from '@/constants/locales';
 import { ICON_NAMES } from '@/components/common/Icon/types';
 import Title from '@/components/common/Title';
 import Step from './Step';
+import { StStepWrapper } from './styled';
 
 const Steps: React.FC = () => {
   const items = [
@@ -15,12 +15,12 @@ const Steps: React.FC = () => {
     { title: locales.delivery_title, text: locales.delivery_text, iconName: ICON_NAMES.delivery },
   ];
   return (
-    <StDiv className="container" padding="62px 80px 94px 80px">
+    <StStepWrapper className="container">
       <Title text={locales.work_order} posX="62px" />
-      <StGrid columns="1fr 1fr 1fr" gap="14px 200px" margin="57px 0 0 0">
+      <div className="steps">
         {items.map((item, i) => <Step {...item} number={i + 1} key={item.iconName} />)}
-      </StGrid>
-    </StDiv>
+      </div>
+    </StStepWrapper>
 
   );
 };

@@ -90,3 +90,9 @@ export const colorsStyles = css<ColorsProps>`
   ${({ color }) => color && `color: ${colors[color]}; text-decoration-color:${colors[color]};`};
   ${(props) => props.opacity && `opacity: ${props.opacity};`};
 `;
+
+export const flexCenter = css`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
