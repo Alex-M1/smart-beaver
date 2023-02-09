@@ -21,8 +21,6 @@ const ContactForm: React.FC<Props> = () => {
     setValue((prev) => ({ ...prev, [field]: value }));
   };
 
-  const [width, setWidth] = useState(0);
-
   const sendRequest = async () => {
     try {
       // await fetch(`${urls.main}${urls.send_mail}`, {
@@ -34,7 +32,6 @@ const ContactForm: React.FC<Props> = () => {
       // });
       setValue({ name: '', phone: '' });
       setIsModalOpen(true);
-      setWidth(window.innerWidth);
     } catch (e) {
       console.log(e);
     }
@@ -50,7 +47,7 @@ const ContactForm: React.FC<Props> = () => {
         <div className="contact-form__inputs">
           <Input value={value.name} onChange={handleChangeValue('name')} placeholder={locales.placeholder_name} />
           <Input value={value.phone} onChange={handleChangeValue('phone')} margin="32px 0" placeholder={locales.placeholder_phone} />
-          <Button padding="16px 0" color="warning" borderRadius="100px" content={width} onClick={sendRequest} />
+          <Button padding="16px 0" color="warning" borderRadius="100px" content={locales.order_button} onClick={sendRequest} />
           <Modal onClose={handleCloseModal} open={isModalOpen} />
         </div>
         <span className="form-text">{locales.form_contacts}</span>
