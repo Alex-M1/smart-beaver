@@ -2,6 +2,25 @@ import { colors } from '@/constants/colors';
 import IconButton from '@mui/material/IconButton';
 import styled from 'styled-components';
 
+export const ModalBox = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 570px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 46px 37px 66px;
+  background: #fff;
+
+  @media (max-width: 426px) {
+    width: 360px;
+  }
+  @media (max-width: 376px) {
+    width: 300px;
+  }
+`;
+
 export const CheckIcon = styled.div`
   display: inline-flex;
   justify-content: center;
@@ -13,6 +32,13 @@ export const CheckIcon = styled.div`
   box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.1);
   font-size: 70px;
   color: ${colors.warning};
+  @media (max-width: 426px) {
+    width: 71px;
+    height: 71px;
+    img {
+      max-width: 34px;
+    }
+  }
 `;
 
 export const ModalTitle = styled.h3`

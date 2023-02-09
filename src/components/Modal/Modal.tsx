@@ -5,7 +5,9 @@ import Box from '@mui/material/Box';
 import Fade from '@mui/material/Fade';
 import { locales } from '@/constants/locales';
 import { StSpan } from '../common/styled/Text';
-import { CheckIcon, CloseIcon, ModalTitle } from './styled';
+import {
+  CheckIcon, CloseIcon, ModalBox, ModalTitle,
+} from './styled';
 import Icon from '../common/Icon';
 
 interface Props {
@@ -39,16 +41,16 @@ const Modal: React.FC<Props> = ({ open, onClose }) => (
     }}
   >
     <Fade in={open}>
-      <Box sx={style}>
+      <ModalBox>
         <CloseIcon onClick={onClose}><Icon alt="close" name="cross" ext="png" /></CloseIcon>
-        <CheckIcon><Icon alt="check" name="check" ext="png" /></CheckIcon>
+        <CheckIcon><Icon fill alt="check" name="check" ext="png" /></CheckIcon>
         <ModalTitle>
           {locales.application_sent_title}
         </ModalTitle>
         <StSpan>
           {locales.aplication_sent_text}
         </StSpan>
-      </Box>
+      </ModalBox>
     </Fade>
   </MuiModal>
 );
