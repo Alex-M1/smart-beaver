@@ -24,7 +24,7 @@ const MainPage: React.FC = () => {
         <PhotoBlock />
         <ContactForm />
         <OurProduction />
-        {/* <Reviews /> */}
+        <Reviews />
       </main>
     </Template>
   );

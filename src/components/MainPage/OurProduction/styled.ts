@@ -77,9 +77,10 @@ export const StOurProduction = styled.div`
       }
       &-2 {
         padding-right: 20px;
+        justify-self: start;
       }
       &-3 {
-        padding-left: 25px;
+        padding-left: 20px;
       }
     }
   }

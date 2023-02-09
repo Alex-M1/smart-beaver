@@ -38,11 +38,11 @@ export const BlockWithPhotoWrapper = styled.div`
     padding: 27px 0;
     flex-direction: column-reverse;
 
-     .block-with-photo {
+    .block-with-photo {
       &__img {
         height: 383px;
       }
-     }
+    }
 
     img {
       height: auto;
