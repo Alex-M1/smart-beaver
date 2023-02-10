@@ -14,6 +14,7 @@ interface Props extends PropsWithChildren {
   onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: ButtonVariants,
   disabled?: boolean;
+  className?: string;
   borderRadius?: string;
   onTouchStart?: () => void;
 }
@@ -29,6 +30,7 @@ const Button: React.FC<Props> = ({
   variant = BUTTON_VARIANTS.contained,
   children,
   disabled,
+  className,
   borderRadius,
   onTouchStart,
 }) => {
@@ -45,6 +47,7 @@ const Button: React.FC<Props> = ({
         disabled={disabled}
         variant={variant}
         color={color}
+        className={className}
       >
         {content || children}
       </MuiButton>

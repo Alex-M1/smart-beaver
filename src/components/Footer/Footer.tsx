@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
         <Link margin="20px 0" href="products" {...commonProps}>{locales.products}</Link>
         <Link href="about_us" {...commonProps}>{locales.about_us}</Link>
         <Link margin="20px 0" href="faq" {...commonProps}>{locales.faq}</Link>
-        <Link href="contacts" {...commonProps}>{locales.contacts}</Link>
+        <Link href="contact" {...commonProps}>{locales.contact}</Link>
       </StFlex>
       <StFlex flexDirection="column" justifySelf="end" ai="center">
         <StSpan color="white" fontSize="24px" fontWeight={FontWeight.bold}>{locales.stay_connected}</StSpan>

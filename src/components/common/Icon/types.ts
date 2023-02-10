@@ -47,7 +47,9 @@ export enum ICON_NAMES {
   burger = 'burger',
 
   about_us_photo = 'about_us_photo',
-  faq_img = 'faq_img'
+  faq_img = 'faq_img',
+  phone = 'phone',
+  mail = 'mail'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

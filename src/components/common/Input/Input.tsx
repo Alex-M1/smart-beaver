@@ -14,6 +14,7 @@ interface Props extends ContentFields {
   isError?: boolean;
   variant?: INPUT_VARIANTS;
   onChange: (value: string, event?: ChangeEvent<HTMLInputElement>) => void;
+  className?: string;
   disabled?: boolean;
   multiline?: boolean;
 }
@@ -30,6 +31,7 @@ const Input: React.FC<Props> = ({
   disabled,
   onChange,
   multiline,
+  className,
   helperText,
   placeholder,
 }) => {
@@ -52,6 +54,7 @@ const Input: React.FC<Props> = ({
       onChange={handleChange}
       helperText={helperText}
       placeholder={placeholder}
+      className={className}
     />
   );
 };

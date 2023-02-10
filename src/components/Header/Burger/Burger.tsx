@@ -8,7 +8,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import { colors } from '@/constants/colors';
 import Icon from '@/components/common/Icon';
 
-type MenuItemType = ['products', 'about_us', 'faq', 'contacts']
+type MenuItemType = ['products', 'about_us', 'faq', 'contact']
 
 const Burger: React.FC = () => {
   const [state, setState] = React.useState(false);
@@ -24,7 +24,7 @@ const Burger: React.FC = () => {
 
     setState(open);
   };
-  const menuItem: MenuItemType = ['products', 'about_us', 'faq', 'contacts'];
+  const menuItem: MenuItemType = ['products', 'about_us', 'faq', 'contact'];
 
   return (
     <div className="burger-menu">

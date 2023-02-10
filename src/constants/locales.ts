@@ -1,7 +1,7 @@
 export const locales = {
   about_us: 'About us',
   faq: 'FAQ',
-  contacts: 'Contacts',
+  contact: 'Contact',
   products: 'Products',
   company_name: 'Smart Beaver',
   tagline: 'Kitchen for Your Individuality',
@@ -51,6 +51,7 @@ export const locales = {
   footer_description: 'Wooden furniture shop',
   footer_address: 'Northeast Ohio, USA',
   phone: '+1 (440) 520 4032',
+  mail: 'smartbeaverusa@gmail.com',
   menu: 'Menu',
   stay_connected: 'Stay Connected',
   facebook: 'Facebook',
@@ -74,4 +75,11 @@ export const locales = {
   faq_answer_5: 'Yes, all our cabinets are made of solid wood. We never plan on using any kind of particle board. Our goal is to provide you with cabinetry that you will be able to enjoy for many years and we realize it would not be possible without high quality solid wood and hardware. We also offer a more budget friendly option for cabinets with solid wood door frames and MDF-fiberboard inset panels.',
   faq_question_6: 'Do you offer formaldehyde-free cabinets?',
   faq_answer_6: 'Yes, with the growing concern for our environment, we offer cabinet shells made out of Purebond Plywood made by Columbia Forest Products. This is a soy-based formaldehyde-free hard plywood and it is U.S. Green Building Council compliant. As this product is becoming more available at a more competitive price, we strive to eventually offer this option on all of our cabinets.',
+  contact_schedule_title: 'We deliver furniture throughout notheast ohio',
+  contact_schedule_work_hours: 'In telephone mode, the online store is open from 10:00 to 19:00 from Monday to Friday.',
+  contact_schedule_day_off: 'Saturday and Sunday day off',
+  contact_schedule_questions: 'All questions of interest can be obtained from the manager',
+  email_plh: 'Your E-mail',
+  text_plh: 'Enter your message',
+  send: 'Send',
 };
