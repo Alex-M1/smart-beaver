@@ -6,10 +6,13 @@ interface Props {
   text: string;
   posX?: string;
   textAlign?: 'left' | 'right'
+  className?: string;
 }
 
-const Title: React.FC<Props> = ({ text, posX = '40px', textAlign = 'left' }) => (
-  <StDiv textAlign={textAlign}>
+const Title: React.FC<Props> = ({
+  text, posX = '40px', textAlign = 'left', className,
+}) => (
+  <StDiv className={className} textAlign={textAlign}>
     <StTitle posX={posX}>
       <h1>
         {text}

@@ -3,7 +3,7 @@ export const urls = {
   products: '/products',
   about_us: '/about_us',
   faq: '/faq',
-  contacts: '/contacts',
+  contact: '/contact',
   send_mail: '/api/send_mail',
   facebook: 'https://www.facebook.com/people/Smart-Beaver/100088857526559/',
   instagram: '',
