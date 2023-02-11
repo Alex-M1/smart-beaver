@@ -1,18 +1,19 @@
 import styled from 'styled-components';
 import { colors } from '@/constants/colors';
+import { headerHeight } from '@/constants/ui';
 import { flexCenter } from '../common/styled/mixins';
 
 export const StHeader = styled.header`
   display: flex;
   background-color: ${colors.brownPrimary};    
-  height: 101px;
+  height: ${headerHeight.large}px;
   width: 100%;
   @media (max-width: 769px) {
-    height: 97px;
+    height: ${headerHeight.medium}px;
   }   
 
   @media (max-width: 550px) {
-    height: 38px;
+    height: ${headerHeight.small}px;
   }  
 `;
 
