@@ -11,16 +11,23 @@ export const StContact = styled.div`
       &-item {
         display: flex;
         align-items: center;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+          color: ${colors.black};
+        }
+
         span {
-          font-size: 20px;
+          font-size: 30px;
           font-weight: ${FontWeight.bold};
           margin-left: 10px;
+          color:${colors.black}
         }
       }
     }
 
     &__data {
-      padding: 84px 100px 0;
+      padding: 84px 180px 0;
     }
 
     &__schedule {
@@ -57,6 +64,7 @@ export const StContact = styled.div`
       padding: 55px 115px;
       display: flex;
       flex-direction: column;
+      margin-top: 36px;
       &-ipt-row {
         display: flex;
         width: 100%;
@@ -69,6 +77,73 @@ export const StContact = styled.div`
       }
       &-btn {
         margin-top: 32px;
+      }
+    }
+  }
+
+  @media (max-width:1025px) {
+    .contact {
+      &__contacts-block {
+        flex-direction: column;
+        &-item {
+          &:first-child {
+            margin-bottom: 20px;
+          }
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+      &__data {
+        padding: 84px 40px 0;
+      }
+
+      &__schedule {
+        padding: 50px 40px 34px;
+        p {
+          font-size: 18px;
+        }
+      }
+
+      &__form {
+        padding: 55px 66px;
+      }
+    }
+  }
+
+  @media (max-width: 426px) {
+    .contact {
+      &__data {
+        padding: 40px 0;
+      }
+      &__schedule {
+        padding: 50px 20px 34px;
+        p {
+          text-align: center;
+          font-size: 18px;
+        }
+      }
+      &__form {
+        padding: 55px 20px;
+        &-ipt-row {
+          flex-direction: column;
+        }
+        &-ipt {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 325px) {
+    .contact {
+      &__contacts-block {
+        flex-direction: column;
+        &-item {
+          span {
+            font-size: 15px;
+          }
+        }
       }
     }
   }

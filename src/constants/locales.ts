@@ -51,6 +51,7 @@ export const locales = {
   footer_description: 'Wooden furniture shop',
   footer_address: 'Northeast Ohio, USA',
   phone: '+1 (440) 520 4032',
+  tel: '+14405204032',
   mail: 'smartbeaverusa@gmail.com',
   menu: 'Menu',
   stay_connected: 'Stay Connected',

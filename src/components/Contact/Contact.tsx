@@ -9,9 +9,9 @@ import { StContact } from './styled';
 
 const Contact: React.FC = () => (
   <Template>
-    <div className="container content">
+    <div className="container">
       <StContact>
-        <Title text={locales.contact} />
+        <Title className="content" posX="50px" text={locales.contact} />
         <div className="contact">
           <ContactsBlock />
           <div className="contact__data">
