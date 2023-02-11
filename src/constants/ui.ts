@@ -1,7 +1,3 @@
-export const breakPoints = {
-  L: 1400,
-};
-
 const fonts = [
   { name: 'Bold', weight: 800 },
   { name: 'SemiBold', weight: 600 },
@@ -30,3 +26,9 @@ export enum FontWeight {
   regular = 400,
   light = 200
 }
+
+export const headerHeight = {
+  large: 101,
+  medium: 97,
+  small: 38,
+};

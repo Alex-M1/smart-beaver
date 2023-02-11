@@ -83,4 +83,8 @@ export const locales = {
   email_plh: 'Your E-mail',
   text_plh: 'Enter your message',
   send: 'Send',
+  not_found: '404 Page',
+  smth_went_wrong: 'Something went wrong?',
+  not_found_text: 'This page does not exist. Try going back or check your internet connection',
+  to_main: 'To main',
 };

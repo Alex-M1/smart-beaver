@@ -11,7 +11,7 @@ interface Props extends PropsWithChildren {
   height?: string;
   padding?: string;
   content?: string | ReactNode;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: ButtonVariants,
   disabled?: boolean;
   className?: string;
