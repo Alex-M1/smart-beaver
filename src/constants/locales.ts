@@ -113,4 +113,11 @@ export const locales = {
   storage_trays: 'FOLD OUT STORAGE TRAYS ON SINK BASE',
   top_row_drawers: 'UP TO 2 TOP ROW OF DRAWERS ON ALL CABINET BASES',
   wood_face_frames: 'SOLID WOOD FACE FRAMES, DOORS AND DRAWER FRONTS',
+
+  cabinet_decr: 'Cabinets can be built to conventional industry standard sizes or to any size needed to fit your needs\nOffering you limitless design potential in your kitchen design',
+  base_cabinets: 'BASE CABINETS',
+  corner_base: 'CORNER BASE',
+  corner_wall: 'CORNER WALL',
+  pantry_cabinets: 'PANTRY CABINETS',
+  wall_cabinets: 'WALL CABINETS',
 };

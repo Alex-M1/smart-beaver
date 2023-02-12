@@ -2,6 +2,7 @@ import React from 'react';
 import Template from '../common/Template';
 import Title from '../common/Title';
 import ContactForm from '../ContactForm';
+import Cabinets from './Cabinets';
 import PreviewBlock from './PreviewBlock';
 import StandartFeatures from './StandartFeatures';
 
@@ -11,6 +12,7 @@ const KitchenCabinets: React.FC = () => (
       <Title text="Kb" />
       <PreviewBlock />
       <StandartFeatures />
+      <Cabinets />
     </div>
     <ContactForm />
   </Template>

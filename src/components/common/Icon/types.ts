@@ -67,6 +67,12 @@ export enum ICON_NAMES {
   storage_trays = 'storage_trays',
   top_row_drawers = 'top_row_drawers',
   wood_face_frames = 'wood_face_frames',
+
+  base_cabinets = 'base_cabinets',
+  corner_base = 'corner_base',
+  corner_wall = 'corner_wall',
+  pantry_cabinets = 'pantry_cabinets',
+  wall_cabinets = 'wall_cabinets',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
