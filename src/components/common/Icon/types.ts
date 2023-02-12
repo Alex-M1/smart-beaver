@@ -49,7 +49,24 @@ export enum ICON_NAMES {
   about_us_photo = 'about_us_photo',
   faq_img = 'faq_img',
   phone = 'phone',
-  mail = 'mail'
+  mail = 'mail',
+
+  bathroom_vanities = 'bathroom_vanities',
+  cabinet_doors = 'cabinet_doors',
+  cabinet_finishing = 'cabinet_finishing',
+  kitchen_cabinets = 'kitchen_cabinets',
+  polities_and_terms = 'polities_and_terms',
+  specialty_islands = 'specialty_islands',
+  wood_species = 'wood_species',
+
+  bottom_drawer = 'bottom_drawer',
+  cabinet_toe_kick = 'cabinet_toe_kick',
+  close_hingles = 'close_hingles',
+  dovetailde_drawers = 'dovetailde_drawers',
+  plywood_shell = 'plywood_shell',
+  storage_trays = 'storage_trays',
+  top_row_drawers = 'top_row_drawers',
+  wood_face_frames = 'wood_face_frames',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
