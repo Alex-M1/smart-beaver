@@ -57,7 +57,16 @@ export enum ICON_NAMES {
   kitchen_cabinets = 'kitchen_cabinets',
   polities_and_terms = 'polities_and_terms',
   specialty_islands = 'specialty_islands',
-  wood_species = 'wood_species'
+  wood_species = 'wood_species',
+
+  bottom_drawer = 'bottom_drawer',
+  cabinet_toe_kick = 'cabinet_toe_kick',
+  close_hingles = 'close_hingles',
+  dovetailde_drawers = 'dovetailde_drawers',
+  plywood_shell = 'plywood_shell',
+  storage_trays = 'storage_trays',
+  top_row_drawers = 'top_row_drawers',
+  wood_face_frames = 'wood_face_frames',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
