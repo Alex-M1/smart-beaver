@@ -87,4 +87,11 @@ export const locales = {
   smth_went_wrong: 'Something went wrong?',
   not_found_text: 'This page does not exist. Try going back or check your internet connection',
   to_main: 'To main',
+  bathroom_vanities: 'BATHROOM VANITIES',
+  cabinet_doors: 'CABINET DOORS & DRAWER FRONTS',
+  cabinet_finishing: 'CABINET FINISHING',
+  kitchen_cabinets: 'KITCHEN CABINETS',
+  polities_and_terms: 'Policies & Terms',
+  specialty_islands: 'SPECIALTY ISLANDS / CABINETS / ORGANIZERS',
+  wood_species: 'WOOD SPECIES',
 };
