@@ -10,6 +10,7 @@ interface Props {
   name: IconNames;
   width?: string;
   margin?: string;
+  quality?: number;
   height?: number;
   padding?: string;
   className?: string;
@@ -17,17 +18,17 @@ interface Props {
 }
 
 const Icon: React.FC<Props> = ({
-  ext = 'jpg', width, margin, fill, className, padding, ...props
+  ext = 'jpg', width, margin, fill, quality = 75, className, padding, ...props
 }) => {
   // eslint-disable-next-line global-require, import/no-dynamic-require
   const path = require(`public/icons/${props.name}.${ext}`).default;
 
   return fill ? (
     <StDiv className={className} padding={padding} width={width} position="relative">
-      <Image {...props} src={path} style={{ width, margin, objectFit: 'contain' }} />
+      <Image {...props} quality={quality} src={path} style={{ width, margin, objectFit: 'contain' }} />
     </StDiv>
   )
-    : <Image className={className} {...props} src={path} style={{ padding, width, margin }} />;
+    : <Image className={className} quality={quality} {...props} src={path} style={{ padding, width, margin }} />;
 };
 
 export default Icon;
