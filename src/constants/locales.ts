@@ -120,4 +120,9 @@ export const locales = {
   corner_wall: 'CORNER WALL',
   pantry_cabinets: 'PANTRY CABINETS',
   wall_cabinets: 'WALL CABINETS',
+
+  raised_panel_end: 'FLAT & RAISED PANEL ENDS AVAILABLE FOR EXPOSED SIDES',
+  post_corners: 'FURNITURE POST CORNERS AVAILABLE FOR BASE CABINETS AND ISLANDS',
+  matching_crown: 'MATCHING CROWN MOLDING FOR WALL CABINETS',
+  other_options_title: 'Some of our other available options',
 };

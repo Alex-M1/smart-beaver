@@ -73,6 +73,10 @@ export enum ICON_NAMES {
   corner_wall = 'corner_wall',
   pantry_cabinets = 'pantry_cabinets',
   wall_cabinets = 'wall_cabinets',
+
+  matching_crown = 'matching_crown',
+  post_corners = 'post_corners',
+  raised_panel_end = 'raised_panel_end'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
