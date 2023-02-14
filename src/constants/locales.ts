@@ -125,4 +125,7 @@ export const locales = {
   post_corners: 'FURNITURE POST CORNERS AVAILABLE FOR BASE CABINETS AND ISLANDS',
   matching_crown: 'MATCHING CROWN MOLDING FOR WALL CABINETS',
   other_options_title: 'Some of our other available options',
+
+  kitchen_pricing_title: 'KITCHEN CABINET PRICING',
+  kitchen_pricing_text: 'We strive to keep our prices very competitive and below that of other cabinet makers & manufacturers. Our Cabinet pricing is based on linear footage(overall length of Base, Wall and Pantry Cabinets) Door style, wood and finishing options along with current material costs. Supply us the information needed by clicking on the request a quote icon below for current pricing',
 };

@@ -76,7 +76,11 @@ export enum ICON_NAMES {
 
   matching_crown = 'matching_crown',
   post_corners = 'post_corners',
-  raised_panel_end = 'raised_panel_end'
+  raised_panel_end = 'raised_panel_end',
+
+  pure_bond = 'pure_bond',
+  click_prices = 'click_prices',
+  request_quote = 'request_quote'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
