@@ -1,6 +1,6 @@
+import React from 'react';
 import Icon from '@/components/common/Icon';
 import { locales } from '@/constants/locales';
-import React from 'react';
 import { StCabinets } from './styled';
 import { cabinetItems } from './utils';
 
@@ -14,7 +14,6 @@ const Cabinets: React.FC = () => (
           <p className="cabinets__item-text">{locales[name]}</p>
         </div>
       ))}
-
     </div>
   </StCabinets>
 );

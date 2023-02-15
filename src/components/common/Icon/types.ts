@@ -73,6 +73,31 @@ export enum ICON_NAMES {
   corner_wall = 'corner_wall',
   pantry_cabinets = 'pantry_cabinets',
   wall_cabinets = 'wall_cabinets',
+
+  matching_crown = 'matching_crown',
+  post_corners = 'post_corners',
+  raised_panel_end = 'raised_panel_end',
+
+  pure_bond = 'pure_bond',
+  click_prices = 'click_prices',
+  request_quote = 'request_quote',
+
+  specialty_islands_main_img = 'specialty_islands_main_img',
+  specialty_islands_bakeware = 'specialty_islands_bakeware',
+  specialty_islands_corner_base_cabinets = 'specialty_islands_corner_base_cabinets',
+  specialty_islands_corner_cabinets = 'specialty_islands_corner_cabinets',
+  specialty_islands_cutting_board = 'specialty_islands_cutting_board',
+  specialty_islands_flatware = 'specialty_islands_flatware',
+  specialty_islands_inset_cabinets = 'specialty_islands_inset_cabinets',
+  specialty_islands_lazy_super_susan = 'specialty_islands_lazy_super_susan',
+  specialty_islands_microwave_cabinets = 'specialty_islands_microwave_cabinets',
+  specialty_islands_pantry_cabinets = 'specialty_islands_pantry_cabinets',
+  specialty_islands_pot_pan = 'specialty_islands_pot_pan',
+  specialty_islands_reach_corner_cabinets = 'specialty_islands_reach_corner_cabinets',
+  specialty_islands_shelf_base_cabinet = 'specialty_islands_shelf_base_cabinet',
+  specialty_islands_spice_sundry = 'specialty_islands_spice_sundry',
+  specialty_islands_waste = 'specialty_islands_waste'
+
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

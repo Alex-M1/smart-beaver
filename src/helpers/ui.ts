@@ -1,7 +1,7 @@
 export const imgSize = (
   selector: string,
   maxWidth: string,
-  maxHeight: string,
+  maxHeight?: string,
 ) => (`
   ${selector} {
     max-width: ${maxWidth};
