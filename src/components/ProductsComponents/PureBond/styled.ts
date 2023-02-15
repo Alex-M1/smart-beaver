@@ -26,6 +26,9 @@ export const StPureBond = styled.div`
     padding: 30px 0;
     align-items: start;
     .pure-bond {
+      &__title {
+        margin: 30px 0;
+      }
       &__text {
         margin-bottom: 30px;
       }
@@ -34,6 +37,9 @@ export const StPureBond = styled.div`
   @media (min-width: 1024px){ 
     padding: 30px 0;
     align-items: start;
+    &__title {
+      margin: 50px 0 30px;
+    }
     .pure-bond {
       &__text {
         font-size: 20px;

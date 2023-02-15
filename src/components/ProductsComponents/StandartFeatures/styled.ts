@@ -10,6 +10,11 @@ export const StStandartFeatures = styled.div`
       color: ${colors.darkGray};
       margin-bottom: 15px;
     }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     &__item {
       display: flex;
       flex-direction: column;
@@ -28,6 +33,7 @@ export const StStandartFeatures = styled.div`
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
+        align-items: inherit;
       }
       &__item-icon {
         max-width: 150px;
@@ -42,11 +48,11 @@ export const StStandartFeatures = styled.div`
       &__title {
         font-size: 25px;
       }
-
+      
       &__item {
         &-icon {
-          max-width: 100%;
-          max-height: 100%;
+          min-width: 200px;
+          min-height: 138px;
         }
         &-text {
           font-size: 18px;

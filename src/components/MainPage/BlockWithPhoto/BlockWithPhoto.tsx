@@ -9,7 +9,7 @@ const BlockWithPhoto: React.FC = () => (
     <div className="block-with-photo__bg">
       <StSpan className="block-with-photo__text" color="white">{locales.block_with_photo}</StSpan>
     </div>
-    <Icon className="block-with-photo__img" fill alt="woman_carpenter" name="woman_carpenter" />
+    <Icon className="block-with-photo__img" fill alt="woman_carpenter" name="woman_carpenter" ext="jpg" />
   </BlockWithPhotoWrapper>
 );
 
