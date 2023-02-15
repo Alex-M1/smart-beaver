@@ -9,7 +9,7 @@ interface Props {
 const ProductsTitle: React.FC<Props> = ({ page }) => (
   <StProductsTitle>
     <h1>{locales.products}</h1>
-    <span>{page}</span>
+    <p>{page}</p>
   </StProductsTitle>
 );
 

@@ -128,4 +128,21 @@ export const locales = {
 
   kitchen_pricing_title: 'KITCHEN CABINET PRICING',
   kitchen_pricing_text: 'We strive to keep our prices very competitive and below that of other cabinet makers & manufacturers. Our Cabinet pricing is based on linear footage(overall length of Base, Wall and Pantry Cabinets) Door style, wood and finishing options along with current material costs. Supply us the information needed by clicking on the request a quote icon below for current pricing',
+  specialty_descr1: 'From custom designed Kitchen islands to space saving cabinet organizers, Ohio Amish Cabinet specializes in adding any feature to your cabinets that you desire to fit your needs.',
+  specialty_descr2: 'Customizing your cabinets and adding organizers offers ease of use as well as a great way to condense items and maximize every square inch of of your cabinets space.',
+
+  specialty_islands_bakeware: 'PULL OUT BAKEWARE ORGANIZERS',
+  specialty_islands_corner_base_cabinets: 'CORNER BASE CABINETS',
+  specialty_islands_corner_cabinets: 'CORNER WALL CABINETS',
+  specialty_islands_cutting_board: 'PULL OUT CUTTING BOARD W/ TRASH PULLOUT UNDERNEATH',
+  specialty_islands_flatware: 'CUTLERY / FLATWARE DRAWER ORGANIZERS',
+  specialty_islands_inset_cabinets: 'INSET CORNER BASE CABINETS',
+  specialty_islands_lazy_super_susan: 'LAZY & SUPER SUSAN CORNER CABINETS',
+  specialty_islands_microwave_cabinets: 'OPEN & MICROWAVE SHELF CABINETS',
+  specialty_islands_pantry_cabinets: 'PANTRY CABINETS',
+  specialty_islands_pot_pan: 'POT & PAN ORGANIZER PULL OUTS',
+  specialty_islands_reach_corner_cabinets: 'EZ REACH CORNER WALL CABINETS',
+  specialty_islands_shelf_base_cabinet: 'PULL OUT SHELF BASE CABINETS',
+  specialty_islands_spice_sundry: 'PULL OUT SPICE & SUNDRY RACKS',
+  specialty_islands_waste: 'PULL OUT WASTE CAN CABINETS',
 };

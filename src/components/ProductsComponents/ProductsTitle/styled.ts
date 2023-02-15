@@ -10,12 +10,12 @@ export const StProductsTitle = styled.div`
   background-position-y: 25px;
   background-position-x: 25px;
   width: 100%;
-  &::after {
+  h1::after {
     content: '';
     display: block;
     position: relative;
-    top:-35px;
-    right:-165px;
+    top:-10px;
+    left: 170px;
     height: 1px;
     width: 50px;
     background: #000;
@@ -30,7 +30,7 @@ export const StProductsTitle = styled.div`
     top: 10px;
   }
   
-  span {
+  p {
     padding-left: 25px;
     font-size: 15px;
     font-weight: ${FontWeight.bold};
@@ -40,13 +40,22 @@ export const StProductsTitle = styled.div`
     display: flex;
     align-items: baseline;
     width: fit-content;
-    &::after {
-      top: 0px;
-      right: 180px;
+    max-width: 400px;
+    h1::after {
+      top: -10px;
+      left: 170px;
     }
-    span {
+    p {
       padding-left: 45px;
       font-size: 15px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 640px;
+    h1::after {
+      top: -15px;
+      left: 260px;
     }
   }
 
@@ -54,7 +63,7 @@ export const StProductsTitle = styled.div`
     &::after {
       right: 310px;
     }
-    span {
+    p {
       font-size: 30px;
     }
   }

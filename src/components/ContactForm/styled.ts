@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const StForm = styled.div`
   padding: 0 110px;
-  
+  margin: 20px 0;
   .form-text {
     font-size: 18px;
     color: ${colors.white_crime};
