@@ -145,4 +145,12 @@ export const locales = {
   specialty_islands_shelf_base_cabinet: 'PULL OUT SHELF BASE CABINETS',
   specialty_islands_spice_sundry: 'PULL OUT SPICE & SUNDRY RACKS',
   specialty_islands_waste: 'PULL OUT WASTE CAN CABINETS',
+
+  bathroom_descr1: 'Like our kitchen cabinets, our bathroom vanities can be made to conventional industry standard sizes or to any size needed to fit your needs.',
+  bathroom_descr2: 'Available in unfinished, natural wood and stained with clear coat finish, along with painted finishes in a wide variety of wood types and door styles to fit your specific needs',
+  bathroom_features: 'All Bathroom Vanities are built with the following standard features',
+  bathroom_standart_features_title: 'Cabinets can be built to conventional industry standard sizes or to any size needed to fit your needs offering you limitless design potential in your bathroom design',
+  bathroom_pure_bond_title: 'BATHROOM VANITY PRICING',
+  bathroom_pure_bond_text: 'We strive to keep our prices very competitive and below that of other cabinet makers & manufacturers. Our Vanity pricing is based on linear footage(overall length of Base. Supply us the information needed by clicking on the request a quote icon below for current pricing.',
+  furniture_post_corners: 'FURNITURE POST CORNERS',
 };

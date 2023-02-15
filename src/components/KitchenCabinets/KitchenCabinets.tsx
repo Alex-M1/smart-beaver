@@ -6,8 +6,8 @@ import ProductsTitle from '../ProductsComponents/ProductsTitle';
 import Cabinets from './Cabinets';
 import OtherOptions from './OtherOptions';
 import PreviewBlock from './PreviewBlock';
-import PureBond from './PureBond';
-import StandartFeatures from './StandartFeatures';
+import PureBond from '../ProductsComponents/PureBond';
+import StandartFeatures from '../ProductsComponents/StandartFeatures';
 
 const KitchenCabinets: React.FC = () => (
   <Template>

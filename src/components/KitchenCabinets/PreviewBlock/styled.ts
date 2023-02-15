@@ -4,12 +4,8 @@ import styled from 'styled-components';
 
 export const StPreview = styled.div`
   padding: 50px 0;
-  p, li {
+  p {
     font-size: 15px;
-  }
-  ul {
-    padding-left: 15px;
-    margin: 0;
   }
   .preview {
     &__icon-container {
@@ -56,7 +52,7 @@ export const StPreview = styled.div`
   }
 
   @media (min-width: 1440px) {
-    p, li {
+    p {
       font-size: 20px;
     }
     .preview {

@@ -18,7 +18,7 @@ interface Props {
 }
 
 const Icon: React.FC<Props> = ({
-  ext = 'jpg', width, margin, fill, quality = 75, className, padding, ...props
+  ext = 'png', width, margin, fill, quality = 75, className, padding, ...props
 }) => {
   // eslint-disable-next-line global-require, import/no-dynamic-require
   const path = require(`public/icons/${props.name}.${ext}`).default;

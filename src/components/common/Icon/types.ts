@@ -96,8 +96,11 @@ export enum ICON_NAMES {
   specialty_islands_reach_corner_cabinets = 'specialty_islands_reach_corner_cabinets',
   specialty_islands_shelf_base_cabinet = 'specialty_islands_shelf_base_cabinet',
   specialty_islands_spice_sundry = 'specialty_islands_spice_sundry',
-  specialty_islands_waste = 'specialty_islands_waste'
+  specialty_islands_waste = 'specialty_islands_waste',
 
+  bathroom_img = 'bathroom_img',
+  bathroom_cabinet = 'bathroom_cabinet',
+  furniture_post_corners = 'furniture_post_corners'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
