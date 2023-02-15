@@ -11,7 +11,7 @@ const Contact: React.FC = () => (
   <Template>
     <div className="container">
       <StContact>
-        <Title className="content" posX="50px" text={locales.contact} />
+        <Title className="content" text={locales.contact} />
         <div className="contact">
           <ContactsBlock />
           <div className="contact__data">
