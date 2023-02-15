@@ -7,7 +7,7 @@ import { StOurProduction } from './styled';
 
 const OurProduction: React.FC = () => (
   <StOurProduction className="container content">
-    <Title text={locales.our_production} textAlign="right" posX="55px" />
+    <Title text={locales.our_production} textAlign="right" />
     <div className="production__images">
       <Icon className="image-1" fill alt="production example 1" name="our_producrtion_1" ext="png" />
       <Icon className="image-2" fill alt="production example 2" name="our_producrtion_2" ext="png" />

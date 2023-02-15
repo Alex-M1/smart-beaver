@@ -16,7 +16,7 @@ const Steps: React.FC = () => {
   ];
   return (
     <StStepWrapper className="container">
-      <Title text={locales.work_order} posX="62px" />
+      <Title text={locales.work_order} />
       <div className="steps">
         {items.map((item, i) => <Step {...item} number={i + 1} key={item.iconName} />)}
       </div>
