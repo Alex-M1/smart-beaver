@@ -153,4 +153,32 @@ export const locales = {
   bathroom_pure_bond_title: 'BATHROOM VANITY PRICING',
   bathroom_pure_bond_text: 'We strive to keep our prices very competitive and below that of other cabinet makers & manufacturers. Our Vanity pricing is based on linear footage(overall length of Base. Supply us the information needed by clicking on the request a quote icon below for current pricing.',
   furniture_post_corners: 'FURNITURE POST CORNERS',
+
+  cabinet_doors_title: 'CABINET DOORS & DRAWER FRONTS',
+  cabinet_doors_decr: 'Give your kitchen a new look without the cost of replacing all of your existing cabinets with NEW solid wood doors and drawer fronts. Available in unfinished, natural wood and stained clear coat finish, along with painted finishes in a wide variety of wood types',
+  cabinet_doors_peview_recipe: 'Ohio Amish Cabinet offers 3/4" solid wood handcrafted "custom made to your size" cabinet doors and drawer frontsAll of our door styles are also available in a more economical paint grade door featuring a 3/4" thick Poplar or Maple frame with 3/4" High Density MDF inset panels',
+  cabinet_doors_catalog_title: 'All Doors and Drawer Fronts are built to last a lifetime with the following features',
+  solid_wood_doors: 'SOLID WOOD DOORS',
+  solid_wood_text1: '•  Custom built to your size specifications to the nearest 1/8" Minimum door width',
+  solid_wood_list1: 'Flat panel Square, Flat Panel Raised Square and Shaker Doors is 7"',
+  solid_wood_list2: 'Raised Panel Arch & Cathedral Arched',
+  solid_wood_list3: 'Panel Doors -12" Maximum door width 26" Minimun door Height 10" - Maximum door Height 70"(Doors over 42" will be made double panel)',
+  solid_wood_text2: '•  3/4" thick solid wood construction throughout',
+  solid_wood_text3: '•  5 piece mortise and tenon and doweled construction',
+  solid_wood_text4: '•  2-1/4" Standard stile and rail width, upon request, they can be made a different size if needed',
+  solid_wood_text5: '•  Hinge Boring & Hinges are Available',
+  solid_wood_text6: '•  Available in unfinished, natural wood and stained clear coat finish,along with painted finishes',
+
+  mdf_panel_title: 'PAINT GRADE SOLID WOOD DOOR FRAMES WITH HIGH DENSITY MDF PANELS',
+  mdf_panel_text1: '•  Available in unfished and painted finishes only',
+
+  drawer_fronts_title: 'SOLID WOOD DRAWER FRONTS',
+  drawer_fronts_text1: '•  Custom built to your size specifications to the nearest 1/8" Minimun Drawer Front Height',
+  drawer_fronts_list1: 'Flat panel, Flat Panel Raised and Shaker Fronts is 6-1 / 2"',
+  drawer_fronts_list2: 'Slab and Slab Profile edge is 4" Minimum Drawer Front Width is 7"',
+  drawer_fronts_note: 'NOTE: Due to the screw holding strength that is need when installed, we only offer Drawer fronts made from solid wood.we do not make or recommend MDF panel paint grade drawer fronts',
+
+  general_door: 'GENERAL DOOR & DRAWER FRONT CONSTRUCTION AND TERMINOLIGY',
 };
+
+export type Locales = keyof typeof locales;

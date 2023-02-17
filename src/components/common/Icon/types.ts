@@ -100,7 +100,14 @@ export enum ICON_NAMES {
 
   bathroom_img = 'bathroom_img',
   bathroom_cabinet = 'bathroom_cabinet',
-  furniture_post_corners = 'furniture_post_corners'
+  furniture_post_corners = 'furniture_post_corners',
+
+  cabinet_doors_preview = 'cabinet_doors_preview',
+  door_catalog_example1 = 'door_catalog_example1',
+  door_catalog_example2 = 'door_catalog_example2',
+  door_catalog_example3 = 'door_catalog_example3',
+
+  general_door = 'general_door',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

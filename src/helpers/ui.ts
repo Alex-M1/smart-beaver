@@ -12,3 +12,14 @@ export const imgSize = (
     }
   }
 `);
+
+export const imgSizeResponsive = (selector: string, width: string, height: string = 'auto') => (`
+  ${selector} {
+    width: ${width};
+    height: ${height};
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+`);
