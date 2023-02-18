@@ -144,7 +144,10 @@ export enum ICON_NAMES {
 
   sd_shaker_beaded_panel = 'sd_shaker_beaded_panel',
   sd_shaker_side_by_side = 'sd_shaker_side_by_side',
-  sd_shaker_square = 'sd_shaker_square'
+  sd_shaker_square = 'sd_shaker_square',
+
+  door_drawers_available1 = 'door_drawers_available1',
+  door_drawers_available2 = 'door_drawers_available2',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

@@ -229,6 +229,15 @@ export const locales = {
   sd_shaker_side_by_side: 'SSS - SPLIT SHAKER SIDE BY SIDE',
   sd_shaker_beaded_panel: 'SBP - SHAKER BEADED PANEL',
   sd_shaker_square: 'SST - SHAKER SQUARE',
+
+  available_options_title: 'AVAILABLE OPTIONS',
+  door_drawers_available_title1: 'OVERLAY DOOR HINGE HOLE BORING',
+  door_drawers_available_text1: '35MM Bores (2 Required per door',
+  door_drawers_available_title2: 'OVERLAY DOOR HINGES',
+  door_drawers_available_text2: 'Available in 1/2" & Full Overlay (2 Required per door)',
+
+  door_drawers_pure_bond_title: 'DOOR & DRAWER FRONT PRICING',
+  door_drawers_pure_bond_text: 'Our Custom Door pricing is based on Square footage, Door style, Wood Type and Finishing options along with current material costs. Supply us the information needed by clicking on the request a quote icon below for current pricing.',
 };
 
 export type Locales = keyof typeof locales;
