@@ -16,9 +16,9 @@ const Img: React.FC<Props> = ({
   alt,
   ext = 'png',
   name,
-  width = 100,
-  height = 100,
-  quality = 100,
+  width = 500,
+  height = 500,
+  quality = 75,
   priority = false,
 }) => (
   <Image

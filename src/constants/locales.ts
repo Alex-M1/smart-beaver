@@ -179,6 +179,56 @@ export const locales = {
   drawer_fronts_note: 'NOTE: Due to the screw holding strength that is need when installed, we only offer Drawer fronts made from solid wood.we do not make or recommend MDF panel paint grade drawer fronts',
 
   general_door: 'GENERAL DOOR & DRAWER FRONT CONSTRUCTION AND TERMINOLIGY',
+
+  edge_profiles: 'EDGE PROFILES - AVAILABLE FOR ALL DOORS & FRONTS',
+  inner_edge: 'IE',
+  inner_edge_profile_title: 'INNER EDGE PROFILE (RAILS & STILES)',
+  inner_edge_profile1: 'Rounded',
+  inner_edge_profile2: 'Ogee',
+  inner_edge_profile3: 'Beveled',
+  inner_edge_profile4: 'Shaker Only',
+
+  raised_panel: 'RP',
+  raised_panel_profile_title: 'RAISED PANEL PROFILE',
+  raised_panel_profile1: 'Ogee',
+  raised_panel_profile2: 'Straight',
+  raised_panel_profile3: 'Cove',
+  raised_panel_profile4: 'Ogee W/Bead',
+
+  outer_edge: 'OE',
+  outer_edge_profile_title: 'OUTER EDGE PROFILE (RAILS & STILES)',
+  outer_edge_profile1: 'Rounded Slant',
+  outer_edge_profile2: 'Rounded Straight',
+  outer_edge_profile3: 'Quarter Round',
+  outer_edge_profile4: 'Shaker Only',
+
+  front_styles_title: 'Cabinet Door and Drawer Front Styles',
+
+  df_title: 'DRAWER FRONT STYLES ',
+  df_flat_panel: 'DFF - FLAT PANEL',
+  df_raised_panel: 'DFR - RAISED PANEL',
+  df_shaker: 'DFSH - SHAKER',
+  df_slab_profile_edge: 'DFS - SLAB PROFILE EDGE',
+
+  fp_title: 'FLAT PANEL DOORS',
+  fp_square_top: 'FPS - SQUARE TOP',
+  fp_cathedral_arch: 'FPC -CATHEDRAL ARCH',
+  fp_double_cathedral_arch: 'FPCD - DOUBLE CATHEDRAL ARCH',
+  fp_arch_top: 'FPA - ARCH TOP',
+  fp_double_arch: 'FPAD - DOUBLE ARCH',
+  fp_square_beaded_panel: 'FPB - SQUARE BEADED PANEL',
+
+  rp_title: 'RAISED PANEL DOORS',
+  rp_square_top: 'RPS - SQUARE TOP',
+  rp_cathedral_arch: 'RPC -CATHEDRAL ARCH',
+  rp_double_cathedral_arch: 'RPCD - DOUBLE CATHEDRAL ARCH',
+  rp_arch_top: 'RPA - ARCH TOP',
+  rp_double_arch: 'RPAD - DOUBLE ARCH',
+
+  sd_title: 'SHAKER DOORS',
+  sd_shaker_side_by_side: 'SSS - SPLIT SHAKER SIDE BY SIDE',
+  sd_shaker_beaded_panel: 'SBP - SHAKER BEADED PANEL',
+  sd_shaker_square: 'SST - SHAKER SQUARE',
 };
 
 export type Locales = keyof typeof locales;

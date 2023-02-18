@@ -108,6 +108,43 @@ export enum ICON_NAMES {
   door_catalog_example3 = 'door_catalog_example3',
 
   general_door = 'general_door',
+
+  inner_edge_profile1 = 'inner_edge_profile1',
+  inner_edge_profile2 = 'inner_edge_profile2',
+  inner_edge_profile3 = 'inner_edge_profile3',
+  inner_edge_profile4 = 'inner_edge_profile4',
+
+  outer_edge_profile1 = 'outer_edge_profile1',
+  outer_edge_profile2 = 'outer_edge_profile2',
+  outer_edge_profile3 = 'outer_edge_profile3',
+  outer_edge_profile4 = 'outer_edge_profile4',
+
+  raised_panel_profile1 = 'raised_panel_profile1',
+  raised_panel_profile2 = 'raised_panel_profile2',
+  raised_panel_profile3 = 'raised_panel_profile3',
+  raised_panel_profile4 = 'raised_panel_profile4',
+
+  df_flat_panel = 'df_flat_panel',
+  df_raised_panel = 'df_raised_panel',
+  df_shaker = 'df_shaker',
+  df_slab_profile_edge = 'df_slab_profile_edge',
+
+  fp_arch_top = 'fp_arch_top',
+  fp_cathedral_arch = 'fp_cathedral_arch',
+  fp_double_arch = 'fp_double_arch',
+  fp_double_cathedral_arch = 'fp_double_cathedral_arch',
+  fp_square_beaded_panel = 'fp_square_beaded_panel',
+  fp_square_top = 'fp_square_top',
+
+  rp_arch_top = 'rp_arch_top',
+  rp_cathedral_arch = 'rp_cathedral_arch',
+  rp_double_arch = 'rp_double_arch',
+  rp_double_cathedral_arch = 'rp_double_cathedral_arch',
+  rp_square_top = 'rp_square_top',
+
+  sd_shaker_beaded_panel = 'sd_shaker_beaded_panel',
+  sd_shaker_side_by_side = 'sd_shaker_side_by_side',
+  sd_shaker_square = 'sd_shaker_square'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

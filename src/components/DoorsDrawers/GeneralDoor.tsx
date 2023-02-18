@@ -6,7 +6,7 @@ const GeneralDoor: React.FC = () => (
   <div className="general-door">
     <p className="general-door__title">{locales.general_door}</p>
     <div className="general-door__img">
-      <Img name="general_door" alt="door schema" />
+      <Img quality={100} name="general_door" alt="door schema" />
     </div>
   </div>
 );
