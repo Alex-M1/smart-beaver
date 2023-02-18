@@ -148,6 +148,15 @@ export enum ICON_NAMES {
 
   door_drawers_available1 = 'door_drawers_available1',
   door_drawers_available2 = 'door_drawers_available2',
+
+  cabinet_finishing_preview = 'cabinet_finishing_preview',
+
+  cf_preview_natural_clear_coat_img = 'cf_preview_natural_clear_coat_img',
+  cf_preview_painted_glaze_img = 'cf_preview_painted_glaze_img',
+  cf_preview_painted_img = 'cf_preview_painted_img',
+  cf_preview_stainded_clear_coat_img = 'cf_preview_stainded_clear_coat_img',
+  cf_preview_unfinished_img = 'cf_preview_unfinished_img'
+
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

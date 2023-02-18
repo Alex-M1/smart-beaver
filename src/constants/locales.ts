@@ -238,6 +238,21 @@ export const locales = {
 
   door_drawers_pure_bond_title: 'DOOR & DRAWER FRONT PRICING',
   door_drawers_pure_bond_text: 'Our Custom Door pricing is based on Square footage, Door style, Wood Type and Finishing options along with current material costs. Supply us the information needed by clicking on the request a quote icon below for current pricing.',
+
+  cabinet_finishing__title: 'CABINET FINISHING',
+  cabinet_finishing_description: 'We offer an array of finishing options for our cabinetry items',
+
+  cf_preview_unfinished_title: 'UNFINISHED',
+  cf_preview_natural_clear_coat_title: 'NATURAL CLEAR COAT',
+  cf_preview_stainded_clear_coat_title: 'STAINED AND CLEAR COAT',
+  cf_preview_painted_title: 'PAINTED',
+  cf_preview_painted_glaze_title: 'PAINT & GLAZE',
+
+  cf_preview_unfinished_text: 'Sanded to 150 grit ready to be painted or stained',
+  cf_preview_natural_clear_coat_text: '3 Coats of soft lustre laquer applied protecting and allowing the natural beauty of the wood to show through',
+  cf_preview_stainded_clear_coat_text: 'Oil based stains are applied and topped with 3 coats of soft lustre laquer to protect your finish',
+  cf_preview_painted_text: 'PAINTEProducts are primed twice and finished with a soft lustre acrylic hardened scratch resistant based paint to protect from scratches and chippingD',
+  cf_preview_painted_glaze_text: 'A base paint of your choice is applied, then finished off with a flood coat of glaze and hand wiped leaving behind highlighted tones in the corners and recessed profiles of the doors.',
 };
 
 export type Locales = keyof typeof locales;
