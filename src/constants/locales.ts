@@ -328,6 +328,43 @@ export const locales = {
   metropolitan_portabella: 'Metropolitan with Portabella Glaze',
   black_warm_brown: 'Black with Warm Brown Glaze',
   chelsea_gray_warm_brown: 'Chelsea Gray with Warm Brown Glaze',
+
+  wood_species_preview_text1: 'Ohio Amish Cabinet offers 12 of the most popular and Select Wood types for your cabinet needs. Each wood has it\'s own characteristics and unique look',
+  wood_species_preview_text2: 'Below is a list of the wood types offered, along with there characteristics and recommended finishing applications for you to choose from. Interested in a wood type not shown on our website?',
+  wood_species_preview_text3: 'Please contact us with the wood type you are interested in and we will check on its availability',
+
+  wood_species_example_title: 'Wood types and recommended finish applications',
+
+  wood_species_alder: 'ALDER',
+  wood_species_cherry: 'CHERRY',
+  wood_species_hickory: 'HICKORY',
+  wood_species_knotty_alder: 'KNOTTY ALDER',
+  wood_species_maple: 'MAPLE',
+  wood_species_poplar: 'POPLAR',
+  wood_species_red_oak: 'RED OAK',
+  wood_species_rustic_hickory: 'RUSTIC HICKORY',
+  wood_species_walnut: 'WALNUT',
+  wood_species_white_oak: 'WHITE OAK',
+  wood_species_wormy_maple: 'WORMY MAPLE',
+  wood_species_quarter_sawn: 'QUARTER SAWN WHITE OAK',
+
+  wood_species_alder_text: 'Alder wood is straight grained and even textured. Pale yellow to reddish brown with indistinct boundary between heartwood and softwood. Alder is an excellent choice for staining, as it will take a clear coat, or a light to dark stain very well. Has also been used quite commonly to mimic the look of cherry if stained and finished properly. Since alder is a straight smooth grain wood it also takes painted finishes very well.',
+  wood_species_cherry_text: 'Cherry wood is a relatively hard hardwood with great wear resistance. Cherry is generally straight grained with a fairly uniform texture and a rich luster. Light to dark reddish brown heartwood and narrow, nearly white sapwood. Cherry takes stain very well and is regarded as one of the most highly prized cabinet woods in North America.',
+  wood_species_hickory_text: 'Hickory is a very hard hardwood with tight, generally straight grain with a coarse texture. Pale to reddish brown heartwood and whitish sapwood. Hickory can be stained and finishes well, but do to its rather coarse grain patterns it is not recommended for painting as this coarse grain will show under some painted finishes.',
+  wood_species_knotty_alder_text: 'Knotty or sometimes called Rustic Alder wood is straight grained with some streaking and knots that create a rustic appearance. Pale yellow to reddish brown with indistinct boundary between heartwood and softwood. Knotty Alder is an excellent choice for staining, as it will take a clear coat, or a light to dark stain very well',
+  wood_species_maple_text: ' Maple is a very hard hardwood, with excellent wear resistance. Maple wood has a straight, close grain with a fine, uniform texture. Nearly white sapwood, sometimes with a reddish tinge and light tannish heartwood. Maple is very hard and can be stained, although it is seen with a glazed finish. Maple paints excellently and is a great choice for a durable material for painting.',
+  wood_species_poplar_text: 'Poplar wood is generally straight grained with a fine, even texture. Creamy-white to pale brown heartwood and sapwood. Poplar varies from white to a light green with occasional black and purple streaks. Poplar is a relatively hard hardwood with good durability. Poplar paints very well but is a difficult wood to stain due to its fine texture',
+  wood_species_red_oak_text: 'Red Oak wood is a straight grained with a coarse texture and prominent rays. Light reddish tan heartwood and narrow, almost white sapwood. Red Oak is a very hard and durable hardwood with great wear resistance. Oak accepts stain very well, from light to dark. Due to its rather coarse grain patterns Red Oak is not recommended for painting as this coarse grain will show under some painted finishes.',
+  wood_species_rustic_hickory_text: 'Rustic Hickory is a very hard tight grained wood. Because of extreme color variations between heart and sap wood, ranging from white to brown, black or green, Rustic hickory in it\'s natural form looks very rustic.The color variation in this can be tamed significantly with darker stain applications, or artistic finishes.',
+  wood_species_walnut_text: 'Walnut is a very stable hard wood with a rich appearance. Generally Straight and moderately coarse grained wood with rich dark brown heartwood and nearly white sap wood. Prized in North America for high-end cabinetry and furniture. Walnut stains very well. Walnut can be painted but it does have a rather coarse grain pattern that would not be recommended for painted surfaces that require a smooth finish. Due to its cost and its natural beauty it is rarely painted.',
+  wood_species_white_oak_text: 'White Oak is an outstanding domestic hardwood that is a very strong wood that displays a very straight and consistent grain. Its unique cellular structure makes the wood highly water resistant.White Oak accepts stain very well, from light to dark. Due to its rather coarse grain patterns White Oak is not recommended for painting as this coarse grain will show under some painted finishes.',
+  wood_species_wormy_maple_text: 'Also known as Ambrosia maple, this comes from regular soft maple trees that have been infested by the ambrosia beetle. Wormy Maple has a nice rustic feature due to the small pin holes created by the ambrosia beetle with an elongated grayish-brown fungi discolorations surrounding the hole. Rest assured that the kiln drying process actually sterilizes the lumber from active fungi, mold and insects. Excellent choice for staining bringing out the rich rustic features of the woods',
+  wood_species_quarter_sawn_text: 'The characteristic that has made White Oak famous is the presence of striking medullary rays that appear when the wood is quartersawn. Quartersawn White Oak is a highly stable material. In the early 1900s White Oak was the standard species for the arts and crafts movement in furniture building. Due to its rather coarse grain patterns itis not recommended for painting as this coarse grain will show under some painted finishes.',
+
+  recommended_finishes: 'RECOMMENDED FINISHES',
+  clear_coat: 'clear coat',
+  stain_and_clear_coat: 'stain and clear coat',
+  painted: 'painted',
 };
 
 export type Locales = keyof typeof locales;
