@@ -365,6 +365,32 @@ export const locales = {
   clear_coat: 'clear coat',
   stain_and_clear_coat: 'stain and clear coat',
   painted: 'painted',
+
+  quotes: 'Quotes',
+
+  polities_and_terms_quotes_text: 'Every item has its own page with a link to request a quote for that specific item or you can use the links below. Please fill out the form provided and upload the sketches and documents for your project. Once we receive your submission, we will review it and send you a quote to your email.',
+
+  drawer_fronts: 'DRAWER FRONTS',
+  drawer_boxes: 'DRAWER BOXES',
+  pull_out_shelves: 'PULL OUT SHELVES',
+  cabinet_door: 'CABINET DOORS',
+  placing_an_order: 'Placing an order',
+  placing_an_order_text: 'If you decide to make an order after reviewing your quote, please reach back out to us and we will create an invoice for you with information on how to submit and pay for your order. A 50% initial deposit is required to begin processing and manufacturing your order. The remaining balance needs to be paid in full before the final item is picked up or sent out for shipping.',
+
+  payment_options: 'PAYMENT OPTIONS',
+  payment_options_text: 'We accept most credit cards and those payments are processed through PayPal. You can also pay directly with your PayPal account. All payments that are done through paypal will be assessed a 3% service fee. We also accept checks.Checks will be deposited by “Ohio Custom Cabinets”.Please don’t abbreviate.All checks that are not honored for payment will be criminally investigated.The sender of the check will be responsible for any additional charges and fees if any issues occur during the deposit of the check',
+
+  lead_times: 'LEAD TIMES',
+  lead_times_text: 'Typical wait time for small orders like kitchen cabinet doors is 2-3 weeks. If you are ordering a full kitchen, the wait time is usually around 6-8 weeks. The time to complete an order also varies depending on the volume and complexity of your project. Wait times can also vary based on the manufacturer’s schedule. You will receive an estimated wait time in your quote.If you want to discuss the lead time on your project in more detail, please reach out to us.',
+
+  changes_and_additions: 'CHANGES AND ADDITIONS',
+  changes_and_additions_text: 'The client has 48 hours after placing the order to make any changes. After this timeframe, any changes in size or design will cost extra. If any change is made to your order at any point, we cannot guarantee that the updated order will be completed in the same amount of time as the original order.',
+
+  delivery_and_pickup: 'DELIVERY AND PICKUP',
+  delivery_and_pickup_text: 'We offer pickup on all of our items along with shipping through USPS and UPS on the following smaller items. Cabinet Doors - Drawer Fronts - Drawer Boxes - Pullout Shelves Freight shipment is available for larger items such as complete cabinets along with pickup and a delivery service throughout Northeast Ohio for the larger items.Please feel free to contact us for more information on freight and or delivery charges',
+
+  return_policy: 'RETURN POLICY',
+  return_policy_text: 'Since your items are manufactured according to your own provided specifications, we do not accept returns for reimbursement. You must inspect the items at the time of pickup or at the time of delivery and make note of any defects. If any defects are found, the buyer must notify us immediately. If we confirm that the item was not made according to the specifications given by you, we will provide you with a replacement. Ohio Custom Cabinets is not responsible for any damage done to your item during transportation, storage, handling, installation or assembly. It is recommended that you apply paint or stain within the first 14 days of receiving your order.',
 };
 
 export type Locales = keyof typeof locales;

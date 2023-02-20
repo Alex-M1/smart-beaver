@@ -262,6 +262,9 @@ export enum ICON_NAMES {
   wood_species_walnut = 'wood_species_walnut',
   wood_species_white_oak = 'wood_species_white_oak',
   wood_species_wormy_maple = 'wood_species_wormy_maple',
+
+  policies_and_terms1 = 'policies_and_terms1',
+  policies_and_terms2 = 'policies_and_terms2',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
