@@ -35,6 +35,9 @@ export const GlobalStyle = createGlobalStyle`
   h3 { 
     font-size: 28px;
   }
+  h4 {
+    font-size: 25px;
+  }
   h5 {
     font-size: 18px;
   }
@@ -59,6 +62,9 @@ export const GlobalStyle = createGlobalStyle`
     h3 { 
       font-size: 18px;
     }
+    h4 {
+      font-size: 18px;
+    }
     h5 {
       font-size: 13px;
     }
@@ -76,6 +82,9 @@ export const GlobalStyle = createGlobalStyle`
     }
     h5 {
       font-size: 13px;
+    }
+    h4 {
+      font-size: 15px;
     }
     .content {
       padding: 0 20px;

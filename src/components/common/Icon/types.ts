@@ -248,6 +248,20 @@ export enum ICON_NAMES {
   red_oak_sealy = 'red_oak_sealy',
   red_oak_tawny = 'red_oak_tawny',
   red_oak_wheat = 'red_oak_wheat',
+
+  wood_species_preview_img = 'wood_species_preview_img',
+  wood_species_alder = 'wood_species_alder',
+  wood_species_cherry = 'wood_species_cherry',
+  wood_species_hickory = 'wood_species_hickory',
+  wood_species_knotty_alder = 'wood_species_knotty_alder',
+  wood_species_maple = 'wood_species_maple',
+  wood_species_poplar = 'wood_species_poplar',
+  wood_species_quarter_sawn = 'wood_species_quarter_sawn',
+  wood_species_red_oak = 'wood_species_red_oak',
+  wood_species_rustic_hickory = 'wood_species_rustic_hickory',
+  wood_species_walnut = 'wood_species_walnut',
+  wood_species_white_oak = 'wood_species_white_oak',
+  wood_species_wormy_maple = 'wood_species_wormy_maple',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
