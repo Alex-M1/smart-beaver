@@ -20,7 +20,7 @@ const PolitiesAndTerms: React.FC = () => (
         </div>
 
         <div className="pt__quotes">
-          {quotes.map((quote) => <PolitiesAndTermsQuote {...quote} />)}
+          {quotes.map((quote) => <PolitiesAndTermsQuote key={quote.title} {...quote} />)}
         </div>
 
         <div className="pt__img-block">
@@ -29,7 +29,7 @@ const PolitiesAndTerms: React.FC = () => (
         </div>
 
         <div>
-          {policiesItems.map((item) => <PolitiesAndTermsItem {...item} />)}
+          {policiesItems.map((item) => <PolitiesAndTermsItem key={item.titleKey} {...item} />)}
         </div>
       </StPolitiesAndTerms>
     </div>

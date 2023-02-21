@@ -1,52 +1,84 @@
 import { colors } from '@/constants/colors';
 import { FontWeight } from '@/constants/ui';
+import { imgSizeResponsive } from '@/helpers/ui';
 import styled from 'styled-components';
 
 export const StPortfolioSlider = styled.div`
-  display: grid;
-  grid-template-columns: 3fr 1fr;
   background-color: ${colors.brownLight};
-  padding: 36px 40px;
-
+  padding: 50px 20px 0;
+  display: flex;
+  flex-direction: column-reverse;
+  height: 1500px;
+  justify-content: flex-end;
   .portfolio-slider {
     &__text {
-      text-align: left;
-      padding-right: 60px;
-      white-space: pre-wrap;
-      font-size: 18px;
       color: ${colors.white};
+      font-size: 15px;
       font-weight: ${FontWeight.bold};
+      white-space: pre-wrap;
       line-height: 30px;
     }
+    ${imgSizeResponsive('&__img', '100%')}
+    &__img-block {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .ps-img1, .ps-img2 {
+    flex-basis: 50%;
+  }
+  .ps-img3, .ps-img4 {
+    flex-basis: 100%;
   }
 
-  @media(max-width: 769px){
-    display: flex;
+  @media (min-width: 768px) {
     flex-direction: column;
-
+    justify-content: space-between;
+    padding: 50px 20px 90px;
+    height: 1200px;
     .portfolio-slider {
-      &__text {
-        font-size: 16px;
-      }
-
       &__img-block {
-        align-items: center;
-        padding: 25px 0;
+        padding: 0 135px;
       }
     }
   }
+`;
 
-  @media(max-width: 426px) {
-    padding: 36px 20px;
-    flex-direction: column-reverse;
-    .portfolio-slider {
-      &__text {
-        padding-right: 0;
-      }
-      &__img-block {
-        align-items: space-between;;
-        padding: 25px 0;
-      }
+export const SliderWrapper = styled.div`
+  margin: 20px 0;
+  .carousel-slider {
+    padding: 0;
+  }
+  .carousel .control-dots {
+    top: auto;
+    bottom: 100px;
+  }
+  .carousel.carousel-slider .control-arrow {
+    bottom: 50px;
+    top: auto;
+  }
+  .carousel.carousel-slider .control-arrow.control-next {
+    left: 50%;
+    transform: translateX(10%)
+  }
+
+  .carousel.carousel-slider .control-arrow.control-prev {
+    left: 50%;
+    transform: translateX(-110%)
+  }
+
+  @media (min-width: 768px){
+    margin: 20px 20px 0;
+    .carousel .control-dots {
+      top: auto;
+      bottom: 100px;
+    }
+    .carousel.carousel-slider .control-arrow {
+      bottom: 0px;
+      top: auto;
+    }
+    .carousel .slide {
+      height: 1250px;
     }
   }
 `;

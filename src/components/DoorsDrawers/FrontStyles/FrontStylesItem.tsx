@@ -13,7 +13,7 @@ const FrontStylesItem: React.FC<Props> = ({ itemArray, title }) => (
     <p className="frontstyles-item__title">{title}</p>
     <div className="frontstyles-item__items">
       {itemArray.map((el) => (
-        <div className="frontstyles-item__example">
+        <div className="frontstyles-item__example" key={el}>
           <div className="frontstyles-item__img"><Img name={el as IconNames} alt="example" width={200} height={200} /></div>
           <p className="frontstyles-item__text">{locales[el as Locales]}</p>
         </div>

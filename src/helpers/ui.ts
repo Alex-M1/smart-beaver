@@ -23,3 +23,9 @@ export const imgSizeResponsive = (selector: string, width: string, height: strin
     }
   }
 `);
+
+export const capitalizeWords = (str: string) => str
+  .toLocaleLowerCase()
+  .split(' ')
+  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+  .join(' ');
