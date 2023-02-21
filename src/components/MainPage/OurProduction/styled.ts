@@ -1,87 +1,37 @@
+import { imgSizeResponsive } from '@/helpers/ui';
 import styled from 'styled-components';
 
 export const StOurProduction = styled.div`
-  padding: 146px;
-
+  padding: 40px 0 0;
   .image {
-    &-1{ grid-area: a;}
-    &-2{
-      grid-area: b;
-      justify-self: end;
+    &-1, &-4{ 
+      flex-basis: 100%;
     }
-    &-3{ grid-area: c;}
-    &-4{ 
-      grid-area: d;
-      justify-self: end;
+    &-2, &-3{
+      flex-basis:45%;
     }
   }
-
   .production {
+    ${imgSizeResponsive('&__image', '100%')}
     &__images {
-      display: grid;
-      padding-top: 77px;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: 
-        "a a b"
-        "c d d";
+      padding: 40px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 10%;
     }
   }
-
-  img {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  @media(max-width: 1025px) {
-    .production {
-      &__images {
-        padding-top: 30px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: 
-          "a a a a a a b b"
-          "c c d d d d d d";
-      }
-    }
+  @media (min-width: 768px) {
+    padding: 80px 0 0;
     .image {
-      &-1{
-        padding-right: 20px;
-        img {
-          width: 100%;
-        }
+      &-1, &-4{ 
+        flex-basis: 70%;
       }
-      &-2{
-        img {
-          width: 100%;
-        }
-      }
-      &-4{
-        padding-left: 20px;
+      &-2, &-3{
+        flex-basis:20%;
       }
     }
   }
-
-  @media (max-width: 426px) {
-    .production {
-      &__images {
-        padding-top: 30px;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-          "a a"
-          "b c"
-          "d d";
-      }
-    }
-    .image {
-      &-1, &-4 {
-        padding: 0;
-      }
-      &-2 {
-        padding-right: 20px;
-        justify-self: start;
-      }
-      &-3 {
-        padding-left: 20px;
-      }
-    }
+  @media (min-width: 1140px) {
+    padding: 140px 0 0;
   }
 `;

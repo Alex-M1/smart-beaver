@@ -4,8 +4,10 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import Fade from '@mui/material/Fade';
 import { colors } from '@/constants/colors';
-import { locales } from '@/constants/locales';
-import { RotateArrow } from './styled';
+import { Locales, locales } from '@/constants/locales';
+import { Urls, urls } from '@/constants/urls';
+import { capitalizeWords } from '@/helpers/ui';
+import { RotateArrow, StLink } from './styled';
 
 const NavigationButton: React.FC = () => {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -18,6 +20,8 @@ const NavigationButton: React.FC = () => {
   const handleClose = () => {
     setAnchorEl(null);
   };
+
+  const links: Urls[] = ['kitchen_cabinets', 'specialty_islands', 'bathroom_vanities', 'cabinet_doors', 'cabinet_finishing', 'wood_species', 'polities_and_terms'];
   return (
     <>
       <Button onClick={handleClick} variant="text">
@@ -40,9 +44,14 @@ const NavigationButton: React.FC = () => {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        {links.map((link) => (
+          <MenuItem key={link} onClick={handleClose}>
+            <StLink href={urls[link]}>
+              <span>• </span>
+              {capitalizeWords(locales[link as Locales])}
+            </StLink>
+          </MenuItem>
+        ))}
       </Menu>
     </>
   );

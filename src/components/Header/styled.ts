@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { colors } from '@/constants/colors';
 import { headerHeight } from '@/constants/ui';
+import { imgSizeResponsive } from '@/helpers/ui';
 import { flexCenter } from '../common/styled/mixins';
 
 export const StHeader = styled.header`
@@ -40,6 +41,10 @@ export const StLogoContainer = styled.div`
   ${flexCenter}
   background-color: ${colors.white};
   padding: 0 57px;
+  ${imgSizeResponsive('.header__logo-img', '100%')}
+  .header__logo-img {
+    display: inline-block;
+  }
   @media (max-width: 1025px) {
     padding: 0 40px;
   }

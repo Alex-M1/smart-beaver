@@ -15,3 +15,5 @@ export const urls = {
   specialty_islands: '/specialty_islands',
   wood_species: '/wood_species',
 };
+
+export type Urls = keyof typeof urls;

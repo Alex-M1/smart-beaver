@@ -10,6 +10,7 @@ interface Props {
   priority?: boolean;
   quality?: number;
   ext?: 'png' | 'jpg' | 'jpeg' | 'svg' | 'gif' | 'webp' | 'ico' | 'bmp' | 'tiff';
+  className?: string;
 }
 
 const Img: React.FC<Props> = ({
@@ -20,15 +21,27 @@ const Img: React.FC<Props> = ({
   height = 500,
   quality = 75,
   priority = false,
-}) => (
-  <Image
-    width={width}
-    height={height}
-    src={`/icons/${name}.${ext}`}
-    alt={alt}
-    priority={priority}
-    quality={quality}
-  />
-);
+  className,
+}) => {
+  const img = (
+    <Image
+      width={width}
+      height={height}
+      src={`/icons/${name}.${ext}`}
+      alt={alt}
+      priority={priority}
+      quality={quality}
+    />
+  );
+  return (
+    className
+      ? (
+        <div className={className}>
+          {img}
+        </div>
+      )
+      : img
+  );
+};
 
 export default Img;

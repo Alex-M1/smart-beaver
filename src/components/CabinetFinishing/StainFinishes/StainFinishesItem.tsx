@@ -16,7 +16,7 @@ const StainFinishesItem: React.FC<Props> = ({ items, title }) => {
       {isGlazeFinishes ? <p className="paint_glaze_finishes_text">{locales.paint_glaze_finishes_text}</p> : null}
       <div className={`stain-finishes__examples-items ${isGlazeFinishes ? 'glaze' : ''}`}>
         {items.map((item) => (
-          <div className="stain-finishes__examples-item ">
+          <div key={item.text} className="stain-finishes__examples-item ">
             <Img name={item.image} alt={`${item.text} color example`} width={106} height={106} />
             <p className="stain-finishes__examples-item-text">{item.text}</p>
           </div>
