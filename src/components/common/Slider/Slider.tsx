@@ -13,6 +13,7 @@ const Slider: React.FC<Props> = ({ slides, width }) => {
     infiniteLoop: true,
     showStatus: false,
     showThumbs: false,
+    swipeable: true,
   };
   return (
     <StCarousel {...settings}>
