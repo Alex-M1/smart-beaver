@@ -23,7 +23,7 @@ const DoorsDrawers: React.FC = () => (
         <EdgeProfiles />
         <FrontStyles />
         <AvailableOptions />
-        <PureBond title={locales.door_drawers_pure_bond_title} text={locales.door_drawers_pure_bond_text} />
+        <PureBond href="" title={locales.door_drawers_pure_bond_title} text={locales.door_drawers_pure_bond_text} />
       </StDoorsDrawers>
     </div>
     <ContactForm />
