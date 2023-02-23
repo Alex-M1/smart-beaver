@@ -21,7 +21,7 @@ const BathroomVanities: React.FC = () => (
         <BathroomFeatures />
         <StandartFeatures isBathroom />
         <BathroomOtherOptions />
-        <PureBond text={locales.bathroom_pure_bond_text} title={locales.bathroom_pure_bond_title} />
+        <PureBond href="" text={locales.bathroom_pure_bond_text} title={locales.bathroom_pure_bond_title} />
       </StBathroom>
     </div>
     <ContactForm />
