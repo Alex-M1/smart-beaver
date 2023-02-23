@@ -14,7 +14,6 @@ const PureBond: React.FC<Props> = ({ text, title }) => (
     <p className="pure-bond__text">{text}</p>
     <div>
       <Icon quality={100} name="request_quote" ext="png" alt="request_quote" />
-      <Icon quality={100} name="click_prices" ext="png" alt="click_prices" />
     </div>
   </StPureBond>
 );

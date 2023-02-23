@@ -15,11 +15,32 @@ export const StCarousel = styled(Carousel)`
     opacity: 1;
   }
   .carousel.carousel-slider .control-arrow.control-next {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     right: 50px;
+    &::before {
+      border-left: none;
+      font-size: 20px;
+      content: '❯';
+    }
+  }
+  .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+    border-top:none; 
+    border-bottom:none;
   }
   .carousel.carousel-slider .control-arrow.control-prev {
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     right: 130px;
     left: auto;
+    background: ${colors.white};
+      &::before {
+        border-right: none;
+        font-size: 20px;
+        color:${colors.warning};
+        content: '❮';
+    }
+  }
+  .carousel .control-prev.control-arrow:before {
+    border-right: 8px solid ${colors.warning};
   }
   .thumbs-wrapper {
     display: none;

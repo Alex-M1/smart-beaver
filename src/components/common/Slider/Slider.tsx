@@ -14,6 +14,7 @@ const Slider: React.FC<Props> = ({ slides, width }) => {
     showStatus: false,
     showThumbs: false,
     swipeable: true,
+    preventMovementUntilSwipeScrollTolerance: true,
   };
   return (
     <StCarousel {...settings}>

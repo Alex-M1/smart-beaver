@@ -14,7 +14,7 @@ export const StDescription = styled(StFlex)`
   flex-direction: column;
   padding: 37px 0 0 20px;
   color: ${colors.gray};
-  
+  backdrop-filter: blur(15.5px);
   .description {
     &__company-name {
       color: ${colors.darkGray};
