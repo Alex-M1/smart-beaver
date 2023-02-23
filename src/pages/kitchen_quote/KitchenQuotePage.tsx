@@ -1,4 +1,4 @@
-import KitchenQuote from '@/components/MainPage/KitchenQuote';
+import KitchenQuote from '@/components/KitchenQuote';
 import React from 'react';
 
 const KitchenQuotePage: React.FC = () => <KitchenQuote />;
