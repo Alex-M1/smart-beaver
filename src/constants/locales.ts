@@ -393,6 +393,9 @@ export const locales = {
 
   return_policy: 'RETURN POLICY',
   return_policy_text: 'Since your items are manufactured according to your own provided specifications, we do not accept returns for reimbursement. You must inspect the items at the time of pickup or at the time of delivery and make note of any defects. If any defects are found, the buyer must notify us immediately. If we confirm that the item was not made according to the specifications given by you, we will provide you with a replacement. Ohio Custom Cabinets is not responsible for any damage done to your item during transportation, storage, handling, installation or assembly. It is recommended that you apply paint or stain within the first 14 days of receiving your order.',
+
+  kitchen_quotes_preview: 'This quote form is designed to quote from 1 cabinet to as many cabinets you need. If there are any additional options such as Lazy Susans, Pull Out Shelves, Extra drawers, etc., that you want quoted you can specify those features in the special instruction box at the bottom of this form.',
+  contact_information: 'Contact Information',
 };
 
 export type Locales = keyof typeof locales;

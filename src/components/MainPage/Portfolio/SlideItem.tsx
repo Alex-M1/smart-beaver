@@ -13,7 +13,7 @@ const SlideItem: React.FC<Props> = ({ index }) => {
   const setIconName = (iconNum: number) => `portfolio_slide_${index}_${iconNum}` as IconNames;
   return (
     <StPortfolioSlider>
-      <StFlex ai="center">
+      <StFlex ai="center" className="portfolio-slider__text-wrapper">
         <span className="portfolio-slider__text">{locales[`portfolio_slide_text_${index}` as Locales]}</span>
       </StFlex>
       <div className="portfolio-slider__img-block">

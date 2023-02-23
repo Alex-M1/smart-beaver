@@ -14,6 +14,7 @@ export const urls = {
   polities_and_terms: '/polities_and_terms',
   specialty_islands: '/specialty_islands',
   wood_species: '/wood_species',
+  kitchen_quote: '/kitchen_quote',
 };
 
 export type Urls = keyof typeof urls;
