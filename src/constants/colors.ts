@@ -13,4 +13,5 @@ export const colors = {
   swamp_green: '#D8D9D4',
   biege: '#FFE6D6',
   bg_black: '#18190E',
+  placeholder: '#bdbdbd',
 };

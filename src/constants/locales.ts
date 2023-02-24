@@ -396,6 +396,15 @@ export const locales = {
 
   kitchen_quotes_preview: 'This quote form is designed to quote from 1 cabinet to as many cabinets you need. If there are any additional options such as Lazy Susans, Pull Out Shelves, Extra drawers, etc., that you want quoted you can specify those features in the special instruction box at the bottom of this form.',
   contact_information: 'Contact Information',
+
+  quote_form_first_name_plh: 'First Name & Last Name (Required)',
+  quote_form_email_plh: 'Email Address (Required)',
+  quote_form_address_l1_plh: 'Address Line 1',
+  quote_form_address_l2_plh: 'Address Line 2',
+  quote_form_state_plh: 'Select State',
+  quote_form_zip_plh: 'Zip Code',
+  quote_form_city_plh: 'City',
+  quote_form_phone_plh: 'Your Phone Number',
 };
 
 export type Locales = keyof typeof locales;

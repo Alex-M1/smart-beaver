@@ -5,9 +5,10 @@ import ContactForm from '../ContactForm';
 
 const KitchenQuote: React.FC = () => (
   <Template>
+    <p className="content container">{locales.kitchen_quotes_preview}</p>
+    <ContactForm isQuoteForm />
     <div className="content container">
-      <p>{locales.kitchen_quotes_preview}</p>
-      <ContactForm isQuoteForm />
+      ada
     </div>
   </Template>
 );
