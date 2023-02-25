@@ -11,7 +11,9 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Gilroy, sans-serif;
     font-weight: ${FontWeight.medium}
   }
-
+  .bold {
+    font-weight: ${FontWeight.bold};
+  }
   .container {
     width: 1440px;
     margin: 0 auto;
@@ -41,6 +43,15 @@ export const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: 18px;
   }
+  p.quote-title {
+    font-weight: ${FontWeight.bold};
+    font-size: 25px;
+    padding: 50px 0;
+    text-align: center;
+  }
+  .small-text {
+    font-size: 18px;
+  }
   ${fontFace}
 
   @media (max-width: 1366px) {
@@ -68,6 +79,13 @@ export const GlobalStyle = createGlobalStyle`
     h5 {
       font-size: 13px;
     }
+    p.quote-title {
+    font-size: 20px;
+    padding: 30px 0;
+    }
+    .small-text {
+      font-size: 15px;
+    }
   }
 
   @media(max-width: 426px) {
@@ -88,6 +106,10 @@ export const GlobalStyle = createGlobalStyle`
     }
     .content {
       padding: 0 20px;
+    }
+    p.quote-title {
+      font-size: 18px;
+      padding: 20px 0;
     }
   }
 `;

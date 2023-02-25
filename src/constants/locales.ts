@@ -405,6 +405,20 @@ export const locales = {
   quote_form_zip_plh: 'Zip Code',
   quote_form_city_plh: 'City',
   quote_form_phone_plh: 'Your Phone Number',
+
+  text_input: 'Text input',
+
+  cabinet_dimensions: '1. Cabinet Dimensions',
+  cabinet_dimensions_text: 'Enter the cabinet dimensions needed for your kitchen layout or upload up to 2 files with a list of cabinets needed or drawings of your kitchen layout',
+
+  base_cabinets_sizes: 'BASE CABINETS\nQUOTED PRICE WILL BE BASED ON 24"\nDEEP X 34-1/2" HEIGHT\nX LENGTH YOU ENTER',
+  base_cabinets_pre_input: 'Enter Total Linear Feet (length) of Base Cabinets Needed or enter Length of each Cabinet needed seperately (EXAMPLE - 10 Linear Feet or 24" 18" 36" 18" 24"etc.)',
+
+  wall_cabinets_sizes: 'WALL CABINETS\nQUOTED PRICE WILL BE BASED ON 12"\nDEEP X 30" HEIGHT\nX LENGTH YOU ENTER',
+  wall_cabinets_pre_input: 'Enter Total Linear Feet (length) of Wall Cabinets Needed or enter Length of each Cabinet needed seperately (EXAMPLE - 10 Linear Feet or 24" 18" 36" 18" 24"etc.)',
+
+  pantry_cabinets_sizes: 'PANTRY CABINETS\nQUOTED PRICE WILL BE BASED\nON 24" DEEP X ANY HEIGHT\nFROM 84" TO 96"\nX LENGTH YOU ENTER',
+  pantry_cabinets_pre_input: 'Enter Linear Feet (length) of Pantry Cabinets Needed seperately (EXAMPLE - 24" 18" etc.) ',
 };
 
 export type Locales = keyof typeof locales;

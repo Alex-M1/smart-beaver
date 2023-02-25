@@ -265,6 +265,10 @@ export enum ICON_NAMES {
 
   policies_and_terms1 = 'policies_and_terms1',
   policies_and_terms2 = 'policies_and_terms2',
+
+  base_cabinet_length = 'base_cabinet_length',
+  pantry_cabinet_length = 'pantry_cabinet_length',
+  wall_cabinet_length = 'wall_cabinet_length'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
