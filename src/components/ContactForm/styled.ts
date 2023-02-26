@@ -62,7 +62,7 @@ export const StForm = styled.div`
   @media(max-width: 426px) {
     padding: 0;
     .contact-form {
-      padding: 20px 10px;
+      padding: 20px;
       &__inputs {
         width: 95%;
       }
@@ -70,5 +70,41 @@ export const StForm = styled.div`
         margin: 15px 0;
       }
     }
+  }
+`;
+
+export const StQuoteForm = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  
+  .quoteform__states {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    .quoteform__states {
+      gap: 10px;
+    }
+    .quote-el {
+      flex-basis: 45%;
+
+      &-last {
+        width: 60%;
+        margin: 0 auto;
+        flex-basis: auto;
+      }
+    }
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 100px;
+    row-gap: 15px;
   }
 `;

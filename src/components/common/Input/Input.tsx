@@ -6,6 +6,7 @@ import {
 import { StInput } from './styled';
 
 interface Props extends ContentFields {
+  rows?: number;
   value: string;
   type?: InputType;
   width?: string;
@@ -20,6 +21,7 @@ interface Props extends ContentFields {
 }
 
 const Input: React.FC<Props> = ({
+  rows = 1,
   type = 'text',
   value,
   title,
@@ -55,6 +57,7 @@ const Input: React.FC<Props> = ({
       helperText={helperText}
       placeholder={placeholder}
       className={className}
+      rows={rows}
     />
   );
 };
