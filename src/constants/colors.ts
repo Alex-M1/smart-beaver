@@ -14,4 +14,5 @@ export const colors = {
   biege: '#FFE6D6',
   bg_black: '#18190E',
   placeholder: '#bdbdbd',
+  error: '#d32f2f',
 };

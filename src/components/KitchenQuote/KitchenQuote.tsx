@@ -1,10 +1,11 @@
-import { locales } from '@/constants/locales';
 import React from 'react';
+import { locales } from '@/constants/locales';
 import Template from '../common/Template';
 import ContactForm from '../ContactForm';
 import CabinetItem from './CabinetItem';
 import CornerCabinets from './CornerCabinets';
 import { StKitchenQuote } from './styled';
+import UploadFileBlock from '../QuoteItems/UploadFileBlock';
 
 const KitchenQuote: React.FC = () => (
   <Template>
@@ -24,6 +25,7 @@ const KitchenQuote: React.FC = () => (
           <CabinetItem type="pantry_cabinets" />
         </div>
         <CornerCabinets />
+        <UploadFileBlock />
       </div>
     </StKitchenQuote>
   </Template>

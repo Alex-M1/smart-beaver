@@ -10,10 +10,13 @@ export interface ChangeInputPld {
 
 export interface Inputs {
   baseCabinetsInput: string;
+  wallCabinetsInput: string;
+  pantryCabinetsInput: string;
 }
 
 export interface State {
   inputs: Inputs;
-
+  files: Array<File>;
   setInputValue: (payload: ChangeInputPld) => void;
+  addFiles: (files: File) => void;
 }

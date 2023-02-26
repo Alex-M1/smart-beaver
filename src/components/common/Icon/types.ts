@@ -268,7 +268,10 @@ export enum ICON_NAMES {
 
   base_cabinet_length = 'base_cabinet_length',
   pantry_cabinet_length = 'pantry_cabinet_length',
-  wall_cabinet_length = 'wall_cabinet_length'
+  wall_cabinet_length = 'wall_cabinet_length',
+
+  corner_cabinets_base = 'corner_cabinets_base',
+  corner_cabinets_wall = 'corner_cabinets_wall'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
   * {
-  box-sizing: border-box;
+    box-sizing: border-box;
   }
   body {
     padding: 0;
@@ -14,6 +14,15 @@ export const GlobalStyle = createGlobalStyle`
   .bold {
     font-weight: ${FontWeight.bold};
   }
+
+  .t-center {
+    text-align: center;
+  }
+  
+  .ws-pre-line {
+    white-space: pre-line;
+  }
+
   .container {
     width: 1440px;
     margin: 0 auto;
@@ -110,6 +119,13 @@ export const GlobalStyle = createGlobalStyle`
     p.quote-title {
       font-size: 18px;
       padding: 20px 0;
+    }
+  }
+
+  .text-25-18 {
+    font-size: 18px;
+    @media (min-width: 1140px){
+      font-size: 25px;
     }
   }
 `;

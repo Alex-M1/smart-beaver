@@ -425,12 +425,6 @@ export const locales = {
   corner_cabinets_note: 'NOTE: Corner Cabinets require 2 Length Dimensions to Determine Linear Feet\nIf the 2 Lengths are the same\nenter one dimension\n(EXAMPLE - 36")\nIf the 2 Lengths are the Different\nenter as two dimensions\n(EXAMPLE - 36" x 40") ',
 
   upload_files: 'Upload Files...',
-  file_drawing_upload_title: 'File or Drawing Upload',
-  file_upload_text: 'Upload a file with a list of cabinet dimensions needed from your computer or a layout drawing. Drawings do not have to be to scale. Scanned hand sketches acceptable',
-  file_upload_max_size: 'Max Upload size 2mb per file',
-  file_upload_max_files: 'Max upload 2 files',
-  file_upload_support: 'Most major drawing and word processing files accepted',
-  file_upload_error: 'Max upload 2 files or 2mb per file',
 };
 
 export type Locales = keyof typeof locales;
