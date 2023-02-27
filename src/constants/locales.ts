@@ -431,6 +431,28 @@ export const locales = {
   file_upload_max_files: 'Max upload 2 files',
   file_upload_support: 'Most major drawing and word processing files accepted',
   file_upload_error: 'Max upload 2 files or 2mb per file',
+
+  fpa_square: 'FPA - SQUARE',
+  fpa_arch_top: 'FPA - ARCH TOP',
+  fpad_double_arch: 'FPAD - DOUBLE ARCH',
+  fpc_cathedral_arch: 'FPC - CATHEDRAL ARCH',
+  fpcd_double_cathedral_arch: 'FPCD - DOUBLE CATHEDRAL ARCH',
+  fpb_beaded_panel: 'FPB - BEADED PANEL',
+
+  rps_raised_square: 'RPS - RAISED SQUARE',
+  rpa_raised_arch_top: 'RPA - RAISED ARCH TOP',
+  rpad_raised_double_arch: 'RPAD - RAISED DOUBLE ARCH',
+  rpc_raised_cathedral_arch: 'RPC - RAISED CATHEDRAL ARCH',
+  rpcd_raised_double_cathedral_arch: 'RPCD - RAISED DOUBLE CATHEDRAL ARCH',
+
+  sst_shaker: 'SST - SHAKER',
+  sss_split_shaker: 'SSS - SPLIT SHAKER',
+  sbp_shaker_beaded_panel: 'SBP - SHAKER BEADED PANEL',
+
+  cabinet_door_style: '2. CABINET DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
+  flat_panel_doors: 'FLAT PANEL DOORS',
+  raised_panel_doors: 'RAISED PANEL DOORS',
+  shaker_doors: 'SHAKER DOORS',
 };
 
 export type Locales = keyof typeof locales;
