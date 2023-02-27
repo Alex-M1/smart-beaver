@@ -27,6 +27,7 @@
     "no-use-before-define": "off",
     "no-shadow": "off",
     "no-useless-escape": "off",
+    "jsx-a11y/label-has-associated-control": "off",
     "no-param-reassign": [
       "error",
       {

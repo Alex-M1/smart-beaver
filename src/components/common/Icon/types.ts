@@ -271,7 +271,24 @@ export enum ICON_NAMES {
   wall_cabinet_length = 'wall_cabinet_length',
 
   corner_cabinets_base = 'corner_cabinets_base',
-  corner_cabinets_wall = 'corner_cabinets_wall'
+  corner_cabinets_wall = 'corner_cabinets_wall',
+
+  fpa_arch_top = 'fpa_arch_top',
+  fpa_square = 'fpa_square',
+  fpad_double_arch = 'fpad_double_arch',
+  fpb_beaded_panel = 'fpb_beaded_panel',
+  fpc_cathedral_arch = 'fpc_cathedral_arch',
+  fpcd_double_cathedral_arch = 'fpcd_double_cathedral_arch',
+
+  rpa_raised_arch_top = 'rpa_raised_arch_top',
+  rpad_raised_double_arch = 'rpad_raised_double_arch',
+  rpc_raised_cathedral_arch = 'rpc_raised_cathedral_arch',
+  rpcd_raised_double_cathedral_arch = 'rpcd_raised_double_cathedral_arch',
+  rps_raised_square = 'rps_raised_square',
+
+  spb_shaker_beaded_panel = 'spb_shaker_beaded_panel',
+  sss_split_shaker = 'sss_split_shaker',
+  sst_shaker = 'sst_shaker',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
