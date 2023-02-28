@@ -1,5 +1,7 @@
 import { create } from 'zustand';
-import { ChangeCheckBoxesPld, ChangeInputPld, State } from './types';
+import {
+  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, State, WoodSpecies,
+} from './types';
 
 export const useAppStore = create<State>((set) => ({
   inputs: {
@@ -26,6 +28,22 @@ export const useAppStore = create<State>((set) => ({
       sss_split_shaker: false,
       sbp_shaker_beaded_panel: false,
     },
+    woodSpecies: {
+      wood_species_cherry: false,
+      wood_species_hickory: false,
+      wood_species_knotty_alder: false,
+      wood_species_red_oak: false,
+      wood_species_rustic_hickory: false,
+      wood_species_walnut: false,
+      wood_species_white_oak: false,
+      wood_species_wormy_maple: false,
+      wood_species_quarter_sawn: false,
+      wood_species_alder: false,
+      wood_species_maple: false,
+      wood_species_poplar: false,
+      wood_species_poplar2: false,
+      wood_species_mdf: false,
+    },
   },
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
@@ -41,7 +59,9 @@ export const useAppStore = create<State>((set) => ({
       ...state.checkBoxes,
       [payload.field]: {
         ...state.checkBoxes[payload.field],
-        [payload.name]: !state.checkBoxes[payload.field][payload.name],
+        [payload.name]: payload.field === 'doorsStyle'
+          ? !state.checkBoxes.doorsStyle[payload.name as CheckBoxesName]
+          : !state.checkBoxes.woodSpecies[payload.name as WoodSpecies],
       },
     },
   })),

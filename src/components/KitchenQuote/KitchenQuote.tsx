@@ -7,6 +7,7 @@ import CornerCabinets from './CornerCabinets';
 import { StKitchenQuote } from './styled';
 import UploadFileBlock from '../QuoteItems/UploadFileBlock';
 import CabinetDoorsStyle from '../QuoteItems/CabinetDoorsStyle';
+import QuoteWoodSpecies from '../QuoteItems/QuoteWoodSpecies';
 
 const KitchenQuote: React.FC = () => (
   <Template>
@@ -28,6 +29,7 @@ const KitchenQuote: React.FC = () => (
         <CornerCabinets />
         <UploadFileBlock />
         <CabinetDoorsStyle />
+        <QuoteWoodSpecies />
       </div>
     </StKitchenQuote>
   </Template>
