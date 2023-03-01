@@ -1,5 +1,5 @@
 import Button from '@/components/common/Button';
-import { locales } from '@/constants/locales';
+import { Locales, locales } from '@/constants/locales';
 import { useAppStore } from '@/state/reducer';
 import { reset, sendForm } from '@/state/selectors';
 import React from 'react';
@@ -7,15 +7,15 @@ import QuoteInput from '../QuoteInput';
 import { StSubmitBlock } from './styled';
 
 interface Props {
-
+  title: Locales;
 }
 
-const SubmitBlock: React.FC<Props> = ({ }) => {
+const SubmitBlock: React.FC<Props> = ({ title }) => {
   const resetForm = useAppStore(reset);
   const send = useAppStore(sendForm);
   return (
     <StSubmitBlock>
-      <p className="small-text bold">{locales.submit_block}</p>
+      <p className="small-text bold">{locales[title]}</p>
       <div className="submit-block">
         <QuoteInput inputType="submitBlockInput" />
         <div className="submit-block__buttons">

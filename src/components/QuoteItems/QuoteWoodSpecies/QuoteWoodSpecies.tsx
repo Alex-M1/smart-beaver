@@ -1,12 +1,16 @@
 import React from 'react';
-import { locales } from '@/constants/locales';
+import { Locales, locales } from '@/constants/locales';
 import QuoteWoodSpeciesItems from './QuoteWoodSpeciesItems';
 import { StQuoteWoodSpecies } from './styled';
 import { recomendedForPainted, woodSpecies } from './utils';
 
-const QuoteWoodSpecies: React.FC = () => (
+interface Props {
+  title: Locales;
+}
+
+const QuoteWoodSpecies: React.FC<Props> = ({ title }) => (
   <StQuoteWoodSpecies>
-    <p className="bold small-text quote-species__title">{locales.quote_wood_species}</p>
+    <p className="bold small-text quote-species__title">{locales[title]}</p>
     <p className="bold small-text">{locales.quote_wood_species_note}</p>
     <div className="quote-species__items">
       {woodSpecies.map((item) => <QuoteWoodSpeciesItems key={item} itemKey={item} />)}

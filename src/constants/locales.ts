@@ -469,6 +469,12 @@ export const locales = {
   submit_block: '5. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
   submit: 'Submit',
   reset_form: 'Reset Form',
+
+  bathroom_quotes_preview: 'This quote form is designed to quote 1 vanity. If there are any additional vanities that you want quoted you can specify those in the special instruction box at the bottom of this form or use the file upload feature and upload a drawing or word file of vanities you need.',
+  vantity_door_style: '3.VANITY DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
+  quote_wood_species2: '4. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
+  quote_finishes2: '5. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
+  submit_block2: '6. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
 };
 
 export type Locales = keyof typeof locales;

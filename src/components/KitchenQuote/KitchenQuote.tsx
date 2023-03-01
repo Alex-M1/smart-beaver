@@ -15,7 +15,7 @@ const KitchenQuote: React.FC = () => (
   <Template>
     <StKitchenQuote>
       <div className="content container">
-        <p className="quote-title ">{locales.kitchen_quotes_preview}</p>
+        <p className="quote-title">{locales.kitchen_quotes_preview}</p>
       </div>
       <ContactForm isQuoteForm />
       <div className="content container">
@@ -30,10 +30,10 @@ const KitchenQuote: React.FC = () => (
         </div>
         <CornerCabinets />
         <UploadFileBlock />
-        <CabinetDoorsStyle />
-        <QuoteWoodSpecies />
-        <QuoteMultiplyFinishes />
-        <SubmitBlock />
+        <CabinetDoorsStyle title="cabinet_door_style" />
+        <QuoteWoodSpecies title="quote_wood_species" />
+        <QuoteMultiplyFinishes title="quote_finishes" />
+        <SubmitBlock title="submit_block" />
       </div>
     </StKitchenQuote>
   </Template>
