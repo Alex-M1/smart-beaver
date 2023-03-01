@@ -362,6 +362,7 @@ export const locales = {
   wood_species_white_oak_text: 'White Oak is an outstanding domestic hardwood that is a very strong wood that displays a very straight and consistent grain. Its unique cellular structure makes the wood highly water resistant.White Oak accepts stain very well, from light to dark. Due to its rather coarse grain patterns White Oak is not recommended for painting as this coarse grain will show under some painted finishes.',
   wood_species_wormy_maple_text: 'Also known as Ambrosia maple, this comes from regular soft maple trees that have been infested by the ambrosia beetle. Wormy Maple has a nice rustic feature due to the small pin holes created by the ambrosia beetle with an elongated grayish-brown fungi discolorations surrounding the hole. Rest assured that the kiln drying process actually sterilizes the lumber from active fungi, mold and insects. Excellent choice for staining bringing out the rich rustic features of the woods',
   wood_species_quarter_sawn_text: 'The characteristic that has made White Oak famous is the presence of striking medullary rays that appear when the wood is quartersawn. Quartersawn White Oak is a highly stable material. In the early 1900s White Oak was the standard species for the arts and crafts movement in furniture building. Due to its rather coarse grain patterns itis not recommended for painting as this coarse grain will show under some painted finishes.',
+  wood_species_mdf: 'MAPLE & MDF PANEL',
 
   recommended_finishes: 'RECOMMENDED FINISHES',
   clear_coat: 'clear coat',
@@ -453,6 +454,27 @@ export const locales = {
   flat_panel_doors: 'FLAT PANEL DOORS',
   raised_panel_doors: 'RAISED PANEL DOORS',
   shaker_doors: 'SHAKER DOORS',
+
+  quote_wood_species: '3. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
+  quote_wood_species_note: 'NOTE: SOLID MAPLE is our recommended choice for painted cabinet doors we also offer SOLID POPLAR in addition to MAPLE FRAME with MDF PANELS in all of our door styles as well',
+  quote_wood_species_recommended: '(RECOMMENDED FOR PAINTED DOORS)',
+  quote_wood_species_painted_option: 'OPTION FOR PAINTED DOORS',
+
+  quote_unfinished: 'UNFINISHED',
+  quote_natural: 'NATURAL CLEAR COAT',
+  quote_stain: 'STAIN AND CLEAR COAT',
+  quote_painted: 'PAINTED',
+  quote_glaze: 'PAINT AND GLAZE',
+  quote_finishes: '4. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
+  submit_block: '5. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
+  submit: 'Submit',
+  reset_form: 'Reset Form',
+
+  bathroom_quotes_preview: 'This quote form is designed to quote 1 vanity. If there are any additional vanities that you want quoted you can specify those in the special instruction box at the bottom of this form or use the file upload feature and upload a drawing or word file of vanities you need.',
+  vantity_door_style: '3.VANITY DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
+  quote_wood_species2: '4. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
+  quote_finishes2: '5. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
+  submit_block2: '6. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
 };
 
 export type Locales = keyof typeof locales;

@@ -1,11 +1,14 @@
 import { create } from 'zustand';
-import { ChangeCheckBoxesPld, ChangeInputPld, State } from './types';
+import {
+  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, State, StateField, WoodSpecies,
+} from './types';
 
-export const useAppStore = create<State>((set) => ({
+const initialState: StateField = {
   inputs: {
     baseCabinetsInput: '',
     pantryCabinetsInput: '',
     wallCabinetsInput: '',
+    submitBlockInput: '',
   },
   files: [],
   checkBoxes: {
@@ -26,7 +29,36 @@ export const useAppStore = create<State>((set) => ({
       sss_split_shaker: false,
       sbp_shaker_beaded_panel: false,
     },
+    woodSpecies: {
+      wood_species_cherry: false,
+      wood_species_hickory: false,
+      wood_species_knotty_alder: false,
+      wood_species_red_oak: false,
+      wood_species_rustic_hickory: false,
+      wood_species_walnut: false,
+      wood_species_white_oak: false,
+      wood_species_wormy_maple: false,
+      wood_species_quarter_sawn: false,
+      wood_species_alder: false,
+      wood_species_maple: false,
+      wood_species_poplar: false,
+      wood_species_poplar2: false,
+      wood_species_mdf: false,
+    },
+    finished: {
+      quote_unfinished: false,
+      quote_natural: false,
+      quote_stain: false,
+      quote_painted: false,
+      quote_glaze: false,
+    },
   },
+};
+
+export const useAppStore = create<State>((set) => ({
+  ...initialState,
+  reset: () => set(initialState),
+  sendForm: () => { },
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
       ...state.inputs,
@@ -36,13 +68,25 @@ export const useAppStore = create<State>((set) => ({
   addFiles: (file: File) => set((state) => ({
     files: [...state.files, file],
   })),
-  setCheckBoxes: (payload: ChangeCheckBoxesPld) => set((state) => ({
-    checkBoxes: {
-      ...state.checkBoxes,
-      [payload.field]: {
-        ...state.checkBoxes[payload.field],
-        [payload.name]: !state.checkBoxes[payload.field][payload.name],
+  setCheckBoxes: (payload: ChangeCheckBoxesPld) => set((state) => {
+    let value: boolean = false;
+    if (payload.field === 'doorsStyle') {
+      value = !state.checkBoxes.doorsStyle[payload.name as CheckBoxesName];
+    }
+    if (payload.field === 'woodSpecies') {
+      value = !state.checkBoxes.woodSpecies[payload.name as WoodSpecies];
+    }
+    if (payload.field === 'finished') {
+      value = !state.checkBoxes.finished[payload.name as Finished];
+    }
+    return ({
+      checkBoxes: {
+        ...state.checkBoxes,
+        [payload.field]: {
+          ...state.checkBoxes[payload.field],
+          [payload.name]: value,
+        },
       },
-    },
-  })),
+    });
+  }),
 }));

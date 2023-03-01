@@ -1,4 +1,5 @@
 import { locales } from '@/constants/locales';
+import { urls } from '@/constants/urls';
 import React from 'react';
 import Template from '../common/Template';
 import ContactForm from '../ContactForm';
@@ -21,7 +22,11 @@ const BathroomVanities: React.FC = () => (
         <BathroomFeatures />
         <StandartFeatures isBathroom />
         <BathroomOtherOptions />
-        <PureBond href="" text={locales.bathroom_pure_bond_text} title={locales.bathroom_pure_bond_title} />
+        <PureBond
+          href={urls.bathroom_quote}
+          text={locales.bathroom_pure_bond_text}
+          title={locales.bathroom_pure_bond_title}
+        />
       </StBathroom>
     </div>
     <ContactForm />

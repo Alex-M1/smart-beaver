@@ -1,6 +1,8 @@
-export type InputTypes = 'baseCabinetsInput' | 'wallCabinetsInput' | 'pantryCabinetsInput';
-export type CheckBoxesTypes = 'doorsStyle';
-export type CheckBoxesName = 'fpa_square' | 'fpa_arch_top' | 'fpad_double_arch' | 'fpc_cathedral_arch' | 'fpcd_double_cathedral_arch' | 'fpb_beaded_panel' | 'rps_raised_square' | 'rpa_raised_arch_top' | 'rpad_raised_double_arch' | 'rpc_raised_cathedral_arch' | 'rpcd_raised_double_cathedral_arch' | 'rpb_raised_beaded_panel' | 'sst_shaker' | 'sss_split_shaker' | 'sbp_shaker_beaded_panel';
+export type InputTypes = keyof Inputs;
+export type CheckBoxesTypes = keyof CheckBoxes;
+export type CheckBoxesName = keyof DoorStyleCheckBoxes;
+export type WoodSpecies = keyof WoodSpeciesCheckBoxes;
+export type Finished = keyof FinishedCheckboxes;
 // actions
 export interface ChangeInputPld {
   inputType: InputTypes;
@@ -9,7 +11,7 @@ export interface ChangeInputPld {
 
 export interface ChangeCheckBoxesPld {
   field: CheckBoxesTypes;
-  name: CheckBoxesName;
+  name: CheckBoxesName | WoodSpecies | Finished;
 }
 
 // state
@@ -17,6 +19,7 @@ export interface Inputs {
   baseCabinetsInput: string;
   wallCabinetsInput: string;
   pantryCabinetsInput: string;
+  submitBlockInput: string;
 }
 
 export interface DoorStyleCheckBoxes {
@@ -36,14 +39,47 @@ export interface DoorStyleCheckBoxes {
   sss_split_shaker: boolean;
   sbp_shaker_beaded_panel: boolean;
 }
-export interface CheckBoxes {
-  doorsStyle: DoorStyleCheckBoxes;
+
+export interface WoodSpeciesCheckBoxes {
+  wood_species_cherry: boolean;
+  wood_species_hickory: boolean;
+  wood_species_knotty_alder: boolean;
+  wood_species_red_oak: boolean;
+  wood_species_rustic_hickory: boolean;
+  wood_species_walnut: boolean;
+  wood_species_white_oak: boolean;
+  wood_species_wormy_maple: boolean;
+  wood_species_quarter_sawn: boolean;
+  wood_species_alder: boolean;
+  wood_species_maple: boolean;
+  wood_species_poplar: boolean;
+  wood_species_poplar2: boolean;
+  wood_species_mdf: boolean;
 }
 
-export interface State {
+export interface FinishedCheckboxes {
+  quote_unfinished: boolean;
+  quote_natural: boolean;
+  quote_stain: boolean;
+  quote_painted: boolean;
+  quote_glaze: boolean;
+}
+
+export interface CheckBoxes {
+  doorsStyle: DoorStyleCheckBoxes;
+  woodSpecies: WoodSpeciesCheckBoxes;
+  finished: FinishedCheckboxes;
+}
+
+export interface StateField {
   inputs: Inputs;
   files: Array<File>;
   checkBoxes: CheckBoxes;
+}
+
+export interface State extends StateField {
+  reset: () => void;
+  sendForm: () => void;
   setInputValue: (payload: ChangeInputPld) => void;
   addFiles: (files: File) => void;
   setCheckBoxes: (payload: ChangeCheckBoxesPld) => void;
