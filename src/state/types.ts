@@ -1,7 +1,8 @@
 export type InputTypes = 'baseCabinetsInput' | 'wallCabinetsInput' | 'pantryCabinetsInput';
-export type CheckBoxesTypes = 'doorsStyle' | 'woodSpecies';
+export type CheckBoxesTypes = 'doorsStyle' | 'woodSpecies' | 'finished';
 export type CheckBoxesName = 'fpa_square' | 'fpa_arch_top' | 'fpad_double_arch' | 'fpc_cathedral_arch' | 'fpcd_double_cathedral_arch' | 'fpb_beaded_panel' | 'rps_raised_square' | 'rpa_raised_arch_top' | 'rpad_raised_double_arch' | 'rpc_raised_cathedral_arch' | 'rpcd_raised_double_cathedral_arch' | 'rpb_raised_beaded_panel' | 'sst_shaker' | 'sss_split_shaker' | 'sbp_shaker_beaded_panel';
 export type WoodSpecies = 'wood_species_cherry' | 'wood_species_hickory' | 'wood_species_knotty_alder' | 'wood_species_red_oak' | 'wood_species_rustic_hickory' | 'wood_species_walnut' | 'wood_species_white_oak' | 'wood_species_wormy_maple' | 'wood_species_quarter_sawn' | 'wood_species_alder' | 'wood_species_maple' | 'wood_species_poplar' | 'wood_species_poplar2' | 'wood_species_mdf';
+export type Finished = 'quote_unfinished' | 'quote_natural' | 'quote_stain' | 'quote_painted' | 'quote_glaze';
 // actions
 export interface ChangeInputPld {
   inputType: InputTypes;
@@ -10,7 +11,7 @@ export interface ChangeInputPld {
 
 export interface ChangeCheckBoxesPld {
   field: CheckBoxesTypes;
-  name: CheckBoxesName | WoodSpecies;
+  name: CheckBoxesName | WoodSpecies | Finished;
 }
 
 // state
@@ -55,9 +56,18 @@ export interface WoodSpeciesCheckBoxes {
   wood_species_mdf: boolean;
 }
 
+export interface FinishedCheckboxes {
+  quote_unfinished: boolean;
+  quote_natural: boolean;
+  quote_stain: boolean;
+  quote_painted: boolean;
+  quote_glaze: boolean;
+}
+
 export interface CheckBoxes {
   doorsStyle: DoorStyleCheckBoxes;
-  woodSpecies: WoodSpeciesCheckBoxes
+  woodSpecies: WoodSpeciesCheckBoxes;
+  finished: FinishedCheckboxes;
 }
 
 export interface State {

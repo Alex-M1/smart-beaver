@@ -459,6 +459,13 @@ export const locales = {
   quote_wood_species_note: 'NOTE: SOLID MAPLE is our recommended choice for painted cabinet doors we also offer SOLID POPLAR in addition to MAPLE FRAME with MDF PANELS in all of our door styles as well',
   quote_wood_species_recommended: '(RECOMMENDED FOR PAINTED DOORS)',
   quote_wood_species_painted_option: 'OPTION FOR PAINTED DOORS',
+
+  quote_unfinished: 'UNFINISHED',
+  quote_natural: 'NATURAL CLEAR COAT',
+  quote_stain: 'STAIN AND CLEAR COAT',
+  quote_painted: 'PAINTED',
+  quote_glaze: 'PAINT AND GLAZE',
+  quote_finishes: '4. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
 };
 
 export type Locales = keyof typeof locales;

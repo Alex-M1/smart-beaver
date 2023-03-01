@@ -22,10 +22,10 @@ const QuoteWoodSpeciesItems: React.FC<Props> = ({ itemKey, isPoplar }) => {
   return (
     <div className="quote-species__item">
       <Img className="quote-species__item-img" name={itemKey as IconNames} alt="example" />
-      <div className="quote-species__item-checkbox">
+      <label className="quote-species__item-checkbox">
         <Checkbox checked={checked} onChange={handleChange} />
         <span className="small-text">{locales[itemKey as Locales]}</span>
-      </div>
+      </label>
     </div>
   );
 };

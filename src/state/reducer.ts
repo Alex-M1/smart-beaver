@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import {
-  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, State, WoodSpecies,
+  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, State, WoodSpecies,
 } from './types';
 
 export const useAppStore = create<State>((set) => ({
@@ -44,6 +44,13 @@ export const useAppStore = create<State>((set) => ({
       wood_species_poplar2: false,
       wood_species_mdf: false,
     },
+    finished: {
+      quote_unfinished: false,
+      quote_natural: false,
+      quote_stain: false,
+      quote_painted: false,
+      quote_glaze: false,
+    },
   },
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
@@ -54,15 +61,25 @@ export const useAppStore = create<State>((set) => ({
   addFiles: (file: File) => set((state) => ({
     files: [...state.files, file],
   })),
-  setCheckBoxes: (payload: ChangeCheckBoxesPld) => set((state) => ({
-    checkBoxes: {
-      ...state.checkBoxes,
-      [payload.field]: {
-        ...state.checkBoxes[payload.field],
-        [payload.name]: payload.field === 'doorsStyle'
-          ? !state.checkBoxes.doorsStyle[payload.name as CheckBoxesName]
-          : !state.checkBoxes.woodSpecies[payload.name as WoodSpecies],
+  setCheckBoxes: (payload: ChangeCheckBoxesPld) => set((state) => {
+    let value: boolean = false;
+    if (payload.field === 'doorsStyle') {
+      value = !state.checkBoxes.doorsStyle[payload.name as CheckBoxesName];
+    }
+    if (payload.field === 'woodSpecies') {
+      value = !state.checkBoxes.woodSpecies[payload.name as WoodSpecies];
+    }
+    if (payload.field === 'finished') {
+      value = !state.checkBoxes.finished[payload.name as Finished];
+    }
+    return ({
+      checkBoxes: {
+        ...state.checkBoxes,
+        [payload.field]: {
+          ...state.checkBoxes[payload.field],
+          [payload.name]: value,
+        },
       },
-    },
-  })),
+    });
+  }),
 }));

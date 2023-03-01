@@ -289,6 +289,8 @@ export enum ICON_NAMES {
   spb_shaker_beaded_panel = 'spb_shaker_beaded_panel',
   sss_split_shaker = 'sss_split_shaker',
   sst_shaker = 'sst_shaker',
+
+  quote_multiply_finishes = 'quote_multiply_finishes',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
