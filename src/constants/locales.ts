@@ -466,6 +466,9 @@ export const locales = {
   quote_painted: 'PAINTED',
   quote_glaze: 'PAINT AND GLAZE',
   quote_finishes: '4. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
+  submit_block: '5. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
+  submit: 'Submit',
+  reset_form: 'Reset Form',
 };
 
 export type Locales = keyof typeof locales;

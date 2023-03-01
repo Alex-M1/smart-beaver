@@ -1,13 +1,14 @@
 import { create } from 'zustand';
 import {
-  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, State, WoodSpecies,
+  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, State, StateField, WoodSpecies,
 } from './types';
 
-export const useAppStore = create<State>((set) => ({
+const initialState: StateField = {
   inputs: {
     baseCabinetsInput: '',
     pantryCabinetsInput: '',
     wallCabinetsInput: '',
+    submitBlockInput: '',
   },
   files: [],
   checkBoxes: {
@@ -52,6 +53,12 @@ export const useAppStore = create<State>((set) => ({
       quote_glaze: false,
     },
   },
+};
+
+export const useAppStore = create<State>((set) => ({
+  ...initialState,
+  reset: () => set(initialState),
+  sendForm: () => { },
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
       ...state.inputs,

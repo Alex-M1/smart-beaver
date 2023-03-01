@@ -9,6 +9,7 @@ import UploadFileBlock from '../QuoteItems/UploadFileBlock';
 import CabinetDoorsStyle from '../QuoteItems/CabinetDoorsStyle';
 import QuoteWoodSpecies from '../QuoteItems/QuoteWoodSpecies';
 import QuoteMultiplyFinishes from '../QuoteItems/QuoteMultiplyFinishes';
+import SubmitBlock from '../QuoteItems/SubmitBlock';
 
 const KitchenQuote: React.FC = () => (
   <Template>
@@ -32,6 +33,7 @@ const KitchenQuote: React.FC = () => (
         <CabinetDoorsStyle />
         <QuoteWoodSpecies />
         <QuoteMultiplyFinishes />
+        <SubmitBlock />
       </div>
     </StKitchenQuote>
   </Template>

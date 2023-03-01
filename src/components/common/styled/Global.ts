@@ -52,6 +52,11 @@ export const GlobalStyle = createGlobalStyle`
   h5 {
     font-size: 18px;
   }
+
+  label {
+    cursor: pointer;
+  }
+  
   p.quote-title {
     font-weight: ${FontWeight.bold};
     font-size: 25px;
