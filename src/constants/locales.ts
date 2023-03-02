@@ -475,6 +475,18 @@ export const locales = {
   quote_wood_species2: '4. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
   quote_finishes2: '5. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
   submit_block2: '6. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
+  vantity_dimensions: '1. VANITY DIMENSIONS',
+  vantity_dimensions_text: 'Fill out the form with dimensions and features you need or use the file upload box to upload up to 2 files or drawings with specifications you need',
+  vantity_dimensions_note: 'NOTE:\nEnter any size you need this is a list of\nstandard dimensions\nSTANDARD VANITY HEIGHT = 30"\nADULT BATH VANITY HEIGHT = 34 - 1 / 2"\nSTANDARD VANITY DEPTH = 21"',
+  vantity_dimensions_sizes: 'Enter Dimension of Vanity Needed WIDTH X DEPTH X HEIGHT (36" x 21" X 30" )',
+  vanity_options: '2. VANITY OPTIONS',
+  side_drawers: 'SIDE DRAWERS',
+  vanity_options_note: 'NOTE: Side Drawers require minimum cabinet width of 36"',
+  vanity_options_input_descr: 'Enter Quantity of Drawers if None Leave Blank',
+  qty: 'QTY',
+  vabity_options_text: 'Select style of Finished Side\nIf one of each select both styles',
+  flat_panel_val: 'FLAT PANEL',
+  raised_panel_val: 'RAISED PANEL',
 };
 
 export type Locales = keyof typeof locales;

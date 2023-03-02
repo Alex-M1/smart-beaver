@@ -291,6 +291,10 @@ export enum ICON_NAMES {
   sst_shaker = 'sst_shaker',
 
   quote_multiply_finishes = 'quote_multiply_finishes',
+
+  vantity_dimensions = 'vantity_dimensions',
+  vanity_options_img1 = 'vanity_options_img1',
+  vanity_options_img2 = 'vanity_options_img2',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

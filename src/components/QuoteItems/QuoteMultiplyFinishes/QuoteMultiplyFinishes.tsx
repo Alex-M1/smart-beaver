@@ -16,7 +16,7 @@ const QuoteMultiplyFinishes: React.FC<Props> = ({ title }) => (
       <Img className="multiply-finishes__img" name="quote_multiply_finishes" alt="quote multiply finishes" />
       <div className="multiply-finishes__label">
         {multiplyFinishesCheckboxes.map((el) => (
-          <QuoteMultiplyFinishesItem name={el} />
+          <QuoteMultiplyFinishesItem key={el} name={el} />
         ))}
       </div>
     </div>

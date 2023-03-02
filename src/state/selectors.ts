@@ -24,3 +24,6 @@ export const getCheckBoxesValue = (pld: ChangeCheckBoxesPld) => (state: State) =
 export const setCheckBoxesValue = (state: State) => state.setCheckBoxes;
 export const reset = (state: State) => state.reset;
 export const sendForm = (state: State) => state.sendForm;
+
+export const getRadioValue = (state: State) => state.radio.vanityOptions;
+export const setRadioValue = (state: State) => state.setRadio;

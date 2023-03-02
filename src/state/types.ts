@@ -3,6 +3,7 @@ export type CheckBoxesTypes = keyof CheckBoxes;
 export type CheckBoxesName = keyof DoorStyleCheckBoxes;
 export type WoodSpecies = keyof WoodSpeciesCheckBoxes;
 export type Finished = keyof FinishedCheckboxes;
+export type RadioTypes = 'flat_panel' | 'raised_panel' | '';
 // actions
 export interface ChangeInputPld {
   inputType: InputTypes;
@@ -20,6 +21,9 @@ export interface Inputs {
   wallCabinetsInput: string;
   pantryCabinetsInput: string;
   submitBlockInput: string;
+  vanityDimensionsInput: string;
+  vantitySideDrawersInput: string;
+  vantityFinishedSideInput: string;
 }
 
 export interface DoorStyleCheckBoxes {
@@ -70,11 +74,15 @@ export interface CheckBoxes {
   woodSpecies: WoodSpeciesCheckBoxes;
   finished: FinishedCheckboxes;
 }
+export interface Radio {
+  vanityOptions: RadioTypes;
+}
 
 export interface StateField {
   inputs: Inputs;
   files: Array<File>;
   checkBoxes: CheckBoxes;
+  radio: Radio;
 }
 
 export interface State extends StateField {
@@ -83,4 +91,5 @@ export interface State extends StateField {
   setInputValue: (payload: ChangeInputPld) => void;
   addFiles: (files: File) => void;
   setCheckBoxes: (payload: ChangeCheckBoxesPld) => void;
+  setRadio: (payload: RadioTypes) => void;
 }

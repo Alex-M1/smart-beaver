@@ -18,6 +18,7 @@ interface Props extends ContentFields {
   className?: string;
   disabled?: boolean;
   multiline?: boolean;
+  borderRadius?: string;
 }
 
 const Input: React.FC<Props> = ({
@@ -36,14 +37,16 @@ const Input: React.FC<Props> = ({
   className,
   helperText,
   placeholder,
+  borderRadius = '100px',
 }) => {
-  const sxProps = { width, margin, borderRadius: '100px' };
+  const sxProps = { width, margin, borderRadius };
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value, e);
   };
 
   return (
     <StInput
+      size="small"
       sx={{ ...sxProps, bgcolor: colors.white }}
       type={type}
       value={value}
@@ -58,6 +61,7 @@ const Input: React.FC<Props> = ({
       placeholder={placeholder}
       className={className}
       rows={rows}
+      borderRadius={borderRadius}
     />
   );
 };

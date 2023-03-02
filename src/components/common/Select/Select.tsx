@@ -20,7 +20,7 @@ const Select: React.FC<Props> = ({
   return (
     <FormControl>
       {/* @ts-ignore */}
-      <StSelect displayEmpty hasValue={value} value={value} defaultValue="" sx={{ bgcolor: colors.white, borderRadius: '100px' }} onChange={handleChange}>
+      <StSelect size="small" displayEmpty hasValue={value} value={value} defaultValue="" sx={{ bgcolor: colors.white, borderRadius: '100px' }} onChange={handleChange}>
         {placeholder ? <MenuItem value="">{placeholder}</MenuItem> : null}
         {options.map((option) => <MenuItem key={option.value} value={option.value}>{option.name}</MenuItem>)}
       </StSelect>
