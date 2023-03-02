@@ -7,6 +7,8 @@ import QuoteMultiplyFinishes from '../QuoteItems/QuoteMultiplyFinishes';
 import QuoteWoodSpecies from '../QuoteItems/QuoteWoodSpecies';
 import SubmitBlock from '../QuoteItems/SubmitBlock';
 import UploadFileBlock from '../QuoteItems/UploadFileBlock';
+import VanityOptions from './VanityOptions';
+import VantityDimesions from './VantityDimesions';
 
 const BathroomQuote: React.FC = () => (
   <Template>
@@ -15,7 +17,8 @@ const BathroomQuote: React.FC = () => (
     </div>
     <ContactForm isQuoteForm />
     <div className="content container">
-
+      <VantityDimesions />
+      <VanityOptions />
       <UploadFileBlock />
       <CabinetDoorsStyle title="vantity_door_style" />
       <QuoteWoodSpecies title="quote_wood_species2" />

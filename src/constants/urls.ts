@@ -6,7 +6,7 @@ export const urls = {
   contact: '/contact',
   send_mail: '/api/send_mail',
   facebook: 'https://www.facebook.com/people/Smart-Beaver/100088857526559/',
-  instagram: '',
+  instagram: 'https://www.instagram.com/aleksandr.forte?fbclid=IwAR3o4w_dM8NpWxaycNVjaOxOz0PNBPtKXbtnsPWTvn9ibrXuWvKaXh869HI',
   bathroom_vanities: '/bathroom_vanities',
   cabinet_doors: '/cabinet_doors',
   cabinet_finishing: '/cabinet_finishing',

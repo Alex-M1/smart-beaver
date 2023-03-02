@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 import {
-  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, State, StateField, WoodSpecies,
+  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, RadioTypes, State, StateField, WoodSpecies,
 } from './types';
 
 const initialState: StateField = {
@@ -9,6 +9,9 @@ const initialState: StateField = {
     pantryCabinetsInput: '',
     wallCabinetsInput: '',
     submitBlockInput: '',
+    vanityDimensionsInput: '',
+    vantitySideDrawersInput: '',
+    vantityFinishedSideInput: '',
   },
   files: [],
   checkBoxes: {
@@ -53,6 +56,9 @@ const initialState: StateField = {
       quote_glaze: false,
     },
   },
+  radio: {
+    vanityOptions: '',
+  },
 };
 
 export const useAppStore = create<State>((set) => ({
@@ -89,4 +95,10 @@ export const useAppStore = create<State>((set) => ({
       },
     });
   }),
+  setRadio: (payload: RadioTypes) => set((state) => ({
+    radio: {
+      ...state.radio,
+      vanityOptions: payload,
+    },
+  })),
 }));

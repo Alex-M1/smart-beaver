@@ -3,7 +3,7 @@ import { FontWeight } from '@/constants/ui';
 import styled from 'styled-components';
 
 export const StForm = styled.div`
-  padding: 0 110px;
+  padding: 20px 110px;
   margin: 20px 0;
   .form-text {
     font-size: 18px;
