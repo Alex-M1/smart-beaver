@@ -12,6 +12,8 @@ const initialState: StateField = {
     vanityDimensionsInput: '',
     vantitySideDrawersInput: '',
     vantityFinishedSideInput: '',
+    cabinetDoorsDimensionsInput: '',
+    cabinetDrawersDimensionsInput: '',
   },
   files: [],
   checkBoxes: {
@@ -54,6 +56,16 @@ const initialState: StateField = {
       quote_stain: false,
       quote_painted: false,
       quote_glaze: false,
+    },
+    drawerFronts: {
+      flat_panel: false,
+      raised_panel: false,
+      shaker: false,
+      slab_profile_edge: false,
+    },
+    higle: {
+      hingle_boring: false,
+      concealed: false,
     },
   },
   radio: {

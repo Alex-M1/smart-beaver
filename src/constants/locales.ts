@@ -471,7 +471,8 @@ export const locales = {
   reset_form: 'Reset Form',
 
   bathroom_quotes_preview: 'This quote form is designed to quote 1 vanity. If there are any additional vanities that you want quoted you can specify those in the special instruction box at the bottom of this form or use the file upload feature and upload a drawing or word file of vanities you need.',
-  vantity_door_style: '3.VANITY DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
+  vantity_door_style: '3. VANITY DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
+  vantity_door_style2: '2. VANITY DOOR STYLE - YOU CAN SELECT UP TO 4 DOOR STYLES TO BE QUOTED',
   quote_wood_species2: '4. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
   quote_finishes2: '5. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
   submit_block2: '6. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
@@ -487,6 +488,16 @@ export const locales = {
   vabity_options_text: 'Select style of Finished Side\nIf one of each select both styles',
   flat_panel_val: 'FLAT PANEL',
   raised_panel_val: 'RAISED PANEL',
+
+  quote_cabinet_door: '1. CABINET DOOR AND/OR DRAWER FRONT DIMENSIONS',
+  quote_cabinet_door_text: 'Enter quantity and dimensions as shown or upload a file with list of dimensions needed using file upload box below',
+  quote_cabinet_ipt: 'CABINET DOORS\nPRICING IS BASED\nON TOTAL SQUARE FEE',
+  quote_cabinet_door_sizes: 'ENTER DOOR AND DRAWER FRONT\nDIMENSIONS FOR EACH DOOR OR\nDRAWER FRONT AS FOLLOWS\nQUANTITY x WIDTH x HEIGHT\nExample\n2 - 12" x 26"\n1 - 13 - 1 / 2" x 28-1/2"\n4 - 14" x 30"\netc.',
+  quote_door_drawer_front: '3. DRAWER FRONT STYLE - YOU CAN SELECT MULTIPLE DRAWER FRONT STYLES TO BE QUOTED',
+
+  quote_door_hingle: '6. CABINET DOOR HINGE BORING AND HINGES\nSelect one or both of these options if you want them Quoted',
+  quote_door_higle_boring: 'HINGE BORING FOR CONCEALED HINGES',
+  quote_door_concealed_hinges: 'CONCEALED 1/2" OVERLAY HINGES',
 };
 
 export type Locales = keyof typeof locales;

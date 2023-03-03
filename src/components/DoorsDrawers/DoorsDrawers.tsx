@@ -1,4 +1,5 @@
 import { locales } from '@/constants/locales';
+import { urls } from '@/constants/urls';
 import React from 'react';
 import Template from '../common/Template';
 import ContactForm from '../ContactForm';
@@ -23,7 +24,11 @@ const DoorsDrawers: React.FC = () => (
         <EdgeProfiles />
         <FrontStyles />
         <AvailableOptions />
-        <PureBond href="" title={locales.door_drawers_pure_bond_title} text={locales.door_drawers_pure_bond_text} />
+        <PureBond
+          href={urls.doors_quote}
+          title={locales.door_drawers_pure_bond_title}
+          text={locales.door_drawers_pure_bond_text}
+        />
       </StDoorsDrawers>
     </div>
     <ContactForm />

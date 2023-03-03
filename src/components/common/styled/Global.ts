@@ -9,12 +9,11 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: Gilroy, sans-serif;
-    font-weight: ${FontWeight.medium}
+    font-weight: ${FontWeight.medium};
   }
   .bold {
     font-weight: ${FontWeight.bold};
   }
-
   .t-center {
     text-align: center;
   }
@@ -65,6 +64,9 @@ export const GlobalStyle = createGlobalStyle`
   }
   .small-text {
     font-size: 18px;
+  }
+  p, span {
+    line-height: 150%;
   }
   ${fontFace}
 

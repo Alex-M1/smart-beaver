@@ -295,6 +295,17 @@ export enum ICON_NAMES {
   vantity_dimensions = 'vantity_dimensions',
   vanity_options_img1 = 'vanity_options_img1',
   vanity_options_img2 = 'vanity_options_img2',
+
+  door_quote_img1 = 'door_quote_img1',
+  door_quote_img2 = 'door_quote_img2',
+
+  drawer_fronts_flat_panel = 'drawer_fronts_flat_panel',
+  drawer_fronts_raised_panel = 'drawer_fronts_raised_panel',
+  drawer_fronts_shaker = 'drawer_fronts_shaker',
+  drawer_fronts_slab_profile = 'drawer_fronts_slab_profile',
+
+  hingle_boring = 'hingle_boring',
+  concealed = 'concealed'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
