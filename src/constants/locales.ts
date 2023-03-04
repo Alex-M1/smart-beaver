@@ -476,6 +476,8 @@ export const locales = {
   quote_wood_species2: '4. WOOD SPECIES - YOU CAN SELECT UP TO 4 WOOD TYPES TO BE QUOTED',
   quote_finishes2: '5. CABINET FINISHING - YOU CAN SELECT MULTIPE FINISHES TO BE QUOTED',
   submit_block2: '6. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
+  submit_block3: '7. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
+  submit_block4: '3. ENTER ANY QUESTIONS OR SPECIAL INSTRUCTIONS HERE',
   vantity_dimensions: '1. VANITY DIMENSIONS',
   vantity_dimensions_text: 'Fill out the form with dimensions and features you need or use the file upload box to upload up to 2 files or drawings with specifications you need',
   vantity_dimensions_note: 'NOTE:\nEnter any size you need this is a list of\nstandard dimensions\nSTANDARD VANITY HEIGHT = 30"\nADULT BATH VANITY HEIGHT = 34 - 1 / 2"\nSTANDARD VANITY DEPTH = 21"',
@@ -498,6 +500,18 @@ export const locales = {
   quote_door_hingle: '6. CABINET DOOR HINGE BORING AND HINGES\nSelect one or both of these options if you want them Quoted',
   quote_door_higle_boring: 'HINGE BORING FOR CONCEALED HINGES',
   quote_door_concealed_hinges: 'CONCEALED 1/2" OVERLAY HINGES',
+
+  box_title: '1. DRAWER BOX AND OR PULL OUT SHELF DIMENSIONS\nEnter quantity and dimensions as shown or upload a file with list of dimensions needed using file upload box below',
+  box_text: 'DRAWER BOX AND PULL OUT SHELF PRCNG IS BASED ON THE CUBIC INCH SIZE OF YOUR BOX\nW(width) x D(depth) x H(height)',
+  box_text2: 'ENTER DRAWER BOX AND PULL\nOUT SHELF DIMENSIONS FOR\nEACH BOX OR PULL OUT\nAS FOLLOWS',
+  box_text3: 'QUANTITY - WIDTH x DEPTH X HEIGHT\nExample\n2 - 18" x 21" X 6"\n1 - 16 - 1 / 2" x 18" X 4"\netc.',
+
+  drawer_box_title: '2. DRAWER BOX AND PULL OUT SHELF OPTIONS',
+  drawer_box_back_end_notching: 'BACK END NOTCHING',
+  drawer_box_back_end_notching_text: 'Needed when using undermount drawer slides\nIf notched is not selected they will be quoted with no notched backs',
+  drawer_box_finish: 'FINISH',
+  drawer_box_finish_text: 'Available in Unfinished or Clear Coated Finish\nSelect one or both of these options if you want a Quote on both options',
+  notched: 'NOTCHED',
 };
 
 export type Locales = keyof typeof locales;

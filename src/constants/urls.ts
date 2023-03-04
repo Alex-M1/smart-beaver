@@ -17,6 +17,7 @@ export const urls = {
   kitchen_quote: '/kitchen_quote',
   bathroom_quote: '/bathroom_quote',
   doors_quote: '/doors_quote',
+  boxes_quote: '/boxes_quote',
 };
 
 export type Urls = keyof typeof urls;

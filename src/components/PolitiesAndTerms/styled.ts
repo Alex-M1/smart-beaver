@@ -46,6 +46,9 @@ export const StPolitiesAndTerms = styled.div`
         &__quote {
           flex-basis: 30%;
           ${imgSizeResponsive('&-img', '100%', 'auto')} 
+          &-img {
+            display: block;
+          }
         }
       }
     }

@@ -1,12 +1,13 @@
 import { Locales, locales } from '@/constants/locales';
+import { urls } from '@/constants/urls';
 
 export const quotes = [
-  { title: locales.kitchen_cabinets },
-  { title: locales.bathroom_vanities },
-  { title: locales.cabinet_door },
-  { title: locales.drawer_fronts },
-  { title: locales.drawer_boxes },
-  { title: locales.pull_out_shelves },
+  { title: locales.kitchen_cabinets, url: urls.kitchen_quote },
+  { title: locales.bathroom_vanities, url: urls.bathroom_quote },
+  { title: locales.cabinet_door, url: urls.doors_quote },
+  { title: locales.drawer_fronts, url: urls.doors_quote },
+  { title: locales.drawer_boxes, url: urls.boxes_quote },
+  { title: locales.pull_out_shelves, url: urls.boxes_quote },
 ];
 
 export const policiesItems: Array<{ textKey: Locales, titleKey: Locales }> = [

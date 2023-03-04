@@ -1,6 +1,16 @@
 import { create } from 'zustand';
 import {
-  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Finished, RadioTypes, State, StateField, WoodSpecies,
+  Higle,
+  State,
+  Drawer,
+  Finished,
+  RadioTypes,
+  StateField,
+  WoodSpecies,
+  DrawerFronts,
+  CheckBoxesName,
+  ChangeInputPld,
+  ChangeCheckBoxesPld,
 } from './types';
 
 const initialState: StateField = {
@@ -14,6 +24,8 @@ const initialState: StateField = {
     vantityFinishedSideInput: '',
     cabinetDoorsDimensionsInput: '',
     cabinetDrawersDimensionsInput: '',
+    boxInput1: '',
+    boxInput2: '',
   },
   files: [],
   checkBoxes: {
@@ -67,6 +79,11 @@ const initialState: StateField = {
       hingle_boring: false,
       concealed: false,
     },
+    drawerBoxes: {
+      natural: false,
+      notched: false,
+      unfinished: false,
+    },
   },
   radio: {
     vanityOptions: '',
@@ -96,6 +113,15 @@ export const useAppStore = create<State>((set) => ({
     }
     if (payload.field === 'finished') {
       value = !state.checkBoxes.finished[payload.name as Finished];
+    }
+    if (payload.field === 'drawerFronts') {
+      value = !state.checkBoxes.drawerFronts[payload.name as DrawerFronts];
+    }
+    if (payload.field === 'higle') {
+      value = !state.checkBoxes.higle[payload.name as Higle];
+    }
+    if (payload.field === 'drawerBoxes') {
+      value = !state.checkBoxes.drawerBoxes[payload.name as Drawer];
     }
     return ({
       checkBoxes: {
