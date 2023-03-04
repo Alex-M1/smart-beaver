@@ -1,6 +1,16 @@
 import { create } from 'zustand';
 import {
-  ChangeCheckBoxesPld, ChangeInputPld, CheckBoxesName, Drawer, DrawerFronts, Finished, Higle, RadioTypes, State, StateField, WoodSpecies,
+  Higle,
+  State,
+  Drawer,
+  Finished,
+  RadioTypes,
+  StateField,
+  WoodSpecies,
+  DrawerFronts,
+  CheckBoxesName,
+  ChangeInputPld,
+  ChangeCheckBoxesPld,
 } from './types';
 
 const initialState: StateField = {
