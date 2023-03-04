@@ -1,5 +1,5 @@
 import {
-  ChangeCheckBoxesPld, CheckBoxesName, Finished, InputTypes, State, WoodSpecies,
+  ChangeCheckBoxesPld, CheckBoxesName, DrawerFronts, Finished, Higle, InputTypes, State, WoodSpecies,
 } from './types';
 
 export const getInputsValue = (inputTypes: InputTypes) => (state: State) => state.inputs[inputTypes];
@@ -18,6 +18,12 @@ export const getCheckBoxesValue = (pld: ChangeCheckBoxesPld) => (state: State) =
   }
   if (pld.field === 'finished') {
     return state.checkBoxes.finished[pld.name as Finished];
+  }
+  if (pld.field === 'drawerFronts') {
+    return state.checkBoxes.drawerFronts[pld.name as DrawerFronts];
+  }
+  if (pld.field === 'higle') {
+    return state.checkBoxes.higle[pld.name as Higle];
   }
   return false;
 };
