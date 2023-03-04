@@ -5,8 +5,10 @@ export type WoodSpecies = keyof WoodSpeciesCheckBoxes;
 export type Finished = keyof FinishedCheckboxes;
 export type DrawerFronts = keyof DrawerFrontsCheckBoxes;
 export type Higle = keyof HigleCheckBoxes;
-
+export type Drawer = keyof DrawerBoxesCheckBoxes;
+export type ChBoxesNames = CheckBoxesName | WoodSpecies | Finished | DrawerFronts | Higle | Drawer;
 export type RadioTypes = 'flat_panel' | 'raised_panel' | '';
+
 // actions
 export interface ChangeInputPld {
   inputType: InputTypes;
@@ -15,7 +17,7 @@ export interface ChangeInputPld {
 
 export interface ChangeCheckBoxesPld {
   field: CheckBoxesTypes;
-  name: CheckBoxesName | WoodSpecies | Finished | DrawerFronts | Higle;
+  name: ChBoxesNames;
 }
 
 // state
@@ -88,12 +90,19 @@ export interface HigleCheckBoxes {
   concealed: boolean;
 }
 
+export interface DrawerBoxesCheckBoxes {
+  notched: boolean;
+  unfinished: boolean;
+  natural: boolean;
+}
+
 export interface CheckBoxes {
   doorsStyle: DoorStyleCheckBoxes;
   woodSpecies: WoodSpeciesCheckBoxes;
   finished: FinishedCheckboxes;
   drawerFronts: DrawerFrontsCheckBoxes;
   higle: HigleCheckBoxes;
+  drawerBoxes: DrawerBoxesCheckBoxes;
 }
 export interface Radio {
   vanityOptions: RadioTypes;

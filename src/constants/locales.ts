@@ -505,6 +505,13 @@ export const locales = {
   box_text: 'DRAWER BOX AND PULL OUT SHELF PRCNG IS BASED ON THE CUBIC INCH SIZE OF YOUR BOX\nW(width) x D(depth) x H(height)',
   box_text2: 'ENTER DRAWER BOX AND PULL\nOUT SHELF DIMENSIONS FOR\nEACH BOX OR PULL OUT\nAS FOLLOWS',
   box_text3: 'QUANTITY - WIDTH x DEPTH X HEIGHT\nExample\n2 - 18" x 21" X 6"\n1 - 16 - 1 / 2" x 18" X 4"\netc.',
+
+  drawer_box_title: '2. DRAWER BOX AND PULL OUT SHELF OPTIONS',
+  drawer_box_back_end_notching: 'BACK END NOTCHING',
+  drawer_box_back_end_notching_text: 'Needed when using undermount drawer slides\nIf notched is not selected they will be quoted with no notched backs',
+  drawer_box_finish: 'FINISH',
+  drawer_box_finish_text: 'Available in Unfinished or Clear Coated Finish\nSelect one or both of these options if you want a Quote on both options',
+  notched: 'NOTCHED',
 };
 
 export type Locales = keyof typeof locales;
