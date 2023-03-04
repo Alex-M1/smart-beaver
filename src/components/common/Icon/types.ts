@@ -305,7 +305,10 @@ export enum ICON_NAMES {
   drawer_fronts_slab_profile = 'drawer_fronts_slab_profile',
 
   hingle_boring = 'hingle_boring',
-  concealed = 'concealed'
+  concealed = 'concealed',
+
+  box_img1 = 'box_img1',
+  box_img2 = 'box_img2',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

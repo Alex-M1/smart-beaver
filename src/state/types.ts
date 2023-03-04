@@ -29,6 +29,8 @@ export interface Inputs {
   vantityFinishedSideInput: string;
   cabinetDoorsDimensionsInput: string;
   cabinetDrawersDimensionsInput: string;
+  boxInput1: string;
+  boxInput2: string;
 }
 
 export interface DoorStyleCheckBoxes {

@@ -65,7 +65,7 @@ export const GlobalStyle = createGlobalStyle`
   .small-text {
     font-size: 18px;
   }
-  p, span {
+  p {
     line-height: 150%;
   }
   ${fontFace}

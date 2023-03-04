@@ -14,6 +14,8 @@ const initialState: StateField = {
     vantityFinishedSideInput: '',
     cabinetDoorsDimensionsInput: '',
     cabinetDrawersDimensionsInput: '',
+    boxInput1: '',
+    boxInput2: '',
   },
   files: [],
   checkBoxes: {

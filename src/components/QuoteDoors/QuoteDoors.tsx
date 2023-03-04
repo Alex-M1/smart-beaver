@@ -21,8 +21,7 @@ const QuoteDoors: React.FC = () => (
       <QuoteWoodSpecies title="quote_wood_species2" />
       <QuoteMultiplyFinishes title="quote_finishes2" />
       <Hingle />
-      {/* name */}
-      <SubmitBlock title="submit_block2" />
+      <SubmitBlock title="submit_block3" />
     </div>
   </Template>
 );
