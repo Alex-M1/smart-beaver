@@ -15,6 +15,7 @@ interface Props extends PropsWithChildren {
   variant?: ButtonVariants,
   disabled?: boolean;
   className?: string;
+  startIcon?: ReactNode;
   borderRadius?: string;
   onTouchStart?: () => void;
 }
@@ -31,6 +32,7 @@ const Button: React.FC<Props> = ({
   children,
   disabled,
   className,
+  startIcon,
   borderRadius,
   onTouchStart,
 }) => {
@@ -48,6 +50,8 @@ const Button: React.FC<Props> = ({
         variant={variant}
         color={color}
         className={className}
+        size="medium"
+        startIcon={startIcon}
       >
         {content || children}
       </MuiButton>

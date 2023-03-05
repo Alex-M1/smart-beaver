@@ -28,6 +28,7 @@ const DoorsDrawers: React.FC = () => (
           href={urls.doors_quote}
           title={locales.door_drawers_pure_bond_title}
           text={locales.door_drawers_pure_bond_text}
+          guideUrl={urls.measure_cabinet_doors}
         />
       </StDoorsDrawers>
     </div>

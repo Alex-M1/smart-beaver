@@ -15,4 +15,5 @@ export const colors = {
   bg_black: '#18190E',
   placeholder: '#bdbdbd',
   error: '#d32f2f',
+  dark_red: '#A30303',
 };

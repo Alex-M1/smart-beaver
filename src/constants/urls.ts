@@ -18,6 +18,7 @@ export const urls = {
   bathroom_quote: '/bathroom_quote',
   doors_quote: '/doors_quote',
   boxes_quote: '/boxes_quote',
+  measure_cabinet_doors: '/measure_cabinet_doors',
 };
 
 export type Urls = keyof typeof urls;

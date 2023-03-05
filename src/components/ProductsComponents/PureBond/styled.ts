@@ -1,5 +1,6 @@
 import { colors } from '@/constants/colors';
 import { FontWeight } from '@/constants/ui';
+import { imgSizeResponsive } from '@/helpers/ui';
 import styled from 'styled-components';
 
 export const StPureBond = styled.div`
@@ -7,6 +8,9 @@ export const StPureBond = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px 0;
+  .guid_img {
+    ${imgSizeResponsive('&', '70%')}
+  }
   .pure-bond {
     &__title {
       font-size: 25px;
