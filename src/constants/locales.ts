@@ -512,6 +512,38 @@ export const locales = {
   drawer_box_finish: 'FINISH',
   drawer_box_finish_text: 'Available in Unfinished or Clear Coated Finish\nSelect one or both of these options if you want a Quote on both options',
   notched: 'NOTCHED',
+
+  mesure_cabinet_doors: 'How To Measure For New Cabinet Doors',
+  very_important: 'Very Important!',
+  tools_required: 'Tools Required',
+  very_important_text: 'Precision is key, as your items will be custom made to your specifications. Incorrect measurements lead to ill-fitting, non-returnable items. Double-check your work until you are confident that you are ordering the correct size items for your project.',
+  replacing_doors: ' Replacing existing doors',
+  replacing_doors_text: 'If you are keeping the same size cabinet doors, this is easy.Simply measure the existing door sizes.Best practice is to measure from the backside of the doors for the most accurate dimensions.Record your dimensions as width x height to the nearest 1/8"',
+  replacing_full_overlay_doors: 'Replacing your doors with 1/2" or Full Overlay Doors',
+  replacing_full_overlay_doors_text: 'Make sure you size the new doors according to standard overlays offered by the hinge manufacturers. We suggest sizing your doors to conform to an overlay of 1/2" for partial overlay and 1-1/4" for full overlay as these are common overlays and supported by all the hinge manufacturers. Sizing your doors according to these common overlays will ensure you can easily find 6 way adjustable hinges for your doors, either from us or from another supplier.',
+  measure_doors_note: 'Note: The following measuring guidelines will work for 1/2" and full overlay doors given your face frame rail & stiles are standard 1-1/2".',
+
+  measure_items_title1: 'Cabinet Door measuring guide for 1/2" Overlay Doors',
+  measure_items_title2: ' Cabinet Door measuring guide for Full Overlay Doors - 1-1/4" Hinge',
+  measure_items_text: 'Measure all door openings to the nearest 1/8" and record your measurements carefully on your note pad. Be sure to record your measurements as width x height. For example, you may write down something such as "width 14" x 30" height." When measuring, make sure that there is at least 5/8" clearance around all openings.',
+
+  measure_single_door: 'HOW TO MEASURE SINGLE DOORS',
+  measure_split_door: 'HOW TO MEASURE SPLIT DOORS\nNO CENTER STILE',
+  measure_step_a: 'STEP A - Place your tape measure against the side of the cabinet opening and measure all the way to the other side of the opening to the nearest 1/8". This will be your width opening Jot down the number on your paper.',
+  measure_step_b: 'STEP B - Place your tape measure against the top of the cabinet opening and measure all the way down to the bottom of the opening to the nearest 1/8". This will be your height opening Jot down the number on your paper.',
+  measure_step_c_1: 'STEP C - Add 1 inch to both the height and width measurements. This will be your door size when ordering and allows the cabinet doors to have an extra 1/2 inch of overlay on all sides.',
+  measure_step_c_2: 'STEP C - Add 1 inch to both the height and width measurements. THEN divide ONLY the Width measurement in half and order 2 doors of that size to fit your opening',
+  measure_step_c_3: 'STEP C - Add 1-1/4" inch to both the height and width measurements. This will be your door size when ordering and allows the cabinet doors to have an extra 1-1/4" inch of overlay on all sides for full overlay doors',
+  measure_step_c_4: 'STEP C - Add 1-1/4" inch to both the height and width measurements. THEN divide ONLY the Width measurement in half and order 2 doors of that size to fit your opening',
+  example: 'EXAMPLE',
+  measure_example_1: 'If width in STEP A is 15" and height is 20" in STEP B - Your Door Size Will Be 16" width x 21" Height',
+  measure_example_2: 'If width in STEP A is 30" and height is 20" in STEP B - Your will need 2 Door Sizes of 15-1/2" width x 21" height',
+  measure_example_3: 'If width in STEP A is 15" and height is 20" in STEP B - Your Door Size Will Be 17-1/2" width x 22-1/2" Height',
+  measure_example_4: 'If width in STEP A is 30" and height is 20" in STEP B - Your will need 2 Door Sizes of 16-1/4" width x 22-1/2" height',
+
+  previos_page: 'Previous Page',
+  print_page: 'Print Page',
+  measure_help: 'Need help with Measuring your kitchen cabinet layout',
 };
 
 export type Locales = keyof typeof locales;

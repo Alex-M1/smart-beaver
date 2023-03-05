@@ -313,6 +313,18 @@ export enum ICON_NAMES {
   back_end_notching = 'back_end_notching',
   finish_img1 = 'finish_img1',
   finish_img2 = 'finish_img2',
+
+  measure_tape = 'measure_tape',
+  notebook = 'notebook',
+  pencil = 'pencil',
+
+  replacing_door = 'replacing_door',
+  measure_single_doors = 'measure_single_doors',
+  measure_split_doors = 'measure_split_doors',
+
+  print = 'print',
+
+  measure_guide = 'measure_guide',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

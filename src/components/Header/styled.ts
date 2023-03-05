@@ -16,6 +16,9 @@ export const StHeader = styled.header`
   @media (max-width: 550px) {
     height: ${headerHeight.small}px;
   }  
+  @media print {
+    display: none;
+  }
 `;
 
 export const StNavContainer = styled.div`
