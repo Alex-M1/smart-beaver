@@ -325,6 +325,7 @@ export enum ICON_NAMES {
   print = 'print',
 
   measure_guide = 'measure_guide',
+  measure_kitchen_img = 'measure_kitchen_img',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;

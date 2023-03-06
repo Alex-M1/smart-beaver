@@ -18,8 +18,8 @@ const MeasureButtons: React.FC<Props> = ({ url }) => {
     <>
       <hr />
       <StMesureButtons>
-        <Button color="warning" content={locales.previos_page} borderRadius="100px" onClick={handlePrevPage} />
-        <Button startIcon={<Img name="print" alt="print" ext="svg" width={18} height={18} />} color="warning" content={locales.print_page} borderRadius="100px" onClick={handlePrintPage} />
+        <Button padding="10px 100px" color="warning" content={locales.previos_page} borderRadius="100px" onClick={handlePrevPage} />
+        <Button padding="10px 100px" startIcon={<Img name="print" alt="print" ext="svg" width={18} height={18} />} color="warning" content={locales.print_page} borderRadius="100px" onClick={handlePrintPage} />
       </StMesureButtons>
     </>
   );

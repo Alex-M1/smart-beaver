@@ -1,5 +1,5 @@
-import { locales } from '@/constants/locales';
 import React from 'react';
+import { locales } from '@/constants/locales';
 import { urls } from '@/constants/urls';
 import Template from '../common/Template';
 import ContactForm from '../ContactForm';
@@ -18,7 +18,12 @@ const KitchenCabinets: React.FC = () => (
       <StandartFeatures />
       <Cabinets />
       <OtherOptions />
-      <PureBond href={urls.kitchen_quote} title={locales.kitchen_pricing_title} text={locales.kitchen_pricing_text} />
+      <PureBond
+        href={urls.kitchen_quote}
+        text={locales.kitchen_pricing_text}
+        title={locales.kitchen_pricing_title}
+        guideUrl={urls.measure_kitchen_cabinets}
+      />
     </div>
     <ContactForm />
   </Template>
