@@ -19,6 +19,7 @@ export const urls = {
   doors_quote: '/doors_quote',
   boxes_quote: '/boxes_quote',
   measure_cabinet_doors: '/measure_cabinet_doors',
+  measure_kitchen_cabinets: '/measure_kitchen_cabinets',
 };
 
 export type Urls = keyof typeof urls;
