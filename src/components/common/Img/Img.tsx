@@ -31,6 +31,8 @@ const Img: React.FC<Props> = ({
       alt={alt}
       priority={priority}
       quality={quality}
+      placeholder="blur"
+      blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mM84QMAAeIBFgshUZEAAAAASUVORK5CYII="
     />
   );
   return (

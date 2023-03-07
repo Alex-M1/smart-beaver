@@ -41,7 +41,7 @@ const SimpleForm: React.FC = () => {
       <div className="contact-form__inputs">
         <Input value={value.name} onChange={handleChangeValue('name')} placeholder={locales.placeholder_name} />
         <Input value={value.phone} onChange={handleChangeValue('phone')} margin="32px 0" placeholder={locales.placeholder_phone} />
-        <Button padding="16px 0" color="warning" borderRadius="100px" content={locales.order_button} onClick={sendRequest} />
+        <Button color="warning" borderRadius="100px" content={locales.order_button} onClick={sendRequest} />
         <Modal onClose={handleCloseModal} open={isModalOpen} />
       </div>
       <span className="form-text">{locales.form_contacts}</span>

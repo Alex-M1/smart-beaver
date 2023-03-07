@@ -20,16 +20,20 @@ export const StPortfolioSlider = styled.div`
     }
     ${imgSizeResponsive('&__img', '100%')}
     &__img-block {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      /* flex-wrap: wrap; */
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10px;
+      grid-template-areas: 'img1 img2' 'img3 img3' 'img4 img4';
+      &.index-2, &.index-3 {
+        grid-template-areas: 'img3 img3' 'img1 img2' 'img4 img4';
+      }
     }
   }
-  .ps-img1, .ps-img2 {
-    flex-basis: 50%;
-  }
-  .ps-img3, .ps-img4 {
-    flex-basis: 100%;
-  }
+  .ps-img1 {grid-area: img1;}
+  .ps-img2 {grid-area: img2;}
+  .ps-img3 {grid-area: img3;}
+  .ps-img4 {grid-area: img4;}
 
   @media (min-width: 768px) {
     flex-direction: column;
@@ -57,7 +61,6 @@ export const StPortfolioSlider = styled.div`
       &__img-block {
         flex-basis: 40%;
       }
-      ${imgSizeResponsive('&__img', '50%', '15%')}
     }
   }
 

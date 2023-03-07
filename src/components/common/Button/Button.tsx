@@ -6,6 +6,7 @@ import { theme } from '../styled/theme';
 
 interface Props extends PropsWithChildren {
   url?: string;
+  size?: 'small' | 'medium' | 'large';
   width?: string;
   color?: ButtonColor;
   height?: string;
@@ -23,6 +24,7 @@ interface Props extends PropsWithChildren {
 const Button: React.FC<Props> = ({
   url,
   width,
+  size = 'medium',
   color = 'primary',
   height,
   padding,
@@ -43,15 +45,15 @@ const Button: React.FC<Props> = ({
     <ThemeProvider theme={theme}>
       <MuiButton
         sx={sxProps}
+        size={size}
         href={url}
-        onClick={onClick}
-        onTouchStart={onTouchStart}
-        disabled={disabled}
-        variant={variant}
         color={color}
+        onClick={onClick}
+        variant={variant}
+        disabled={disabled}
         className={className}
-        size="medium"
         startIcon={startIcon}
+        onTouchStart={onTouchStart}
       >
         {content || children}
       </MuiButton>

@@ -1,5 +1,6 @@
 export const urls = {
   main: 'http://localhost:3000',
+  start: '/',
   products: '/products',
   about_us: '/about_us',
   faq: '/faq',
@@ -20,6 +21,7 @@ export const urls = {
   boxes_quote: '/boxes_quote',
   measure_cabinet_doors: '/measure_cabinet_doors',
   measure_kitchen_cabinets: '/measure_kitchen_cabinets',
+  pure_bond: '/pure_bond',
 };
 
 export type Urls = keyof typeof urls;

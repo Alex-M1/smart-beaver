@@ -326,6 +326,11 @@ export enum ICON_NAMES {
 
   measure_guide = 'measure_guide',
   measure_kitchen_img = 'measure_kitchen_img',
+
+  go_green = 'go_green',
+  purebond_img = 'purebond_img',
+  purebond_img2 = 'purebond_img2',
+  purebond_logo = 'purebond_logo'
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
