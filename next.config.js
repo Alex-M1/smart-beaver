@@ -13,6 +13,12 @@ const nextConfig = {
       ssr: true,
     },
   },
+  rewrites: async () => ([
+    {
+      source: '/robots.txt',
+      destination: '/_next/static/robots.txt',
+    },
+  ]),
 };
 
 module.exports = withBundleAnalyzer(nextConfig);

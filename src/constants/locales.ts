@@ -95,6 +95,7 @@ export const locales = {
   kitchen_cabinets: 'KITCHEN CABINETS',
   polities_and_terms: 'Policies & Terms',
   specialty_islands: 'SPECIALTY ISLANDS / CABINETS / ORGANIZERS',
+  specialty_islands_title: 'SPECIALTY ISLANDS',
   wood_species: 'WOOD SPECIES',
   kitchen_cabinet_descr: '100% Solid wood handcrafted kitchen cabinets Available in unfinished, natural wood and stained with clear coat finish, along with painted finishes in a wide variety of wood types and door styles to fit your specific needs.',
   kitchen_cabinet_recipe: 'With our attention to detail such as',
@@ -514,6 +515,7 @@ export const locales = {
   notched: 'NOTCHED',
 
   mesure_cabinet_doors: 'How To Measure For New Cabinet Doors',
+  measure_cabinet_doors_title: 'Cabinet Doors Measuring Guide',
   very_important: 'Very Important!',
   tools_required: 'Tools Required',
   very_important_text: 'Precision is key, as your items will be custom made to your specifications. Incorrect measurements lead to ill-fitting, non-returnable items. Double-check your work until you are confident that you are ordering the correct size items for your project.',
@@ -601,6 +603,12 @@ export const locales = {
   purebond_text7: 'Biomimicry: Nature-inspired design',
   purebond_text8: 'As the pacific Ocean swirled around him, a question rushed into Dr. Kaichang Li’s head : how do mussels keep their grip on rocks that are constantly pounded by waves?Dr. Li, a professor at Oregon State University’s College of Forestry, found that mussels secrete proteins known as byssal threads, which provide superior strength and extraordinary flexibility. His curiosity led to groundbreaking research – funded by Columbia Forest Products and others – based in the principles of biomimicry, which studies nature and then imitates its designs and processes to solve human problems.Li discovered that soy proteins can be modified to perform similarly to byssal threads. And not only did they deliver phenomenal adhesion, they also offered exceptional water resistance. This breakthrough led to PureBond, proving that enhanced environmental quality and increased product performance can go hand in hand.',
   purebond_title6: 'How it is made',
+
+  kitchen_quote: 'Kitchen Quote',
+  doors_quote: 'Doors Quote',
+  boxes_quote: 'Boxes Quote',
+  bathroom_quote: 'Bathroom Quote',
+  page_not_found: 'Page Not Found',
 };
 
 export type Locales = keyof typeof locales;
