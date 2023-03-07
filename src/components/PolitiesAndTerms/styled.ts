@@ -1,6 +1,7 @@
 import { FontWeight } from '@/constants/ui';
 import { imgSizeResponsive } from '@/helpers/ui';
 import styled from 'styled-components';
+import { transitionScale } from '../common/styled/mixins';
 
 export const StPolitiesAndTerms = styled.div`
   padding: 20px 0;
@@ -8,6 +9,9 @@ export const StPolitiesAndTerms = styled.div`
     ${imgSizeResponsive('&__img', '100%', 'auto')}  
     &__quote {
       padding-top: 10px;
+      &-img {
+        ${transitionScale};
+      }
       &-title {
         font-size: 18px;
         font-weight: ${FontWeight.bold};

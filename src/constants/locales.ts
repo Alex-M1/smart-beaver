@@ -586,6 +586,21 @@ export const locales = {
   minimum_space7: 'Diagonal (L Shaped) Corner Base 21" Minimum from each corner out',
   minimum_space8: '45 Degree Corner front face cabinet 21" minimum from each corner out',
   minimum_space9: '45 Degree Corner front face cabinet with lazy susan 24" minimum from each corner out',
+
+  purebond_text1: 'With the ever growing concern for our environment, we do offer the option of having your cabinet shells constructed with Purebond® Plywood made by Columbia Forest Products, which is a soy based formaldehyde-free hardwood plywood and is U.S. Green Building Council Compliant. As this product becomes more competively priced we hope to make this our standard feature for all cabinets.',
+  purebond_text2: 'Below is information on Purebond Plywood from\nthe Columbia Forest Products website:',
+  purebond_title: 'PureBond® Hardwood Plywood',
+  purebond_text3: 'Soy-Based Technology.\nCost- Competitive.\nNorth American Made.\nAnd only from Columbia Forest Products',
+  purebond_title2: '"Formaldehyde-Free" What Does It Mean?',
+  purebond_text4: 'When we say PureBond technology is \'formaldehyde- free,\' we\'re describing the way our hardwood plywood panels are comprised of no added urea formaldehyde components and assembled with no added urea formaldehyde adhesives." In other words, we don\'t add any urea formaldehyde to the products we call "formaldehyde - free, " whether in the resin or the wood that makes up the core of the panel. For example, our PureBond Veneer Core Hardwood Plywood is comprised of core layers of dried wood (mostly fir, pine, poplar or aspen), bonded together using our innovative, soy-based PureBond technology. The resulting plywood product adds no additional formaldehyde to what exists naturally in the wood itself. It contributes no additional pollutants into our environment.',
+  purebond_title3: 'Additional Benefit',
+  purebond_text5: 'PureBond is even more water resistant than UF panels. PureBond panels with formaldehyde-free technology have out-performed UF bonded panels in all moisture degradation tests.',
+  purebond_title4: 'PureBond® Facts',
+  purebond_text6: '• PureBond® technology utilizes formaldehyde-free, soy-based assembly technology\n• PureBond® technology significantly reduces interior formaldehyde emissions in comparison with UF technology\n• Panels are made in the US and Canada\n• PureBond panels contribute towards the LEED® IEQ Credit 4.4 for Low - Emitting Materials: Composite Wood\n• Panels can be specified as FSC® certified upon request\n• PureBond is manufactured exclusively in North America by Columbia Forest Products.',
+  purebond_title5: 'How it came to be',
+  purebond_text7: 'Biomimicry: Nature-inspired design',
+  purebond_text8: 'As the pacific Ocean swirled around him, a question rushed into Dr. Kaichang Li’s head : how do mussels keep their grip on rocks that are constantly pounded by waves?Dr. Li, a professor at Oregon State University’s College of Forestry, found that mussels secrete proteins known as byssal threads, which provide superior strength and extraordinary flexibility. His curiosity led to groundbreaking research – funded by Columbia Forest Products and others – based in the principles of biomimicry, which studies nature and then imitates its designs and processes to solve human problems.Li discovered that soy proteins can be modified to perform similarly to byssal threads. And not only did they deliver phenomenal adhesion, they also offered exceptional water resistance. This breakthrough led to PureBond, proving that enhanced environmental quality and increased product performance can go hand in hand.',
+  purebond_title6: 'How it is made',
 };
 
 export type Locales = keyof typeof locales;

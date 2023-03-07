@@ -1,3 +1,4 @@
+import { transitionScale } from '@/components/common/styled/mixins';
 import { colors } from '@/constants/colors';
 import { FontWeight } from '@/constants/ui';
 import { imgSizeResponsive } from '@/helpers/ui';
@@ -10,8 +11,13 @@ export const StPureBond = styled.div`
   padding: 20px 0;
   .guid_img {
     ${imgSizeResponsive('&', '70%')}
+    ${transitionScale};
   }
   .pure-bond {
+    &__img, &__link  {
+      cursor: pointer;
+      ${transitionScale};
+    }
     &__title {
       font-size: 25px;
       font-weight: ${FontWeight.bold};
