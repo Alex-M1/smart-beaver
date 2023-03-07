@@ -16,7 +16,7 @@ const SlideItem: React.FC<Props> = ({ index }) => {
       <StFlex ai="center" className="portfolio-slider__text-wrapper">
         <span className="portfolio-slider__text">{locales[`portfolio_slide_text_${index}` as Locales]}</span>
       </StFlex>
-      <div className="portfolio-slider__img-block">
+      <div className={`portfolio-slider__img-block index-${index}`}>
         <Img className="portfolio-slider__img ps-img1" name={setIconName(1)} alt="portfolio-example-1" />
         <Img className="portfolio-slider__img ps-img2" name={setIconName(2)} alt="portfolio-example-2" />
         <Img className="portfolio-slider__img ps-img3" name={setIconName(3)} alt="portfolio-example-3" />
