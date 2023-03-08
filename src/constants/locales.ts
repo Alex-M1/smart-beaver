@@ -609,6 +609,9 @@ export const locales = {
   boxes_quote: 'Boxes Quote',
   bathroom_quote: 'Bathroom Quote',
   page_not_found: 'Page Not Found',
+
+  required_field: 'Required Field',
+  many_checkbox: 'You can choose up to 4 items',
 };
 
 export type Locales = keyof typeof locales;

@@ -73,7 +73,6 @@ export const StContact = styled.div`
 
       &-ipt {
         width: 45%;
-        margin-bottom: 32px;
       }
       &-btn {
         margin-top: 32px;

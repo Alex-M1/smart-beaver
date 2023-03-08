@@ -10,13 +10,19 @@ const SimpleForm: React.FC = () => {
     phone: '',
   });
 
+  const [error, setError] = useState(false);
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleChangeValue = (field: 'name' | 'phone') => (value: string) => {
+    if (field === 'phone') setError(false);
     setValue((prev) => ({ ...prev, [field]: value }));
   };
 
   const sendRequest = async () => {
+    if (!value.phone) {
+      return setError(true);
+    }
     try {
       // await fetch(`${urls.main}${urls.send_mail}`, {
       //   method: 'POST',
@@ -39,8 +45,8 @@ const SimpleForm: React.FC = () => {
       <h2>{locales.form_title}</h2>
       <span className="contact-form__description form-text">{locales.form_description}</span>
       <div className="contact-form__inputs">
-        <Input value={value.name} onChange={handleChangeValue('name')} placeholder={locales.placeholder_name} />
-        <Input value={value.phone} onChange={handleChangeValue('phone')} margin="32px 0" placeholder={locales.placeholder_phone} />
+        <Input borderRadius="100px" value={value.name} onChange={handleChangeValue('name')} placeholder={locales.placeholder_name} />
+        <Input borderRadius="100px" helperText={error ? locales.required_field : ''} isError={error} value={value.phone} onChange={handleChangeValue('phone')} margin={`32px 0 ${error ? 8 : 32}px`} placeholder={locales.placeholder_phone} />
         <Button color="warning" borderRadius="100px" content={locales.order_button} onClick={sendRequest} />
         <Modal onClose={handleCloseModal} open={isModalOpen} />
       </div>
