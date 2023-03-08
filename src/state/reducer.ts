@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { sendKitchenQuote } from './requests';
 import {
   Higle,
   State,
@@ -11,9 +12,24 @@ import {
   CheckBoxesName,
   ChangeInputPld,
   ChangeCheckBoxesPld,
+  ChangeQuoteInputsPld,
 } from './types';
 
 const initialState: StateField = {
+  quoteFormInputs: {
+    firstName: '',
+    email: '',
+    addressL1: '',
+    addressL2: '',
+    state: '',
+    zip: '',
+    city: '',
+    phone: '',
+  },
+  quoteFormInputsError: {
+    firstName: false,
+    email: false,
+  },
   inputs: {
     baseCabinetsInput: '',
     pantryCabinetsInput: '',
@@ -90,10 +106,9 @@ const initialState: StateField = {
   },
 };
 
-export const useAppStore = create<State>((set) => ({
+export const useAppStore = create<State>((set, get) => ({
   ...initialState,
   reset: () => set(initialState),
-  sendForm: () => { },
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
       ...state.inputs,
@@ -139,4 +154,18 @@ export const useAppStore = create<State>((set) => ({
       vanityOptions: payload,
     },
   })),
+
+  setQuoteFormInputs: (payload: ChangeQuoteInputsPld) => set((state) => ({
+    quoteFormInputs: {
+      ...state.quoteFormInputs,
+      [payload.field]: payload.value,
+    },
+  })),
+  setQuoteFormInputsError: (payload) => set((state) => ({
+    quoteFormInputsError: { ...state.quoteFormInputsError, [payload.field]: payload.value },
+  })),
+
+  sendForm: async () => {
+    await sendKitchenQuote(set, get);
+  },
 }));

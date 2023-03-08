@@ -1,5 +1,15 @@
 import {
-  ChangeCheckBoxesPld, CheckBoxesName, Drawer, DrawerFronts, Finished, Higle, InputTypes, State, WoodSpecies,
+  State,
+  Higle,
+  Drawer,
+  Finished,
+  InputTypes,
+  WoodSpecies,
+  DrawerFronts,
+  CheckBoxesName,
+  QuoteFoormTypes,
+  ChangeCheckBoxesPld,
+  QuoteFormInputsErrorTypes,
 } from './types';
 
 export const getInputsValue = (inputTypes: InputTypes) => (state: State) => state.inputs[inputTypes];
@@ -37,3 +47,21 @@ export const sendForm = (state: State) => state.sendForm;
 
 export const getRadioValue = (state: State) => state.radio.vanityOptions;
 export const setRadioValue = (state: State) => state.setRadio;
+
+export const getQuoteFormInputs = (inputType: QuoteFoormTypes) => (state: State) => state.quoteFormInputs[inputType];
+export const setQuoteFormInputs = (state: State) => state.setQuoteFormInputs;
+
+export const getQuoteFormInputsError = (inputType?: QuoteFormInputsErrorTypes) => (
+  (state: State) => (!inputType ? false : state.quoteFormInputsError[inputType])
+);
+export const setQuoteFormInputsError = (state: State) => state.setQuoteFormInputsError;
+
+export const checkBoxesQuantityError = (field: 'doorsStyle' | 'woodSpecies') => (state: State) => {
+  let quantity = 0;
+  const chbxs = state.checkBoxes[field];
+  Object.keys(chbxs).forEach((key) => {
+    if (chbxs[key as keyof typeof chbxs]) quantity += 1;
+  });
+
+  return quantity >= 4;
+};

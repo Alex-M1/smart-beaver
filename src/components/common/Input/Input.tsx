@@ -37,9 +37,9 @@ const Input: React.FC<Props> = ({
   className,
   helperText,
   placeholder,
-  borderRadius = '100px',
+  borderRadius = '0px',
 }) => {
-  const sxProps = { width, margin, borderRadius };
+  const sxProps = { width, margin };
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value, e);
   };
@@ -47,7 +47,8 @@ const Input: React.FC<Props> = ({
   return (
     <StInput
       size="small"
-      sx={{ ...sxProps, bgcolor: colors.white }}
+      sx={{ ...sxProps }}
+      InputProps={{ sx: { bgcolor: colors.white, borderRadius } }}
       type={type}
       value={value}
       error={isError}

@@ -1,4 +1,6 @@
 export type InputTypes = keyof Inputs;
+export type QuoteFoormTypes = keyof QuoteFormInputs;
+export type QuoteFormInputsErrorTypes = keyof QuoteFormInputsError;
 export type CheckBoxesTypes = keyof CheckBoxes;
 export type CheckBoxesName = keyof DoorStyleCheckBoxes;
 export type WoodSpecies = keyof WoodSpeciesCheckBoxes;
@@ -9,9 +11,22 @@ export type Drawer = keyof DrawerBoxesCheckBoxes;
 export type ChBoxesNames = CheckBoxesName | WoodSpecies | Finished | DrawerFronts | Higle | Drawer;
 export type RadioTypes = 'flat_panel' | 'raised_panel' | '';
 
+export type Set = (state: Partial<State>) => void;
+export type Get = () => State;
+
 // actions
 export interface ChangeInputPld {
   inputType: InputTypes;
+  value: string;
+}
+
+export interface ChangeQuoteInputsErrorPld {
+  field: QuoteFormInputsErrorTypes;
+  value: boolean;
+}
+
+export interface ChangeQuoteInputsPld {
+  field: QuoteFoormTypes;
   value: string;
 }
 
@@ -108,8 +123,26 @@ export interface Radio {
   vanityOptions: RadioTypes;
 }
 
+export interface QuoteFormInputs {
+  firstName: string;
+  email: string;
+  addressL1: string;
+  addressL2: string;
+  state: string;
+  zip: string;
+  city: string;
+  phone: string;
+}
+
+export interface QuoteFormInputsError {
+  firstName: boolean;
+  email: boolean;
+}
+
 export interface StateField {
   inputs: Inputs;
+  quoteFormInputs: QuoteFormInputs;
+  quoteFormInputsError: QuoteFormInputsError;
   files: Array<File>;
   checkBoxes: CheckBoxes;
   radio: Radio;
@@ -122,4 +155,6 @@ export interface State extends StateField {
   addFiles: (files: File) => void;
   setCheckBoxes: (payload: ChangeCheckBoxesPld) => void;
   setRadio: (payload: RadioTypes) => void;
+  setQuoteFormInputs: (payload: ChangeQuoteInputsPld) => void;
+  setQuoteFormInputsError: (payload: ChangeQuoteInputsErrorPld) => void;
 }
