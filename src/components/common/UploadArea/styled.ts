@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { flexCenter } from '../styled/mixins';
 
 export const StAploadArea = styled.div`
+  position: relative;
   label {
     width: 100%;
     height: 179px;
@@ -47,6 +48,8 @@ export const StAploadArea = styled.div`
   .error {
     font-size: 12px;
     color: ${colors.error};
+    position: absolute;
+    bottom: -20px;
   }
 
   @media (min-width: 768px) {
