@@ -33,7 +33,7 @@ const KitchenQuote: React.FC = () => (
         <CabinetDoorsStyle title="cabinet_door_style" />
         <QuoteWoodSpecies title="quote_wood_species" />
         <QuoteMultiplyFinishes title="quote_finishes" />
-        <SubmitBlock title="submit_block" />
+        <SubmitBlock title="submit_block" formType="kitchen" />
       </div>
     </StKitchenQuote>
   </Template>

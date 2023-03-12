@@ -14,6 +14,7 @@ export type ModalNames = keyof ModalsState;
 
 export type Set = (state: Partial<State>) => void;
 export type Get = () => State;
+export type RequestType = 'kitchen' | 'bathroom' | 'doors' | 'boxes';
 
 // actions
 export interface ChangeInputPld {
@@ -161,7 +162,7 @@ export interface StateField {
 
 export interface State extends StateField {
   reset: () => void;
-  sendForm: () => void;
+  sendForm: (type: RequestType) => void;
   setInputValue: (payload: ChangeInputPld) => void;
   addFiles: (files: File) => void;
   setModalState: (payload: SetModalStatePld) => void;
