@@ -430,7 +430,7 @@ export const locales = {
   file_drawing_upload_title: 'File or Drawing Upload',
   file_upload_text: 'Upload a file with a list of cabinet dimensions needed from your computer or a layout drawing. Drawings do not have to be to scale. Scanned hand sketches acceptable',
   file_upload_max_size: 'Max Upload size 2mb per file',
-  file_upload_max_files: 'Max upload 2 files',
+  file_upload_max_files: 'Max upload 2 files or 2mb per file',
   file_upload_support: 'Most major drawing and word processing files accepted',
   file_upload_error: 'Max upload 2 files or 2mb per file',
 

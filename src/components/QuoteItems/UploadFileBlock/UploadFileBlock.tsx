@@ -5,6 +5,8 @@ import { useAppStore } from '@/state/reducer';
 import { addFiles, getFileNames, getFiles } from '@/state/selectors';
 import { StUploadFileBlock } from './styled';
 
+const maxSize = 2097152; // 2MB
+
 const UploadFileBlock: React.FC = () => {
   const [isError, setIsError] = React.useState(false);
   const files = useAppStore(getFiles);
@@ -16,6 +18,11 @@ const UploadFileBlock: React.FC = () => {
       setIsError(false);
       // eslint-disable-next-line no-plusplus
       for (let i = 0; i < filesList.length; i++) {
+        if (filesList[i].size > maxSize) {
+          setIsError(true);
+          setTimeout(() => setIsError(false), 3000);
+          return;
+        }
         setFiles(filesList[i]);
       }
     } else {

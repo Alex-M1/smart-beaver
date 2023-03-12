@@ -10,6 +10,7 @@ import {
   QuoteFoormTypes,
   ChangeCheckBoxesPld,
   QuoteFormInputsErrorTypes,
+  ModalNames,
 } from './types';
 
 export const getInputsValue = (inputTypes: InputTypes) => (state: State) => state.inputs[inputTypes];
@@ -65,3 +66,6 @@ export const checkBoxesQuantityError = (field: 'doorsStyle' | 'woodSpecies') => 
 
   return quantity >= 4;
 };
+
+export const getModalState = (modal: ModalNames) => (state: State) => state.modalsState[modal];
+export const setModalState = (state: State) => state.setModalState;

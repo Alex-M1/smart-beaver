@@ -104,11 +104,17 @@ const initialState: StateField = {
   radio: {
     vanityOptions: '',
   },
+  modalsState: {
+    successModal: false,
+  },
 };
 
 export const useAppStore = create<State>((set, get) => ({
   ...initialState,
-  reset: () => set(initialState),
+  reset: () => set((state) => ({
+    ...initialState,
+    modalsState: state.modalsState,
+  })),
   setInputValue: (payload: ChangeInputPld) => set((state) => ({
     inputs: {
       ...state.inputs,
@@ -163,6 +169,12 @@ export const useAppStore = create<State>((set, get) => ({
   })),
   setQuoteFormInputsError: (payload) => set((state) => ({
     quoteFormInputsError: { ...state.quoteFormInputsError, [payload.field]: payload.value },
+  })),
+  setModalState: (payload) => set((state) => ({
+    modalsState: {
+      ...state.modalsState,
+      [payload.modalType]: payload.value,
+    },
   })),
 
   sendForm: async () => {
