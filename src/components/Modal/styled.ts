@@ -46,7 +46,7 @@ export const ModalTitle = styled.h3`
 `;
 
 export const CloseIcon = styled(IconButton)`
-  position: absolute;
+  position: absolute !important;
   top: 20px;
   right: 20px;
 `;

@@ -35,12 +35,7 @@ MyDocument.getInitialProps = async (ctx) => {
 
     return {
       ...initialProps,
-      styles: (
-        <>
-          {initialProps.styles}
-          {sheets.getStyleElement()}
-        </>
-      ),
+      styles: [initialProps.styles, sheets.getStyleElement()],
     };
   } finally {
     sheets.seal();
