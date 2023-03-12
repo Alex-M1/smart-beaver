@@ -2,6 +2,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import nodemailer from 'nodemailer';
 import formidable from 'formidable';
 import fs from 'fs';
+import { bodyToHtml } from '@/helpers/bodyToHtml';
 
 type Data = {
   message: string
@@ -35,12 +36,12 @@ export default function handler(
         return;
       }
 
-      const data = JSON.parse(fields.data as string);
+      const { data } = fields;
       const message = {
         from: process.env.NEXT_PUBLIC_MAIL,
         to: process.env.NEXT_PUBLIC_CLIENT,
         subject: 'Mail sender',
-        text: JSON.stringify(data),
+        html: bodyToHtml(data as string),
         attachments: [] as { filename: string; content: Buffer }[],
       };
 

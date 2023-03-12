@@ -1,5 +1,4 @@
 import { Locales, locales } from '@/constants/locales';
-import { fetchData } from '@/helpers/fetchData';
 import {
   CheckBoxesName,
   Finished,
@@ -37,9 +36,10 @@ export const getDoorStylesAndWoodSpecies = (state: State) => {
 export const sendKitchenQuote = async (set: Set, get: Get) => {
   const state = get();
   const isValid = validateQuoteForm(state);
-  // if (!isValid) {
-  //   return false;
-  // }
+  if (!isValid) {
+    return false;
+  }
+
   const { doorStyles, woodSpecies } = getDoorStylesAndWoodSpecies(state);
 
   const finishing = (Object.keys(state.checkBoxes.finished) as Finished[])
@@ -51,6 +51,7 @@ export const sendKitchenQuote = async (set: Set, get: Get) => {
 
   const data = {
     name: 'Kitchen Quote',
+    ...state.quoteFormInputs,
     'base cabinet': state.inputs.baseCabinetsInput,
     'wall cabinet': state.inputs.wallCabinetsInput,
     'pantry cabinet': state.inputs.pantryCabinetsInput,
@@ -62,63 +63,12 @@ export const sendKitchenQuote = async (set: Set, get: Get) => {
 
   formData.append('data', JSON.stringify(data));
 
-  await fetchData('/api/send_mail', 'POST', formData);
+  const res = await fetch('/api/send_mail', {
+    method: 'POST',
+    body: formData,
+  });
+  if (res.ok) {
+    state.setModalState({ modalType: 'successModal', value: true });
+    state.reset();
+  }
 };
-
-// const a = {
-//   doorsStyle: {
-//     fpa_square: false,
-//     fpa_arch_top: true,
-//     fpad_double_arch: true,
-//     fpc_cathedral_arch: false,
-//     fpcd_double_cathedral_arch: false,
-//     fpb_beaded_panel: false,
-//     rps_raised_square: false,
-//     rpa_raised_arch_top: false,
-//     rpad_raised_double_arch: false,
-//     rpc_raised_cathedral_arch: false,
-//     rpcd_raised_double_cathedral_arch: false,
-//     rpb_raised_beaded_panel: false,
-//     sst_shaker: false,
-//     sss_split_shaker: false,
-//     sbp_shaker_beaded_panel: false,
-//   },
-//   woodSpecies: {
-//     wood_species_cherry: true,
-//     wood_species_hickory: true,
-//     wood_species_knotty_alder: false,
-//     wood_species_red_oak: false,
-//     wood_species_rustic_hickory: false,
-//     wood_species_walnut: false,
-//     wood_species_white_oak: false,
-//     wood_species_wormy_maple: false,
-//     wood_species_quarter_sawn: false,
-//     wood_species_alder: false,
-//     wood_species_maple: false,
-//     wood_species_poplar: true,
-//     wood_species_poplar2: true,
-//     wood_species_mdf: false,
-//   },
-//   finished: {
-//     quote_unfinished: true,
-//     quote_natural: true,
-//     quote_stain: true,
-//     quote_painted: false,
-//     quote_glaze: false,
-//   },
-//   drawerFronts: {
-//     flat_panel: false,
-//     raised_panel: false,
-//     shaker: false,
-//     slab_profile_edge: false,
-//   },
-//   higle: {
-//     hingle_boring: false,
-//     concealed: false,
-//   },
-//   drawerBoxes: {
-//     natural: false,
-//     notched: false,
-//     unfinished: false,
-//   },
-// };

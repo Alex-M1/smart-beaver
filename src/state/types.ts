@@ -10,6 +10,7 @@ export type Higle = keyof HigleCheckBoxes;
 export type Drawer = keyof DrawerBoxesCheckBoxes;
 export type ChBoxesNames = CheckBoxesName | WoodSpecies | Finished | DrawerFronts | Higle | Drawer;
 export type RadioTypes = 'flat_panel' | 'raised_panel' | '';
+export type ModalNames = keyof ModalsState;
 
 export type Set = (state: Partial<State>) => void;
 export type Get = () => State;
@@ -33,6 +34,11 @@ export interface ChangeQuoteInputsPld {
 export interface ChangeCheckBoxesPld {
   field: CheckBoxesTypes;
   name: ChBoxesNames;
+}
+
+export interface SetModalStatePld {
+  modalType: ModalNames;
+  value: boolean;
 }
 
 // state
@@ -139,6 +145,10 @@ export interface QuoteFormInputsError {
   email: boolean;
 }
 
+export interface ModalsState {
+  successModal: boolean;
+}
+
 export interface StateField {
   inputs: Inputs;
   quoteFormInputs: QuoteFormInputs;
@@ -146,6 +156,7 @@ export interface StateField {
   files: Array<File>;
   checkBoxes: CheckBoxes;
   radio: Radio;
+  modalsState: ModalsState;
 }
 
 export interface State extends StateField {
@@ -153,6 +164,7 @@ export interface State extends StateField {
   sendForm: () => void;
   setInputValue: (payload: ChangeInputPld) => void;
   addFiles: (files: File) => void;
+  setModalState: (payload: SetModalStatePld) => void;
   setCheckBoxes: (payload: ChangeCheckBoxesPld) => void;
   setRadio: (payload: RadioTypes) => void;
   setQuoteFormInputs: (payload: ChangeQuoteInputsPld) => void;
