@@ -1,74 +1,40 @@
 import { Locales, locales } from '@/constants/locales';
+import { RequestBuilder } from '@/helpers/RequestBuilder';
 import {
-  CheckBoxesName,
+  Get,
   Finished,
-  Get, Set, State, WoodSpecies,
 } from './types';
 
-const validateQuoteForm = (state: State) => {
-  const quoteInputs = state.quoteFormInputs;
-  const setError = state.setQuoteFormInputsError;
-  if (quoteInputs.firstName && quoteInputs.email) {
-    return true;
-  }
-  if (!quoteInputs.firstName) {
-    setError({ field: 'firstName', value: true });
-  }
-  if (!quoteInputs.email) {
-    setError({ field: 'email', value: true });
-  }
-
-  return false;
-};
-
-export const getDoorStylesAndWoodSpecies = (state: State) => {
-  const doorStyles = (Object.keys(state.checkBoxes.doorsStyle) as CheckBoxesName[])
-    .filter((key) => state.checkBoxes.doorsStyle[key])
-    .map((key) => locales[key as Locales]);
-
-  const woodSpecies = (Object.keys(state.checkBoxes.woodSpecies) as WoodSpecies[])
-    .filter((key) => state.checkBoxes.woodSpecies[key])
-    .map((key) => (key === 'wood_species_poplar2' ? locales.wood_species_poplar : locales[key as Locales]));
-
-  return { doorStyles, woodSpecies };
-};
-
-export const sendKitchenQuote = async (set: Set, get: Get) => {
+export const sendKitchenQuote = async (get: Get) => {
   const state = get();
-  const isValid = validateQuoteForm(state);
-  if (!isValid) {
+  const reqBuilder = new RequestBuilder(state);
+  if (!reqBuilder.isValid) {
     return false;
   }
-
-  const { doorStyles, woodSpecies } = getDoorStylesAndWoodSpecies(state);
-
   const finishing = (Object.keys(state.checkBoxes.finished) as Finished[])
     .filter((key) => state.checkBoxes.finished[key])
     .map((key) => locales[key as Locales]);
+  await reqBuilder
+    .field('Quote Name', 'Kitchen Quote')
+    .field('Base Cabinet', state.inputs.baseCabinetsInput)
+    .field('Wall Cabinet', state.inputs.wallCabinetsInput)
+    .field('Cabinet Finishing', finishing)
+    .sendRequest();
+};
 
-  const formData = new FormData();
-  state.files.forEach((file) => { formData.append('files', file); });
+export const sendBathroomQuote = async (get: Get) => {
+  const state = get();
+  const reqBuilder = new RequestBuilder(state);
 
-  const data = {
-    name: 'Kitchen Quote',
-    ...state.quoteFormInputs,
-    'base cabinet': state.inputs.baseCabinetsInput,
-    'wall cabinet': state.inputs.wallCabinetsInput,
-    'pantry cabinet': state.inputs.pantryCabinetsInput,
-    questions: state.inputs.submitBlockInput,
-    'cabinet door styles': doorStyles,
-    'wood species': woodSpecies,
-    'cabinet finishing': finishing,
-  };
-
-  formData.append('data', JSON.stringify(data));
-
-  const res = await fetch('/api/send_mail', {
-    method: 'POST',
-    body: formData,
-  });
-  if (res.ok) {
-    state.setModalState({ modalType: 'successModal', value: true });
-    state.reset();
+  if (!reqBuilder.isValid) {
+    return false;
   }
+
+  await reqBuilder
+    .field('Quote Name', 'Bathroom Quote')
+    .field('Dimension of Vantity', state.inputs.vanityDimensionsInput)
+    .field('Quantity of Finishes Sides', state.inputs.vantityFinishedSideInput)
+    .field('Quantity of Drawers', state.inputs.vantitySideDrawersInput)
+    .field('Style of Finish Sides', state.radio.vanityOptions)
+    .sendRequest();
 };

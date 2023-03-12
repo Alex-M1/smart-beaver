@@ -13,7 +13,7 @@ const QuoteBoxes: React.FC = () => (
       <Box />
       <UploadFileBlock />
       <DrawerBox />
-      <SubmitBlock title="submit_block4" />
+      <SubmitBlock title="submit_block4" formType="boxes" />
     </div>
   </Template>
 );

@@ -23,7 +23,7 @@ const BathroomQuote: React.FC = () => (
       <CabinetDoorsStyle title="vantity_door_style" />
       <QuoteWoodSpecies title="quote_wood_species2" />
       <QuoteMultiplyFinishes title="quote_finishes2" />
-      <SubmitBlock title="submit_block2" />
+      <SubmitBlock title="submit_block2" formType="bathroom" />
     </div>
   </Template>
 );

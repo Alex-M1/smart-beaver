@@ -487,6 +487,7 @@ export const locales = {
   side_drawers: 'SIDE DRAWERS',
   vanity_options_note: 'NOTE: Side Drawers require minimum cabinet width of 36"',
   vanity_options_input_descr: 'Enter Quantity of Drawers if None Leave Blank',
+  vanity_options_input_descr2: 'Enter Quantity of Finished Sides if None Leave Blank',
   qty: 'QTY',
   vabity_options_text: 'Select style of Finished Side\nIf one of each select both styles',
   flat_panel_val: 'FLAT PANEL',

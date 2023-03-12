@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { sendKitchenQuote } from './requests';
+import { sendBathroomQuote, sendKitchenQuote } from './requests';
 import {
   Higle,
   State,
@@ -177,7 +177,8 @@ export const useAppStore = create<State>((set, get) => ({
     },
   })),
 
-  sendForm: async () => {
-    await sendKitchenQuote(set, get);
+  sendForm: async (type) => {
+    if (type === 'kitchen') await sendKitchenQuote(get);
+    else if (type === 'bathroom') await sendBathroomQuote(get);
   },
 }));

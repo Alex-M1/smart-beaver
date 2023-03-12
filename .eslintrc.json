@@ -28,6 +28,7 @@
     "no-shadow": "off",
     "no-useless-escape": "off",
     "jsx-a11y/label-has-associated-control": "off",
+    "lines-between-class-members": "off",
     "no-param-reassign": [
       "error",
       {

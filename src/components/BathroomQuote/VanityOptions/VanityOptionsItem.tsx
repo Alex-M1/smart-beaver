@@ -25,7 +25,7 @@ const VanityOptionsItem: React.FC<Props> = ({ isFirst }) => {
       <div className="vanity-options__item_text-block">
         <p className="bold small-text">{locales.side_drawers}</p>
         {isFirst && <p className="bold small-text">{locales.vanity_options_note}</p>}
-        <p className="bold small-text">{locales.vanity_options_input_descr}</p>
+        <p className="bold small-text">{isFirst ? locales.vanity_options_input_descr : locales.vanity_options_input_descr2}</p>
         <div className="vanity-options__item_input-block">
           <span className="bold small-text">{locales.qty}</span>
           <Input value={value} onChange={handleChange} type="number" borderRadius="0px" className="vanity-options__item_input" placeholder="0" />
