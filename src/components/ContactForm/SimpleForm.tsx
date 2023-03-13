@@ -1,4 +1,6 @@
 import { locales } from '@/constants/locales';
+import { RequestBuilder } from '@/helpers/RequestBuilder';
+import { useAppStore } from '@/state/reducer';
 import React, { useState } from 'react';
 import Button from '../common/Button';
 import Input from '../common/Input';
@@ -8,7 +10,7 @@ const SimpleForm: React.FC = () => {
     name: '',
     phone: '',
   });
-
+  const state = useAppStore();
   const [error, setError] = useState(false);
 
   const handleChangeValue = (field: 'name' | 'phone') => (value: string) => {
@@ -21,13 +23,11 @@ const SimpleForm: React.FC = () => {
       return setError(true);
     }
     try {
-      // await fetch(`${urls.main}${urls.send_mail}`, {
-      //   method: 'POST',
-      //   body: JSON.stringify(value),
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      // });
+      const reqBuilder = new RequestBuilder(state);
+      await reqBuilder
+        .field('Name', value.name)
+        .field('Phone', value.phone)
+        .simpleFormRequest();
       setValue({ name: '', phone: '' });
     } catch (e) {
       console.log(e);

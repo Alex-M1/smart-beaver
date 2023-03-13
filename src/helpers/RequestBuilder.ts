@@ -43,7 +43,15 @@ export class RequestBuilder {
     });
     this.validateResponse(res);
   }
-
+  public simpleFormRequest = async () => {
+    const formData = new FormData();
+    formData.append('data', JSON.stringify(this.data));
+    const res = await fetch('/api/send_mail', {
+      method: 'POST',
+      body: formData,
+    });
+    this.validateResponse(res);
+  };
   public field = (key: string, value: unknown) => {
     this.data[key] = value;
     return this;
