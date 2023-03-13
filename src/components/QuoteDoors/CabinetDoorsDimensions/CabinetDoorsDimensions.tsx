@@ -12,7 +12,7 @@ const CabinetDoorsDimensions: React.FC = () => (
       <div className="door-dimensions__item">
         <Img className="door-dimensions__item_img" name="door_quote_img1" alt="door example" />
         <div className="door-dimensions__item_ipt">
-          <p className="small-text bold">{locales.quote_cabinet_ipt}</p>
+          <p className="small-text bold">{locales.quote_cabinet_ipt1}</p>
           <QuoteInput inputType="cabinetDoorsDimensionsInput" />
         </div>
         <p className="small-text bold">{locales.quote_cabinet_door_sizes}</p>
@@ -20,7 +20,7 @@ const CabinetDoorsDimensions: React.FC = () => (
       <div className="door-dimensions__draweritem">
         <Img className="door-dimensions__item_img" name="door_quote_img2" alt="door example" />
         <div className="door-dimensions__item_ipt">
-          <p className="small-text bold">{locales.quote_cabinet_ipt}</p>
+          <p className="small-text bold">{locales.quote_cabinet_ipt2}</p>
           <QuoteInput inputType="cabinetDrawersDimensionsInput" />
         </div>
       </div>

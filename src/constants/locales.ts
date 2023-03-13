@@ -495,13 +495,14 @@ export const locales = {
 
   quote_cabinet_door: '1. CABINET DOOR AND/OR DRAWER FRONT DIMENSIONS',
   quote_cabinet_door_text: 'Enter quantity and dimensions as shown or upload a file with list of dimensions needed using file upload box below',
-  quote_cabinet_ipt: 'CABINET DOORS\nPRICING IS BASED\nON TOTAL SQUARE FEE',
+  quote_cabinet_ipt1: 'CABINET DOORS\nPRICING IS BASED\nON TOTAL SQUARE FEET',
+  quote_cabinet_ipt2: 'DRAWER FRONTS\nPRICING IS BASED\nON TOTAL SQUARE FEET',
   quote_cabinet_door_sizes: 'ENTER DOOR AND DRAWER FRONT\nDIMENSIONS FOR EACH DOOR OR\nDRAWER FRONT AS FOLLOWS\nQUANTITY x WIDTH x HEIGHT\nExample\n2 - 12" x 26"\n1 - 13 - 1 / 2" x 28-1/2"\n4 - 14" x 30"\netc.',
   quote_door_drawer_front: '3. DRAWER FRONT STYLE - YOU CAN SELECT MULTIPLE DRAWER FRONT STYLES TO BE QUOTED',
 
   quote_door_hingle: '6. CABINET DOOR HINGE BORING AND HINGES\nSelect one or both of these options if you want them Quoted',
-  quote_door_higle_boring: 'HINGE BORING FOR CONCEALED HINGES',
-  quote_door_concealed_hinges: 'CONCEALED 1/2" OVERLAY HINGES',
+  hingle_boring: 'HINGE BORING FOR CONCEALED HINGES',
+  concealed: 'CONCEALED 1/2" OVERLAY HINGES',
 
   box_title: '1. DRAWER BOX AND OR PULL OUT SHELF DIMENSIONS\nEnter quantity and dimensions as shown or upload a file with list of dimensions needed using file upload box below',
   box_text: 'DRAWER BOX AND PULL OUT SHELF PRCNG IS BASED ON THE CUBIC INCH SIZE OF YOUR BOX\nW(width) x D(depth) x H(height)',

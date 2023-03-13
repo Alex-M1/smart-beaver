@@ -11,6 +11,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: Gilroy, sans-serif;
     font-weight: ${FontWeight.medium};
   }
+  ${fontFace}
   .bold {
     font-weight: ${FontWeight.bold};
   }
@@ -68,7 +69,6 @@ export const GlobalStyle = createGlobalStyle`
   p {
     line-height: 150%;
   }
-  ${fontFace}
 
   @media (max-width: 1366px) {
     .container {

@@ -1,5 +1,10 @@
 import { create } from 'zustand';
-import { sendBathroomQuote, sendKitchenQuote } from './requests';
+import {
+  sendDoorQuote,
+  sendBoxesQuote,
+  sendKitchenQuote,
+  sendBathroomQuote,
+} from './requests';
 import {
   Higle,
   State,
@@ -86,19 +91,19 @@ const initialState: StateField = {
       quote_glaze: false,
     },
     drawerFronts: {
-      flat_panel: false,
-      raised_panel: false,
-      shaker: false,
-      slab_profile_edge: false,
+      df_flat_panel: false,
+      df_raised_panel: false,
+      df_shaker: false,
+      df_slab_profile_edge: false,
     },
     higle: {
       hingle_boring: false,
       concealed: false,
     },
     drawerBoxes: {
-      natural: false,
+      quote_natural: false,
       notched: false,
-      unfinished: false,
+      quote_unfinished: false,
     },
   },
   radio: {
@@ -180,5 +185,7 @@ export const useAppStore = create<State>((set, get) => ({
   sendForm: async (type) => {
     if (type === 'kitchen') await sendKitchenQuote(get);
     else if (type === 'bathroom') await sendBathroomQuote(get);
+    else if (type === 'doors') await sendDoorQuote(get);
+    else if (type === 'boxes') await sendBoxesQuote(get);
   },
 }));

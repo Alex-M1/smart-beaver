@@ -1,5 +1,5 @@
 import { Locales, locales } from '@/constants/locales';
-import { CheckBoxesName, State, WoodSpecies } from '@/state/types';
+import { State, WoodSpecies } from '@/state/types';
 
 export class RequestBuilder {
   public isValid: boolean;
@@ -13,12 +13,7 @@ export class RequestBuilder {
     this.init();
   }
 
-  public async sendRequest() {
-    if (!this.isValid) {
-      return false;
-    }
-    const { doorStyles, woodSpecies } = this.getDoorStylesAndWoodSpecies();
-
+  public async sendRequest(isBoxes?: boolean) {
     this
       .field('First & Last Name', this.state.quoteFormInputs.firstName)
       .field('Email', this.state.quoteFormInputs.email)
@@ -28,9 +23,15 @@ export class RequestBuilder {
       .field('City', this.state.quoteFormInputs.city)
       .field('State', this.state.quoteFormInputs.state)
       .field('Zip', this.state.quoteFormInputs.zip)
-      .field('Cabinet Door Styles', doorStyles)
-      .field('Wood Species', woodSpecies)
       .field('Questions', this.state.inputs.submitBlockInput);
+
+    if (!isBoxes) {
+      const { doorStyles, woodSpecies, finished } = this.getDoorStylesAndWoodSpecies();
+      this
+        .field('Cabinet Door Styles', doorStyles)
+        .field('Wood Species', woodSpecies)
+        .field('Cabinet Finishing', finished);
+    }
 
     const formData = new FormData();
     this.state.files.forEach((file) => { formData.append('files', file); });
@@ -48,20 +49,25 @@ export class RequestBuilder {
     return this;
   };
 
+  public static checkboxesToArray = <T extends object>(checkboxes: T) => (
+    Object.keys(checkboxes)
+      .filter((key) => checkboxes[key as keyof T])
+      .map((key) => locales[key as Locales])
+  );
+
   private init() {
     this.validateQuoteForm();
   }
 
   private getDoorStylesAndWoodSpecies() {
-    const doorStyles = (Object.keys(this.state.checkBoxes.doorsStyle) as CheckBoxesName[])
-      .filter((key) => this.state.checkBoxes.doorsStyle[key])
-      .map((key) => locales[key as Locales]);
+    const doorStyles = RequestBuilder.checkboxesToArray(this.state.checkBoxes.doorsStyle);
+    const finished = RequestBuilder.checkboxesToArray(this.state.checkBoxes.finished);
 
     const woodSpecies = (Object.keys(this.state.checkBoxes.woodSpecies) as WoodSpecies[])
       .filter((key) => this.state.checkBoxes.woodSpecies[key])
       .map((key) => (key === 'wood_species_poplar2' ? locales.wood_species_poplar : locales[key as Locales]));
 
-    return { doorStyles, woodSpecies };
+    return { doorStyles, woodSpecies, finished };
   }
 
   private validateQuoteForm() {
