@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { useAppStore } from '@/state/reducer';
 import {
   getQuoteFormInputs, getQuoteFormInputsError, setQuoteFormInputs, setQuoteFormInputsError,
@@ -26,9 +26,18 @@ const QuoteFormInput: React.FC<Props> = ({ inputName, placeholder, className }) 
     }
     setValue({ field: inputName, value });
   };
-
+  const ref = useRef<HTMLInputElement>(null);
+  useEffect(() => {
+    if (ref.current && error) {
+      window.scrollTo({
+        top: ref.current.offsetTop,
+        behavior: 'smooth',
+      });
+    }
+  }, [error]);
   return (
     <Input
+      inputRef={ref}
       isError={error}
       helperText={error ? locales.required_field : ''}
       value={value}

@@ -15,6 +15,7 @@ interface Props extends ContentFields {
   isError?: boolean;
   variant?: INPUT_VARIANTS;
   onChange: (value: string, event?: ChangeEvent<HTMLInputElement>) => void;
+  inputRef?: React.RefObject<HTMLInputElement>
   className?: string;
   disabled?: boolean;
   multiline?: boolean;
@@ -33,6 +34,7 @@ const Input: React.FC<Props> = ({
   isError,
   disabled,
   onChange,
+  inputRef,
   multiline,
   className,
   helperText,
@@ -46,6 +48,7 @@ const Input: React.FC<Props> = ({
 
   return (
     <StInput
+      ref={inputRef}
       size="small"
       sx={{ ...sxProps }}
       InputProps={{ sx: { bgcolor: colors.white, borderRadius } }}
