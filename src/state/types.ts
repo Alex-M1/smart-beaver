@@ -101,10 +101,10 @@ export interface FinishedCheckboxes {
 }
 
 export interface DrawerFrontsCheckBoxes {
-  flat_panel: boolean;
-  raised_panel: boolean;
-  shaker: boolean;
-  slab_profile_edge: boolean;
+  df_flat_panel: boolean;
+  df_raised_panel: boolean;
+  df_shaker: boolean;
+  df_slab_profile_edge: boolean;
 }
 
 export interface HigleCheckBoxes {
@@ -114,8 +114,8 @@ export interface HigleCheckBoxes {
 
 export interface DrawerBoxesCheckBoxes {
   notched: boolean;
-  unfinished: boolean;
-  natural: boolean;
+  quote_unfinished: boolean;
+  quote_natural: boolean;
 }
 
 export interface CheckBoxes {

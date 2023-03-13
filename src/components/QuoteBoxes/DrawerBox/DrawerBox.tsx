@@ -22,11 +22,11 @@ const DrawerBox: React.FC = () => (
         <div className="drawer-box__item_example">
           <div>
             <Img className="drawer-box__img-finish" name="finish_img1" alt="example" />
-            <QuoteCheckBox field="drawerBoxes" name="unfinished" textKey="quote_unfinished" />
+            <QuoteCheckBox field="drawerBoxes" name="quote_unfinished" textKey="quote_unfinished" />
           </div>
           <div>
             <Img className="drawer-box__img-finish" name="finish_img2" alt="example" />
-            <QuoteCheckBox field="drawerBoxes" name="natural" textKey="quote_natural" />
+            <QuoteCheckBox field="drawerBoxes" name="quote_natural" textKey="quote_natural" />
           </div>
         </div>
         <div>

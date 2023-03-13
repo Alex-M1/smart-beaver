@@ -16,7 +16,7 @@ const DrawerFrontStyleItem: React.FC<Props> = ({ img, name, txt }) => {
   const value = useAppStore(getCheckBoxesValue({ field: 'drawerFronts', name }));
   const setValue = useAppStore(setCheckBoxesValue);
 
-  const handleChange = () => setValue({ field: 'doorsStyle', name });
+  const handleChange = () => setValue({ field: 'drawerFronts', name });
 
   return (
     <div className="drawer-fronts__item">
