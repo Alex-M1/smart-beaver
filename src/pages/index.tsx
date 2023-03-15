@@ -5,7 +5,7 @@ import React from 'react';
 export default function Home() {
   return (
     <>
-      <AppHead title="company_name" desription="description_text" />
+      <AppHead title="company_name" desription="description_text" isMain />
       <MainPage />
     </>
   );
