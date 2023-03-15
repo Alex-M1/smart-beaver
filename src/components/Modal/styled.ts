@@ -43,6 +43,7 @@ export const CheckIcon = styled.div`
 
 export const ModalTitle = styled.h3`
   margin: 38px 0 34px 0;
+  white-space: pre-line;
 `;
 
 export const CloseIcon = styled(IconButton)`

@@ -111,6 +111,7 @@ const initialState: StateField = {
   },
   modalsState: {
     successModal: false,
+    errorModal: false,
   },
 };
 

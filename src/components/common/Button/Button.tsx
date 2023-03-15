@@ -39,7 +39,7 @@ const Button: React.FC<Props> = ({
   onTouchStart,
 }) => {
   const sxProps = {
-    width, height, borderRadius, padding,
+    width, height, borderRadius, padding, fontFamily: 'Gilroy, sans-serif',
   };
   return (
     <ThemeProvider theme={theme}>

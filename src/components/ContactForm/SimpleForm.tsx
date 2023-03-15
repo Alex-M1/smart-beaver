@@ -22,16 +22,12 @@ const SimpleForm: React.FC = () => {
     if (!value.phone) {
       return setError(true);
     }
-    try {
-      const reqBuilder = new RequestBuilder(state);
-      await reqBuilder
-        .field('Name', value.name)
-        .field('Phone', value.phone)
-        .simpleFormRequest();
-      setValue({ name: '', phone: '' });
-    } catch (e) {
-      console.log(e);
-    }
+    const reqBuilder = new RequestBuilder(state);
+    await reqBuilder
+      .field('Name', value.name)
+      .field('Phone', value.phone)
+      .simpleFormRequest();
+    setValue({ name: '', phone: '' });
   };
 
   return (

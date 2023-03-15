@@ -36,21 +36,28 @@ export class RequestBuilder {
     const formData = new FormData();
     this.state.files.forEach((file) => { formData.append('files', file); });
     formData.append('data', JSON.stringify(this.data));
-
-    const res = await fetch('/api/send_mail', {
-      method: 'POST',
-      body: formData,
-    });
-    this.validateResponse(res);
+    try {
+      const res = await fetch('/api/send_mail', {
+        method: 'POST',
+        body: formData,
+      });
+      this.validateResponse(res);
+    } catch {
+      this.state.setModalState({ modalType: 'errorModal', value: true });
+    }
   }
   public simpleFormRequest = async () => {
-    const formData = new FormData();
-    formData.append('data', JSON.stringify(this.data));
-    const res = await fetch('/api/send_mail', {
-      method: 'POST',
-      body: formData,
-    });
-    this.validateResponse(res);
+    try {
+      const formData = new FormData();
+      formData.append('data', JSON.stringify(this.data));
+      const res = await fetch('/api/send_mail', {
+        method: 'POST',
+        body: formData,
+      });
+      this.validateResponse(res);
+    } catch {
+      this.state.setModalState({ modalType: 'errorModal', value: true });
+    }
   };
   public field = (key: string, value: unknown) => {
     this.data[key] = value;

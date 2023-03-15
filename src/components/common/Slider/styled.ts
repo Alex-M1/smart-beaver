@@ -18,9 +18,14 @@ export const StCarousel = styled(Carousel)`
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     right: 50px;
     &::before {
+      position: absolute;
+      margin: 0;
       border-left: none;
       font-size: 20px;
       content: '❯';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
   .carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
@@ -33,10 +38,15 @@ export const StCarousel = styled(Carousel)`
     left: auto;
     background: ${colors.white};
       &::before {
+        position: absolute;
         border-right: none;
         font-size: 20px;
         color:${colors.warning};
+        margin: 0;
         content: '❮';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
   }
   .carousel .control-prev.control-arrow:before {
@@ -59,8 +69,8 @@ export const StCarousel = styled(Carousel)`
       position: relative;
       &::before {
         content: '';
-        width: 15px;
-        height: 15px;
+        width: 16px;
+        height: 16px;
         border-radius: 100%;
         border: 1px solid ${colors.warning};
         position: absolute;
