@@ -614,6 +614,9 @@ export const locales = {
 
   required_field: 'Required Field',
   many_checkbox: 'You can choose up to 4 items',
+
+  oops: 'Oops, something\nwent wrong',
+  try_again: 'Тry again or come back later',
 };
 
 export type Locales = keyof typeof locales;

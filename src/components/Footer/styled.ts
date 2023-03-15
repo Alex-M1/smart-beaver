@@ -6,6 +6,7 @@ export const StFooter = styled.footer`
   padding: 54px 73px 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  
   @media print {
     display: none;
   }

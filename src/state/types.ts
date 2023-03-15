@@ -148,6 +148,7 @@ export interface QuoteFormInputsError {
 
 export interface ModalsState {
   successModal: boolean;
+  errorModal: boolean;
 }
 
 export interface StateField {

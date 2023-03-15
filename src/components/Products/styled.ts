@@ -1,12 +1,14 @@
 import { colors } from '@/constants/colors';
 import { FontWeight } from '@/constants/ui';
 import styled from 'styled-components';
+import { transitionScale } from '../common/styled/mixins';
 
 export const StProducts = styled.div`
   .products {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px 0;
   }
   .products-item {
     display: inline-block;
@@ -14,6 +16,7 @@ export const StProducts = styled.div`
     text-decoration: none;
     margin-top: 15px;
     color: ${colors.black};
+    ${transitionScale};
 
     span {
       display: inline-block;

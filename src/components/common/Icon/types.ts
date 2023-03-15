@@ -330,7 +330,9 @@ export enum ICON_NAMES {
   go_green = 'go_green',
   purebond_img = 'purebond_img',
   purebond_img2 = 'purebond_img2',
-  purebond_logo = 'purebond_logo'
+  purebond_logo = 'purebond_logo',
+
+  red_cross = 'red_cross',
 }
 
 export type IconNames = keyof typeof ICON_NAMES;
