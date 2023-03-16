@@ -37,11 +37,12 @@ export default function handler(
       }
 
       const { data } = fields;
+      const bodyJson = JSON.parse(data as string);
       const message = {
         from: process.env.NEXT_PUBLIC_MAIL,
         to: process.env.NEXT_PUBLIC_CLIENT,
-        subject: 'Mail sender',
-        html: bodyToHtml(data as string),
+        subject: bodyJson.subject as string || 'Mail sender',
+        html: bodyToHtml(bodyJson),
         attachments: [] as { filename: string; content: Buffer }[],
       };
 
