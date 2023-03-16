@@ -24,9 +24,9 @@ const SimpleForm: React.FC = () => {
     }
     const reqBuilder = new RequestBuilder(state);
     await reqBuilder
-      .field('Page', value.name)
-      .field('subject', 'Order a measurer')
+      .field('Name', value.name)
       .field('Phone', value.phone)
+      .field('subject', 'Order a measurer')
       .simpleFormRequest();
     setValue({ name: '', phone: '' });
   };
