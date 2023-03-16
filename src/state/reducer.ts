@@ -45,6 +45,7 @@ const initialState: StateField = {
     vantityFinishedSideInput: '',
     cabinetDoorsDimensionsInput: '',
     cabinetDrawersDimensionsInput: '',
+    cornerCabinetsDimensionsInput: '',
     boxInput1: '',
     boxInput2: '',
   },

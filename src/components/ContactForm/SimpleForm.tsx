@@ -1,7 +1,7 @@
+import React, { useState } from 'react';
 import { locales } from '@/constants/locales';
 import { RequestBuilder } from '@/helpers/RequestBuilder';
 import { useAppStore } from '@/state/reducer';
-import React, { useState } from 'react';
 import Button from '../common/Button';
 import Input from '../common/Input';
 
@@ -24,7 +24,8 @@ const SimpleForm: React.FC = () => {
     }
     const reqBuilder = new RequestBuilder(state);
     await reqBuilder
-      .field('Name', value.name)
+      .field('Page', value.name)
+      .field('subject', 'Order a measurer')
       .field('Phone', value.phone)
       .simpleFormRequest();
     setValue({ name: '', phone: '' });
