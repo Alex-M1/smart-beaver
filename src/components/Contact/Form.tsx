@@ -1,9 +1,12 @@
-import { locales } from '@/constants/locales';
 import React, { useState } from 'react';
+import { locales } from '@/constants/locales';
+import { RequestBuilder } from '@/helpers/RequestBuilder';
+import { useAppStore } from '@/state/reducer';
 import Button from '../common/Button';
 import Input from '../common/Input';
 
 const Form: React.FC = () => {
+  const state = useAppStore();
   const [iptValue, setIptValue] = useState({
     name: '',
     email: '',
@@ -21,26 +24,21 @@ const Form: React.FC = () => {
     setIptValue((prev) => ({ ...prev, [type]: value }));
   };
 
-  const handleSend = () => {
+  const handleSend = async () => {
     if (!iptValue.email) {
       return setError((prev) => ({ ...prev, email: true }));
     }
     if (!iptValue.message) {
       return setError((prev) => ({ ...prev, message: true }));
     }
-    try {
-      // await fetch(`${urls.main}${urls.send_mail}`, {
-      //   method: 'POST',
-      //   body: JSON.stringify(value),
-      //   headers: {
-      //     'Content-Type': 'application/json',
-      //   },
-      // });
-      setIptValue({ name: '', email: '', message: '' });
-      // setIsModalOpen(true);
-    } catch (e) {
-      console.log(e);
-    }
+    const reqBuilder = new RequestBuilder(state);
+    await reqBuilder
+      .field('Page', 'Contact Page')
+      .field('Client name', iptValue.name)
+      .field('Email', iptValue.email)
+      .field('Message', iptValue.message)
+      .simpleFormRequest();
+    setIptValue({ name: '', email: '', message: '' });
   };
 
   return (

@@ -13,6 +13,7 @@ export const sendKitchenQuote = async (get: Get) => {
     .field('Quote Name', 'Kitchen Quote')
     .field('Base Cabinet', state.inputs.baseCabinetsInput)
     .field('Wall Cabinet', state.inputs.wallCabinetsInput)
+    .field('Corner Cabinet Dimension', state.inputs.cornerCabinetsDimensionsInput)
     .field('Cabinet Finishing', finishing)
     .sendRequest();
 };

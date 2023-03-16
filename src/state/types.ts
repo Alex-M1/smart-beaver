@@ -53,6 +53,7 @@ export interface Inputs {
   vantityFinishedSideInput: string;
   cabinetDoorsDimensionsInput: string;
   cabinetDrawersDimensionsInput: string;
+  cornerCabinetsDimensionsInput: string;
   boxInput1: string;
   boxInput2: string;
 }

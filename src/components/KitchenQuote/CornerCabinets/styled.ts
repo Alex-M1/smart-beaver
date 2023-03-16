@@ -23,8 +23,13 @@ export const StCornerCabinets = styled.div`
         padding: 20px 0;
       }
     }
-    & > p {
+    .cornet-cabinets__dimensions {
       flex-basis: 100%;
+      &-ipt {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+      }
     }
   }
 
@@ -33,9 +38,15 @@ export const StCornerCabinets = styled.div`
     .corner-cabinets__item {
       flex-basis: 30%;
     }
-    & > p {
+    .cornet-cabinets__dimensions {
       flex-basis: 30%;
       padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &-ipt {
+        display: block;
+      }
     }
   }
 `;
