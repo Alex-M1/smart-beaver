@@ -7,6 +7,10 @@ export const theme = createTheme({
       main: colors.warning,
       contrastText: colors.white,
     },
+    primary: {
+      main: colors.brownPrimary,
+      contrastText: colors.white,
+    },
     contrastThreshold: 3,
     tonalOffset: 0.2,
   },

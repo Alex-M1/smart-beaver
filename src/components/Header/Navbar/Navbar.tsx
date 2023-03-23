@@ -9,7 +9,7 @@ const Navbar: React.FC = () => (
     <NavigationButton />
     <Link href="about_us">{locales.about_us}</Link>
     <Link href="faq">{locales.faq}</Link>
-    <Link href="contacts">{locales.contacts}</Link>
+    <Link href="contact">{locales.contact}</Link>
   </StNav>
 );
 

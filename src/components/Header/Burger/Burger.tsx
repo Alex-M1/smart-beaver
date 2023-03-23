@@ -1,17 +1,19 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
-import Link from '@/components/common/Link';
-import { locales } from '@/constants/locales';
 import IconButton from '@mui/material/IconButton';
 import ListItemButton from '@mui/material/ListItemButton';
+import { useRouter } from 'next/router';
 import { colors } from '@/constants/colors';
 import Icon from '@/components/common/Icon';
+import { locales } from '@/constants/locales';
+import { urls, Urls } from '@/constants/urls';
 
-type MenuItemType = ['products', 'about_us', 'faq', 'contacts']
+type MenuItemType = ['products', 'about_us', 'faq', 'contact']
 
 const Burger: React.FC = () => {
   const [state, setState] = React.useState(false);
+  const { push } = useRouter();
 
   const toggleDrawer = (open: boolean) => (event: React.KeyboardEvent | React.MouseEvent) => {
     if (
@@ -21,10 +23,14 @@ const Burger: React.FC = () => {
     ) {
       return;
     }
-
     setState(open);
   };
-  const menuItem: MenuItemType = ['products', 'about_us', 'faq', 'contacts'];
+
+  const handleClick = (url: Urls) => () => {
+    push(urls[url]);
+  };
+
+  const menuItem: MenuItemType = ['products', 'about_us', 'faq', 'contact'];
 
   return (
     <div className="burger-menu">
@@ -51,8 +57,8 @@ const Burger: React.FC = () => {
         >
           <Icon margin="12px 0" name="white_logo" alt="logo" ext="png" />
           {menuItem.map((itemName) => (
-            <ListItemButton key={itemName}>
-              <Link key={itemName} href={itemName}>{locales[itemName]}</Link>
+            <ListItemButton sx={{ color: 'white' }} key={itemName} onClick={handleClick(itemName)}>
+              {locales[itemName]}
             </ListItemButton>
           ))}
         </Box>

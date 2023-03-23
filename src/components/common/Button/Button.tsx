@@ -6,14 +6,17 @@ import { theme } from '../styled/theme';
 
 interface Props extends PropsWithChildren {
   url?: string;
+  size?: 'small' | 'medium' | 'large';
   width?: string;
   color?: ButtonColor;
   height?: string;
   padding?: string;
   content?: string | ReactNode;
-  onClick: (e: React.MouseEvent<HTMLButtonElement>) => void;
+  onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   variant?: ButtonVariants,
   disabled?: boolean;
+  className?: string;
+  startIcon?: ReactNode;
   borderRadius?: string;
   onTouchStart?: () => void;
 }
@@ -21,6 +24,7 @@ interface Props extends PropsWithChildren {
 const Button: React.FC<Props> = ({
   url,
   width,
+  size = 'medium',
   color = 'primary',
   height,
   padding,
@@ -29,22 +33,27 @@ const Button: React.FC<Props> = ({
   variant = BUTTON_VARIANTS.contained,
   children,
   disabled,
+  className,
+  startIcon,
   borderRadius,
   onTouchStart,
 }) => {
   const sxProps = {
-    width, height, borderRadius, padding,
+    width, height, borderRadius, padding, fontFamily: 'Gilroy, sans-serif',
   };
   return (
     <ThemeProvider theme={theme}>
       <MuiButton
         sx={sxProps}
+        size={size}
         href={url}
-        onClick={onClick}
-        onTouchStart={onTouchStart}
-        disabled={disabled}
-        variant={variant}
         color={color}
+        onClick={onClick}
+        variant={variant}
+        disabled={disabled}
+        className={className}
+        startIcon={startIcon}
+        onTouchStart={onTouchStart}
       >
         {content || children}
       </MuiButton>

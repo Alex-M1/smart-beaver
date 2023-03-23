@@ -96,3 +96,11 @@ export const flexCenter = css`
   justify-content: center;
   align-items: center;
 `;
+
+export const transitionScale = css`
+  transition-duration: 0.3s;
+    &:hover {
+      transform: scale(1.1);
+      opacity: .8;
+    }
+`;

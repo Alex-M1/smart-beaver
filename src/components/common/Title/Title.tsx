@@ -4,17 +4,18 @@ import { StDiv } from '../styled/Block';
 
 interface Props {
   text: string;
-  posX?: string;
   textAlign?: 'left' | 'right'
+  className?: string;
 }
 
-const Title: React.FC<Props> = ({ text, posX = '40px', textAlign = 'left' }) => (
-  <StDiv textAlign={textAlign}>
-    <StTitle posX={posX}>
-      <h1>
-        {text}
-      </h1>
-    </StTitle>
+const Title: React.FC<Props> = ({
+  text, textAlign = 'left', className,
+}) => (
+  <StDiv className={className} textAlign={textAlign}>
+    <h1>
+      {text.slice(0, 1)}
+      <StTitle>{text.slice(1)}</StTitle>
+    </h1>
   </StDiv>
 
 );

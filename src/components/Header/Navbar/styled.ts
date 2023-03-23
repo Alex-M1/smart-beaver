@@ -8,9 +8,12 @@ export const StNav = styled.nav`
   button, a {
     text-transform: none;
     margin-right: 218px;
-    font-size: 16px;
+    font-size: 18px;
     color: ${colors.white};
     text-decoration: none;
+    &:hover {
+      opacity: .8;
+    }
   }
 
     @media screen and (max-width: 1367px) {
