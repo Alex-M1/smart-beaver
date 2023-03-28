@@ -15,6 +15,7 @@ export const fontFace = fontsExt.map((ext) => (
       src: url('/fonts/Gilroy-${font.name}.${ext}');
       font-weight: ${font.weight};
       font-style: ${font.style || 'normal'};
+      font-display: swap;
     }
   `))
 ));
